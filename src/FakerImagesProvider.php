@@ -6,7 +6,7 @@ namespace NiklasBr\FakerImages;
 
 use Faker\Provider\Image;
 
-class FakerImagesProvider extends Image
+final class FakerImagesProvider extends Image
 {
     /**
      * @throws \ImagickException
