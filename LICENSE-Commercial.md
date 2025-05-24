@@ -12,4 +12,4 @@ Approved charities:
  - [The International Consortium of Investigative Journalists](https://www.icij.org/)
  - [World Wide Fund for Nature (WWF)](https://www.worldwildlife.org/)
 
-After making your donation, please contact me at n.brunberg@gmail.com with proof of donation (e.g., a receipt or verification link). Upon verification, you will receive a permanent license grant for the BSD-3-Clause license.
+After making your donation, please contact me at n.brunberg@gmail.com with proof of donation (e.g., a receipt or verification link). Upon verification, you will receive a permanent license grant for the BSD-3-Clause license as well as a copy of the code with BSD-3.0 headers.
