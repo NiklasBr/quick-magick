@@ -30,6 +30,7 @@ return (new Config())
         'numeric_literal_separator' => true,
         'attribute_empty_parentheses' => true,
         'final_class' => true,
+        'static_lambda' => false, // Interferes with tests
     ])
     ->setFinder(
         (new Finder())

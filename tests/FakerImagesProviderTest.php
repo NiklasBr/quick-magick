@@ -11,7 +11,7 @@ namespace NiklasBr\FakerImages\Tests;
 
 use NiklasBr\FakerImages\FakerImagesProvider;
 
-it('returns image data with default parameters', static function () {
+it('returns image data with default parameters', function () {
     $result = FakerImagesProvider::imageData();
     expect($result)->not()->toBeNull();
 });
