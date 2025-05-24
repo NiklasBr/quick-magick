@@ -7,4 +7,10 @@
 
 declare(strict_types=1);
 
-require_once '../vendor/autoload.php';
+namespace NiklasBr\FakerImages;
+
+enum Format: string
+{
+    case PNG = 'png';
+    case JPG = 'jpg';
+}

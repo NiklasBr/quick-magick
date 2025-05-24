@@ -7,4 +7,10 @@
 
 declare(strict_types=1);
 
-require_once '../vendor/autoload.php';
+namespace NiklasBr\FakerImages;
+
+enum Type: string
+{
+    case RADIAL_GRADIENT = 'radial-gradient';
+    case UNKNOWN = 'unknown';
+}
