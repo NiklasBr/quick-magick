@@ -21,12 +21,13 @@ it('returns image data with default parameters', function () {
 });
 
 it('returns image data with custom parameters', function () {
-    $result = FakerImagesProvider::imageData(901, 855, Format::JPG);
+    $result = FakerImagesProvider::imageData(91, 85, Format::JPG);
     $imgData = getimagesizefromstring($result);
 
-    expect($imgData[0])->toBe(901)
-        ->and($imgData[1])->toBe(855)
-        ->and($imgData['mime'])->toMatch('/image\\/jpeg/')
+    expect($imgData)->toBeArray()
+        ->and($imgData[0])->toBe(91)
+        ->and($imgData[1])->toBe(85)
+        ->and($imgData['mime'])->toMatch('/image\/jpeg/')
     ;
 });
 
