@@ -1,4 +1,4 @@
-# COMMERCIAL LICENSE
+# Dual Licensing: AGPL-3.0-only & BSD-3-Clause (Commercial Option)
 
 This library is dual-licensed. By default, it is licensed under the *AGPL-3.0-only* open source license.
 
