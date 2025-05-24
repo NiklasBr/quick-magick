@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 
+/**
+ * © 2025 Niklas Brunberg
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
 namespace NiklasBr\FakerImages;
 
 use Faker\Provider\Image;

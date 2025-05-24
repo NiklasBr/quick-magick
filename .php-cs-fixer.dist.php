@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 
+/**
+ * © 2025 Niklas Brunberg
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
 use PhpCsFixer\Config;
 use PhpCsFixer\Finder;
 use PhpCsFixer\Runner\Parallel\ParallelConfigFactory;
@@ -17,7 +22,7 @@ return (new Config())
             'annotations' => ['expectedDeprecation'],
         ],
         'header_comment' => [
-            'header' => 'TODO LICENSE header',
+            'header' => '© '.date('Y').' Niklas Brunberg'.PHP_EOL.'SPDX-License-Identifier: AGPL-3.0-only',
             'comment_type' => 'PHPDoc',
         ],
         'modernize_strpos' => true,
