@@ -20,7 +20,7 @@ final class FakerImagesProvider extends Image
         int $width = 640,
         int $height = 480,
         ImageFormatEnum $format = ImageFormatEnum::PNG,
-        ?string $imageType = 'radial-gradient:red-blue',
+        string $imageType = 'radial-gradient:red-blue',
     ): string {
         return self::img($width, $height, $imageType, $format)->getImageBlob();
     }
