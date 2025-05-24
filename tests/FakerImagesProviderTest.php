@@ -15,7 +15,19 @@ use NiklasBr\FakerImages\Type;
 
 it('returns image data with default parameters', function () {
     $result = FakerImagesProvider::imageData();
-    expect($result)->not()->toBeNull();
+
+    // https://evanhahn.com/worlds-smallest-png/
+    expect(\strlen($result))->toBeGreaterThan(8 + 25 + 22 + 12);
+});
+
+it('returns image data with custom parameters', function () {
+    $result = FakerImagesProvider::imageData(901, 855, Format::JPG);
+    $imgData = getimagesizefromstring($result);
+
+    expect($imgData[0])->toBe(901)
+        ->and($imgData[1])->toBe(855)
+        ->and($imgData['mime'])->toMatch('/image\\/jpeg/')
+    ;
 });
 
 it('throws an exception when there is no proper ImageType', function () {
