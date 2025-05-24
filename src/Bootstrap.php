@@ -1,8 +1,3 @@
 <?php
 
-namespace NiklasBr\FakerImages;
-
-class Bootstrap
-{
-
-}
+require_once "../vendor/autoload.php";
