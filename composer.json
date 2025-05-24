@@ -1,0 +1,31 @@
+{
+    "name": "niklasbr/faker-images",
+    "description": "Image placeholder provider for Faker",
+    "version": "0.0.0",
+    "require": {
+        "ext-imagick": "*",
+        "fakerphp/faker": "^1.24.1"
+    },
+    "require-dev": {
+        "pestphp/pest": "*",
+        "friendsofphp/php-cs-fixer": "^3.75.0",
+        "phpstan/phpstan": "^2.1.17"
+    },
+    "license": "AGPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "NiklasBr\\FakerImages\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Niklas Brunberg"
+        }
+    ],
+    "minimum-stability": "dev",
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
