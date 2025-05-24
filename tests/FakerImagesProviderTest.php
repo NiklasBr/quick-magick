@@ -20,13 +20,22 @@ it('returns image data with default parameters', function () {
     expect(\strlen($result))->toBeGreaterThan(8 + 25 + 22 + 12);
 });
 
-it('returns image data with custom parameters', function () {
-    $result = FakerImagesProvider::imageData(91, 85, Format::JPG);
+it('returns image data with custom dimensions', function () {
+    $result = FakerImagesProvider::imageData(91, 85);
     $imgData = getimagesizefromstring($result);
 
     expect($imgData)->toBeArray()
         ->and($imgData[0])->toBe(91)
         ->and($imgData[1])->toBe(85)
+        ->and($imgData['mime'])->toMatch('/image\/png/')
+    ;
+});
+
+it('returns a JPEG when requested', function () {
+    $result = FakerImagesProvider::imageData(format: Format::JPG);
+    $imgData = getimagesizefromstring($result);
+
+    expect($imgData)->toBeArray()
         ->and($imgData['mime'])->toMatch('/image\/jpeg/')
     ;
 });
