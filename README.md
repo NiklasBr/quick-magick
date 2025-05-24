@@ -1,4 +1,4 @@
-# Placeholder image generator for Faker
+# Image placeholder provider for Faker
 
 
 

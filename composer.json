@@ -8,7 +8,7 @@
             "name": "Niklas Brunberg"
         }
     ],
-    "license": "AGPL-3.0-only",
+    "license": ["AGPL-3.0-only", "proprietary"],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
