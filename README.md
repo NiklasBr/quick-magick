@@ -14,7 +14,7 @@ composer require niklasbr/faker-images
 ```php
 use \NiklasBr\FakerImages\FakerImagesProvider;
 
-$imageData = FakerImagesProvider::();
+$imageData = FakerImagesProvider::imageData();
 ```
 
 ## License
