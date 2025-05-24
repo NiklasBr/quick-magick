@@ -2,8 +2,8 @@
 
 namespace NiklasBr\FakerImages;
 
-enum ImageFormatEnum
+enum ImageFormatEnum: string
 {
-    case PNG;
-    case JPG;
+    case PNG = 'png';
+    case JPG = 'jpg';
 }

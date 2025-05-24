@@ -14,7 +14,8 @@
     "license": "AGPL-3.0-or-later",
     "autoload": {
         "psr-4": {
-            "NiklasBr\\FakerImages\\": "src/"
+            "NiklasBr\\FakerImages\\": "src/",
+            "NiklasBr\\FakerImages\\Tests\\": "tests/"
         }
     },
     "authors": [
@@ -27,5 +28,10 @@
         "allow-plugins": {
             "pestphp/pest-plugin": true
         }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "cs:check": "@php php-cs-fixer check --verbose --diff",
+        "cs:fix": "@php php-cs-fixer fix"
     }
 }

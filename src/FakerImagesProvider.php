@@ -8,14 +8,27 @@ use Faker\Provider\Image;
 
 class FakerImagesProvider extends Image
 {
+    /**
+     * @throws \ImagickException
+     */
     public static function imageData(
         int $width = 640,
         int $height = 480,
         ImageFormatEnum $format = ImageFormatEnum::PNG,
-        string $text = null,
-        ?string $backgroundColor = null,
-        ?string $textColor = null
-    )
+        ?string $imageType = 'radial-gradient:red-blue',
+    ): string {
+        return self::img($width, $height, $imageType, $format)->getImageBlob();
+    }
+
+    /**
+     * @throws \ImagickException
+     */
+    private static function img(int $width, int $height, string $imageType, ImageFormatEnum $format): \Imagick
     {
+        $image = new \Imagick();
+        $image->newPseudoImage($width, $height, $imageType);
+        $image->setImageFormat($format->value);
+
+        return $image;
     }
 }
