@@ -1,31 +1,33 @@
 {
     "name": "niklasbr/faker-images",
     "description": "Image placeholder provider for Faker",
-    "version": "0.0.0",
+    "version": "0.0.1",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Niklas Brunberg"
+        }
+    ],
+    "license": "AGPL-3.0-only",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
+        "php": "^8.3",
         "ext-imagick": "*",
         "fakerphp/faker": "^1.24.1"
     },
     "require-dev": {
-        "pestphp/pest": "*",
+        "pestphp/pest": "^3.8.2",
         "friendsofphp/php-cs-fixer": "^3.75.0",
         "phpstan/phpstan": "^2.1.17"
     },
-    "license": "AGPL-3.0-only",
     "autoload": {
         "psr-4": {
             "NiklasBr\\FakerImages\\": "src/",
             "NiklasBr\\FakerImages\\Tests\\": "tests/"
         }
     },
-    "authors": [
-        {
-            "name": "Niklas Brunberg"
-        }
-    ],
-    "minimum-stability": "dev",
-  "prefer-stable": true,
-  "config": {
+    "config": {
         "allow-plugins": {
             "pestphp/pest-plugin": true
         }
@@ -33,7 +35,7 @@
     "scripts": {
         "phpstan": "vendor/bin/phpstan analyse",
         "test": "vendor/bin/pest",
-        "cs:check": "@php php-cs-fixer check --verbose --diff",
-        "cs:fix": "@php php-cs-fixer fix"
+        "cs:check": "vendor/bin/php-cs-fixer check --verbose --diff",
+        "cs:fix": "vendor/bin/php-cs-fixer fix"
     }
 }
