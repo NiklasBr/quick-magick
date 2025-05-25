@@ -33,9 +33,12 @@ it('returns image data with custom dimensions', function () {
 
 it('returns a JPEG when requested', function () {
     $result = FakerImagesProvider::imageData(format: Format::JPG);
+    /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
     $imgData = getimagesizefromstring($result);
 
-    expect($imgData)->toBeArray()
+    expect($imgData)
+        ->not()->toBeFalse()
+        ->toBeArray()
         ->and($imgData['mime'])->toMatch('/image\/jpeg/')
     ;
 });
