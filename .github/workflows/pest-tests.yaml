@@ -1,0 +1,28 @@
+name: Run Pest Tests
+
+on:
+    push:
+        branches: [ main ]
+    pull_request:
+        branches: [ main ]
+
+jobs:
+    pest:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+
+            - name: Setup PHP
+              uses: shivammathur/setup-php@v2
+              with:
+                  php-version: 8.3
+                  tools: composer:v2
+                  coverage: xdebug
+
+            - name: Install dependencies
+              run: composer install --no-interaction --prefer-dist --optimize-autoloader
+
+            - name: Run Pest tests
+              run: composer pest:test
