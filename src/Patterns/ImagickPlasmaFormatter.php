@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace NiklasBr\FakerImages\ImagickPatterns;
+namespace NiklasBr\FakerImages\Patterns;
 
 use NiklasBr\FakerImages\Enums\Type;
 

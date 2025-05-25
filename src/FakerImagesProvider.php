@@ -12,10 +12,10 @@ namespace NiklasBr\FakerImages;
 use Faker\Provider\Image;
 use NiklasBr\FakerImages\Enums\Format;
 use NiklasBr\FakerImages\Enums\Type;
-use NiklasBr\FakerImages\ImagickPatterns\ImagickGradientsFormatter;
-use NiklasBr\FakerImages\ImagickPatterns\ImagickPatternsFormatter;
-use NiklasBr\FakerImages\ImagickPatterns\ImagickPlasmaFormatter;
-use NiklasBr\FakerImages\ImagickPatterns\ImagickSolidColorFormatter;
+use NiklasBr\FakerImages\Patterns\ImagickGradientsFormatter;
+use NiklasBr\FakerImages\Patterns\ImagickPatternsFormatter;
+use NiklasBr\FakerImages\Patterns\ImagickPlasmaFormatter;
+use NiklasBr\FakerImages\Patterns\ImagickSolidColorFormatter;
 
 final class FakerImagesProvider extends Image
 {

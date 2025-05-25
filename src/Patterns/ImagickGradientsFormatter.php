@@ -7,11 +7,15 @@
 
 declare(strict_types=1);
 
-namespace NiklasBr\FakerImages\ImagickPatterns;
+namespace NiklasBr\FakerImages\Patterns;
 
 use NiklasBr\FakerImages\Enums\Type;
 
-final readonly class ImagickSolidColorFormatter implements ImagickPseudoImageFormatterInterface
+// https://www.imagemagick.org/script/gradient.php
+// gradient:
+// gradient:fromColor
+// gradient:fromColor-toColor
+final readonly class ImagickGradientsFormatter implements ImagickPseudoImageFormatterInterface
 {
     public static function format(Type $imageType, null|float|int|string $arg): string
     {
