@@ -11,7 +11,7 @@ namespace NiklasBr\FakerImages\Patterns;
 
 use NiklasBr\FakerImages\Enums\Type;
 
-final class ImagickPlasmaFormatter implements ImagickPseudoImageFormatterInterface
+final class PlasmaFormatter implements ImagickPseudoImageFormatterInterface
 {
     /**
      * @var string[]

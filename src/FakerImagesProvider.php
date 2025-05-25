@@ -12,10 +12,10 @@ namespace NiklasBr\FakerImages;
 use Faker\Provider\Image;
 use NiklasBr\FakerImages\Enums\Format;
 use NiklasBr\FakerImages\Enums\Type;
-use NiklasBr\FakerImages\Patterns\ImagickGradientsFormatter;
-use NiklasBr\FakerImages\Patterns\ImagickPatternsFormatter;
-use NiklasBr\FakerImages\Patterns\ImagickPlasmaFormatter;
-use NiklasBr\FakerImages\Patterns\ImagickSolidColorFormatter;
+use NiklasBr\FakerImages\Patterns\GradientsFormatter;
+use NiklasBr\FakerImages\Patterns\PatternsFormatter;
+use NiklasBr\FakerImages\Patterns\PlasmaFormatter;
+use NiklasBr\FakerImages\Patterns\SolidColorFormatter;
 
 final class FakerImagesProvider extends Image
 {
@@ -55,10 +55,10 @@ final class FakerImagesProvider extends Image
         }
 
         return match ($imageType) {
-            Type::PATTERN => ImagickPatternsFormatter::format($imageType, $arg),
-            Type::SOLID_COLOR => ImagickSolidColorFormatter::format($imageType, $arg),
-            Type::RADIAL_GRADIENT, Type::LINEAR_GRADIENT => ImagickGradientsFormatter::format($imageType, $arg),
-            Type::PLASMA => ImagickPlasmaFormatter::format($imageType, $arg),
+            Type::PATTERN => PatternsFormatter::format($imageType, $arg),
+            Type::SOLID_COLOR => SolidColorFormatter::format($imageType, $arg),
+            Type::RADIAL_GRADIENT, Type::LINEAR_GRADIENT => GradientsFormatter::format($imageType, $arg),
+            Type::PLASMA => PlasmaFormatter::format($imageType, $arg),
             default => throw new \UnexpectedValueException('Missing image type category')
         };
     }

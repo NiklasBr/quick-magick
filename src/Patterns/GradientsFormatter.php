@@ -15,7 +15,7 @@ use NiklasBr\FakerImages\Enums\Type;
 // gradient:
 // gradient:fromColor
 // gradient:fromColor-toColor
-final readonly class ImagickGradientsFormatter implements ImagickPseudoImageFormatterInterface
+final readonly class GradientsFormatter implements ImagickPseudoImageFormatterInterface
 {
     public static function format(Type $imageType, null|float|int|string $arg): string
     {

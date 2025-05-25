@@ -11,7 +11,7 @@ namespace NiklasBr\FakerImages\Patterns;
 
 use NiklasBr\FakerImages\Enums\Type;
 
-final readonly class ImagickSolidColorFormatter implements ImagickPseudoImageFormatterInterface
+final readonly class SolidColorFormatter implements ImagickPseudoImageFormatterInterface
 {
     public static function format(Type $imageType, null|float|int|string $arg): string
     {
