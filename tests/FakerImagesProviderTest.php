@@ -50,6 +50,23 @@ it('returns a JPEG when requested', function () {
     ;
 });
 
+it('returns a filepath when requested', function () {
+    $result = FakerImagesProvider::image(dir: './');
+
+    expect($result)
+        ->toContain(\DIRECTORY_SEPARATOR, '.')
+        ->toEndWith('.png')
+        ->not()->toStartWith(\DIRECTORY_SEPARATOR)
+    ;
+
+    $result = FakerImagesProvider::image(dir: __DIR__);
+    expect($result)
+        ->toContain(\DIRECTORY_SEPARATOR, '.')
+        ->toEndWith('.png')
+        ->toStartWith(\DIRECTORY_SEPARATOR)
+    ;
+});
+
 it('throws an exception when there is no proper ImageType', function () {
     expect(function () {
         FakerImagesProvider::image(category: Type::UNKNOWN);

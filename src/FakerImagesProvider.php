@@ -76,6 +76,7 @@ final class FakerImagesProvider extends Base
         $image = new \Imagick();
         $image->newPseudoImage($width, $height, $pseudoString);
         $image->setImageFormat($format->value);
+        $image->setFilename(\uniqid() . "_{$width}x{$height}.{$format->value}");
 
         return $image;
     }
