@@ -9,9 +9,8 @@ declare(strict_types=1);
 
 namespace NiklasBr\FakerImages\Tests;
 
+use NiklasBr\FakerImages\Enums\Type;
 use NiklasBr\FakerImages\FakerImagesProvider;
-use NiklasBr\FakerImages\ImagickPatterns\ImagickPatternsFormatter;
-use NiklasBr\FakerImages\Type;
 
 it('writes a default values file to disk', function () {
     $imageData = FakerImagesProvider::image();
@@ -61,6 +60,12 @@ it('writes a pattern image file to disk', function () {
     ;
 });
 
+it('throws an exception when there is no proper pattern-pattern', function () {
+    expect(function () {
+        FakerImagesProvider::image(category: Type::PATTERN, word: 'BAD PATTERN');
+    })->toThrow(\InvalidArgumentException::class);
+});
+
 it('writes a plasma image file to disk', function () {
     $imageData = FakerImagesProvider::image(category: Type::PLASMA);
 
@@ -73,3 +78,8 @@ it('writes a plasma image file to disk', function () {
     ;
 });
 
+it('throws an exception when there is no proper plasma-pattern', function () {
+    expect(function () {
+        FakerImagesProvider::image(category: Type::PLASMA, word: 'BAD PLASMA');
+    })->toThrow(\InvalidArgumentException::class);
+});

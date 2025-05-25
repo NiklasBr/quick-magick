@@ -9,11 +9,11 @@ declare(strict_types=1);
 
 namespace NiklasBr\FakerImages\ImagickPatterns;
 
-use NiklasBr\FakerImages\Type;
+use NiklasBr\FakerImages\Enums\Type;
 
 final readonly class ImagickSolidColorFormatter implements ImagickPseudoImageFormatterInterface
 {
-    public static function format(Type $imageType, $arg): string
+    public static function format(Type $imageType, null|float|int|string $arg): string
     {
         return "{$imageType->value}:{$arg}";
     }

@@ -10,6 +10,8 @@ declare(strict_types=1);
 namespace NiklasBr\FakerImages;
 
 use Faker\Provider\Image;
+use NiklasBr\FakerImages\Enums\Format;
+use NiklasBr\FakerImages\Enums\Type;
 use NiklasBr\FakerImages\ImagickPatterns\ImagickGradientsFormatter;
 use NiklasBr\FakerImages\ImagickPatterns\ImagickPatternsFormatter;
 use NiklasBr\FakerImages\ImagickPatterns\ImagickPlasmaFormatter;
@@ -24,9 +26,9 @@ final class FakerImagesProvider extends Image
      * @param null|string|Type $category  Any Imagick keyword as available in the Type enum
      * @param bool             $fullPath
      * @param bool             $randomize
-     * @param null             $word      Any primary argument to the Imagick keyword, e.g. color value
+     * @param null|string      $word      Any primary argument to the Imagick keyword, e.g. color value
      * @param bool             $gray
-     * @param                  $format    Image file format
+     * @param Format|string    $format    Image file format
      *
      * @throws \ImagickException
      */
@@ -36,14 +38,14 @@ final class FakerImagesProvider extends Image
             $width,
             $height,
             self::imageTypeToPseudoString($category, $word),
-            $format instanceof Format ? $format : Format::from($format)
+            $format instanceof Format ? $format : Format::from((string) $format)
         )->getImageBlob();
     }
 
     /**
      * Different image types have different extra variables.
      */
-    private static function imageTypeToPseudoString(null|string|Type $imageType, mixed $arg1, mixed $arg2 = null): string
+    private static function imageTypeToPseudoString(null|string|Type $imageType, null|float|int|string $arg): string
     {
         // Handles Faker's (deprecated) categories to a default solid color.
         if (null === $imageType) {
@@ -53,10 +55,10 @@ final class FakerImagesProvider extends Image
         }
 
         return match ($imageType) {
-            Type::PATTERN => ImagickPatternsFormatter::format($imageType, $arg1),
-            Type::SOLID_COLOR => ImagickSolidColorFormatter::format($imageType, $arg1),
-            Type::RADIAL_GRADIENT, Type::LINEAR_GRADIENT => ImagickGradientsFormatter::format($imageType, $arg1),
-            Type::PLASMA => ImagickPlasmaFormatter::format($imageType, $arg1),
+            Type::PATTERN => ImagickPatternsFormatter::format($imageType, $arg),
+            Type::SOLID_COLOR => ImagickSolidColorFormatter::format($imageType, $arg),
+            Type::RADIAL_GRADIENT, Type::LINEAR_GRADIENT => ImagickGradientsFormatter::format($imageType, $arg),
+            Type::PLASMA => ImagickPlasmaFormatter::format($imageType, $arg),
             default => throw new \UnexpectedValueException('Missing image type category')
         };
     }

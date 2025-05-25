@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace NiklasBr\FakerImages\ImagickPatterns;
 
-use NiklasBr\FakerImages\Type;
+use NiklasBr\FakerImages\Enums\Type;
 
 final class ImagickPlasmaFormatter implements ImagickPseudoImageFormatterInterface
 {
@@ -20,10 +20,10 @@ final class ImagickPlasmaFormatter implements ImagickPseudoImageFormatterInterfa
         'fractal',
     ];
 
-    public static function format(Type $imageType, $arg): string
+    public static function format(Type $imageType, null|float|int|string $arg): string
     {
         if (!empty($arg) && !\in_array($arg, self::$validPatterns, true)) {
-            throw new \UnexpectedValueException('Unsupported pattern');
+            throw new \InvalidArgumentException('Unsupported pattern');
         }
 
         return "{$imageType->value}:{$arg}";

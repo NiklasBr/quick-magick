@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace NiklasBr\FakerImages;
+namespace NiklasBr\FakerImages\Enums;
 
 enum Format: string
 {

@@ -11,9 +11,9 @@ namespace NiklasBr\FakerImages\Tests;
 
 use Faker\Factory;
 use Faker\Provider\Base;
+use NiklasBr\FakerImages\Enums\Format;
+use NiklasBr\FakerImages\Enums\Type;
 use NiklasBr\FakerImages\FakerImagesProvider;
-use NiklasBr\FakerImages\Format;
-use NiklasBr\FakerImages\Type;
 
 it('returns image data with default parameters', function () {
     $result = FakerImagesProvider::image();

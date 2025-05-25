@@ -9,14 +9,12 @@ declare(strict_types=1);
 
 namespace NiklasBr\FakerImages\ImagickPatterns;
 
-use NiklasBr\FakerImages\Type;
+use NiklasBr\FakerImages\Enums\Type;
 
 interface ImagickPseudoImageFormatterInterface
 {
     /**
-     * @param mixed $arg
-     *
-     * @throws \ArgumentCountError If missing or unable to use any required argument
+     * @throws \InvalidArgumentException If missing or unable to use any required argument
      */
-    public static function format(Type $imageType, $arg): string;
+    public static function format(Type $imageType, null|float|int|string $arg): string;
 }

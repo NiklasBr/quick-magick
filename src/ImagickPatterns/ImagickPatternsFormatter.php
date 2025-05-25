@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace NiklasBr\FakerImages\ImagickPatterns;
 
-use NiklasBr\FakerImages\Type;
+use NiklasBr\FakerImages\Enums\Type;
 
 final class ImagickPatternsFormatter implements ImagickPseudoImageFormatterInterface
 {
@@ -73,10 +73,10 @@ final class ImagickPatternsFormatter implements ImagickPseudoImageFormatterInter
         'VERTICALSAW',
     ];
 
-    public static function format(Type $imageType, $arg): string
+    public static function format(Type $imageType, null|float|int|string $arg): string
     {
         if (!\in_array($arg, self::$validPatterns, true)) {
-            throw new \ArgumentCountError('Unsupported pattern');
+            throw new \InvalidArgumentException('Unsupported pattern');
         }
 
         return "{$imageType->value}:{$arg}";
