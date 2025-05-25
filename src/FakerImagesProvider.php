@@ -10,39 +10,66 @@ declare(strict_types=1);
 namespace NiklasBr\FakerImages;
 
 use Faker\Provider\Image;
+use NiklasBr\FakerImages\ImagickPatterns\ImagickGradientsFormatter;
+use NiklasBr\FakerImages\ImagickPatterns\ImagickPatternsFormatter;
+use NiklasBr\FakerImages\ImagickPatterns\ImagickPlasmaFormatter;
+use NiklasBr\FakerImages\ImagickPatterns\ImagickSolidColorFormatter;
 
 final class FakerImagesProvider extends Image
 {
     /**
+     * @param null|string      $dir
+     * @param int              $width
+     * @param int              $height
+     * @param null|string|Type $category  Any Imagick keyword as available in the Type enum
+     * @param bool             $fullPath
+     * @param bool             $randomize
+     * @param null             $word      Any primary argument to the Imagick keyword, e.g. color value
+     * @param bool             $gray
+     * @param                  $format    Image file format
+     *
      * @throws \ImagickException
      */
-    public static function imageData(int $width = 640, int $height = 480, Format $format = Format::PNG, Type $imageType = Type::RADIAL_GRADIENT): string
+    public static function image($dir = null, $width = 640, $height = 480, $category = null, $fullPath = true, $randomize = true, $word = null, $gray = false, $format = 'png'): string
     {
-        $imageType = self::processImageType($imageType);
+        return self::img(
+            $width,
+            $height,
+            self::imageTypeToPseudoString($category, $word),
+            $format instanceof Format ? $format : Format::from($format)
+        )->getImageBlob();
+    }
 
-        return self::img($width, $height, $imageType, $format)->getImageBlob();
+    /**
+     * Different image types have different extra variables.
+     */
+    private static function imageTypeToPseudoString(null|string|Type $imageType, mixed $arg1, mixed $arg2 = null): string
+    {
+        // Handles Faker's (deprecated) categories to a default solid color.
+        if (null === $imageType) {
+            $imageType = Type::SOLID_COLOR;
+        } elseif (\is_string($imageType)) {
+            $imageType = Type::tryFrom($imageType);
+        }
+
+        return match ($imageType) {
+            Type::PATTERN => ImagickPatternsFormatter::format($imageType, $arg1),
+            Type::SOLID_COLOR => ImagickSolidColorFormatter::format($imageType, $arg1),
+            Type::RADIAL_GRADIENT, Type::LINEAR_GRADIENT => ImagickGradientsFormatter::format($imageType, $arg1),
+            Type::PLASMA => ImagickPlasmaFormatter::format($imageType, $arg1),
+            default => throw new \UnexpectedValueException('Missing image type category')
+        };
     }
 
     /**
      * @throws \ImagickException
      */
-    private static function img(int $width, int $height, string $imageType, Format $format): \Imagick
+    private static function img(int $width, int $height, string $pseudoString, Format $format): \Imagick
     {
         $image = new \Imagick();
-        $image->newPseudoImage($width, $height, $imageType);
+        $image->newPseudoImage($width, $height, $pseudoString);
         $image->setImageFormat($format->value);
 
         return $image;
-    }
-
-    /**
-     * @throws \UnexpectedValueException
-     */
-    private static function processImageType(Type $imageType): string
-    {
-        return match ($imageType) {
-            Type::RADIAL_GRADIENT => $imageType->value.':red-blue',
-            default => throw new \UnexpectedValueException('Invalid image type'),
-        };
     }
 }

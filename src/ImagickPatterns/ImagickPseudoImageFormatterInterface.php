@@ -14,7 +14,9 @@ use NiklasBr\FakerImages\Type;
 interface ImagickPseudoImageFormatterInterface
 {
     /**
-     * @throws \ArgumentCountError If missing any required argument
+     * @param mixed $arg
+     *
+     * @throws \ArgumentCountError If missing or unable to use any required argument
      */
-    public static function format(Type $imageType, ...$arg): string;
+    public static function format(Type $imageType, $arg): string;
 }
