@@ -11,8 +11,10 @@
     </testsuites>
     <source>
         <include>
-            <directory>app</directory>
             <directory>src</directory>
         </include>
+        <exclude>
+            <file>src/Bootstrap.php</file>
+        </exclude>
     </source>
 </phpunit>
