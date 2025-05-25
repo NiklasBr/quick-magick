@@ -2,6 +2,7 @@
 
 A high-performance placeholder image generator with full test coverage and no network requests to third-party services.
 
+
 ## Installation
 
 Install this Faker [provider](https://fakerphp.org/#faker-internals-understanding-providers) using [Composer](https://getcomposer.org/):
@@ -18,13 +19,37 @@ use NiklasBr\FakerImages\FakerImagesProvider;
 
 $faker = Factory::create();
 $faker->addProvider(new FakerImagesProvider($faker));
-
-// Simple image with default parameters
-$imageData = $faker->image();
-
-// A large linear gradient
-$imageData = $faker->image(width: 1600, height: 1200, category: Type::LINEAR_GRADIENT, word: '#1100ff-magenta')
 ```
+```php
+// Simple image with only default parameters
+$imageData = $faker->image();
+```
+![default_output.png](docs/img/default_output.png "simple silver image")
+
+```php
+// A linear gradient
+$imageData = $faker->image(category: Type::LINEAR_GRADIENT, word: '#1100ff-magenta');
+```
+![linear_gradient.png](docs/img/linear_gradient.png "orange-magenta vertical gradient")
+
+```php
+// A radial gradient
+$imageData = $faker->image(category: Type::RADIAL_GRADIENT, word: 'green-yellow');
+```
+![linear_gradient.png](docs/img/radial_gradient.png "green-yellow circular gradient")
+
+```php
+// A plasma with fractal colour
+$imageData = $faker->image(category: Type::PLASMA, word: 'fractal-magenta');
+```
+![linear_gradient.png](docs/img/plasma.png "cloudy magenta fractal")
+
+```php
+// A black and white pattern
+$imageData = $faker->image(category: Type::PATTERN, imagickArgs: 'SMALLFISHSCALES');
+```
+![linear_gradient.png](docs/img/pattern.png "1-bit repeating fish scale pattern")
+
 
 ## License
 
