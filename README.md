@@ -1,5 +1,6 @@
 # Image placeholder provider for [Faker](https://github.com/FakerPHP/Faker)
 
+A high-performance placeholder image generator with full test coverage and no network requests to third-party services.
 
 ## Installation
 
@@ -12,9 +13,12 @@ composer require niklasbr/faker-images
 ## Example usage
 
 ```php
-use \NiklasBr\FakerImages\FakerImagesProvider;
+use Faker\Factory;
+use NiklasBr\FakerImages\FakerImagesProvider;
 
-$imageData = FakerImagesProvider::imageData();
+$faker = Factory::create();
+$faker->addProvider(new FakerImagesProvider($faker));
+$imageData = $faker->image();
 ```
 
 ## License
