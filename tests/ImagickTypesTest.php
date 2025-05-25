@@ -10,6 +10,7 @@ declare(strict_types=1);
 namespace NiklasBr\FakerImages\Tests;
 
 use NiklasBr\FakerImages\FakerImagesProvider;
+use NiklasBr\FakerImages\ImagickPatterns\ImagickPatternsFormatter;
 use NiklasBr\FakerImages\Type;
 
 it('writes a default values file to disk', function () {
@@ -47,3 +48,28 @@ it('writes a radial gradient image file to disk', function () {
         ->and(__DIR__.'/radial_gradient.png')->toBeFile()
     ;
 });
+
+it('writes a pattern image file to disk', function () {
+    $imageData = FakerImagesProvider::image(category: Type::PATTERN, word: 'SMALLFISHSCALES');
+
+    $putResult = file_put_contents(__DIR__.'/pattern.png', $imageData);
+
+    expect($putResult)
+        ->not()->toBeFalse()
+        ->toEqual(\strlen($imageData))
+        ->and(__DIR__.'/pattern.png')->toBeFile()
+    ;
+});
+
+it('writes a plasma image file to disk', function () {
+    $imageData = FakerImagesProvider::image(category: Type::PLASMA);
+
+    $putResult = file_put_contents(__DIR__.'/plasma.png', $imageData);
+
+    expect($putResult)
+        ->not()->toBeFalse()
+        ->toEqual(\strlen($imageData))
+        ->and(__DIR__.'/plasma.png')->toBeFile()
+    ;
+});
+

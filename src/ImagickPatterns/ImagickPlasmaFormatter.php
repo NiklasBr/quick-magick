@@ -20,12 +20,12 @@ final class ImagickPlasmaFormatter implements ImagickPseudoImageFormatterInterfa
         'fractal',
     ];
 
-    public static function format(Type $imageType, ...$arg): string
+    public static function format(Type $imageType, $arg): string
     {
-        if (!\in_array($arg[0], self::$validPatterns, true)) {
+        if (!empty($arg) && !\in_array($arg, self::$validPatterns, true)) {
             throw new \UnexpectedValueException('Unsupported pattern');
         }
 
-        return "{$imageType->value}:{$arg[0]}";
+        return "{$imageType->value}:{$arg}";
     }
 }
