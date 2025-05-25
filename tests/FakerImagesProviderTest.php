@@ -16,14 +16,14 @@ use NiklasBr\FakerImages\Format;
 use NiklasBr\FakerImages\Type;
 
 it('returns image data with default parameters', function () {
-    $result = FakerImagesProvider::imageData();
+    $result = FakerImagesProvider::image();
 
     // https://evanhahn.com/worlds-smallest-png/
     expect(\strlen($result))->toBeGreaterThan(8 + 25 + 22 + 12);
 });
 
 it('returns image data with custom dimensions', function () {
-    $result = FakerImagesProvider::imageData(91, 85);
+    $result = FakerImagesProvider::image(width: 91, height: 85);
 
     /** @phpstan-var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
     $imgData = getimagesizefromstring($result);
@@ -38,7 +38,7 @@ it('returns image data with custom dimensions', function () {
 });
 
 it('returns a JPEG when requested', function () {
-    $result = FakerImagesProvider::imageData(format: Format::JPG);
+    $result = FakerImagesProvider::image(format: Format::JPG);
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
     $imgData = getimagesizefromstring($result);
@@ -52,7 +52,7 @@ it('returns a JPEG when requested', function () {
 
 it('throws an exception when there is no proper ImageType', function () {
     expect(function () {
-        FakerImagesProvider::imageData(100, 100, Format::PNG, Type::UNKNOWN);
+        FakerImagesProvider::image(category: Type::UNKNOWN);
     })->toThrow(\UnexpectedValueException::class);
 });
 
@@ -62,5 +62,6 @@ it('registers properly with Faker', function () {
 
     expect($faker->getProviders())
         ->toBeArray()
-        ->toContainOnlyInstancesOf(Base::class);
+        ->toContainOnlyInstancesOf(Base::class)
+    ;
 });

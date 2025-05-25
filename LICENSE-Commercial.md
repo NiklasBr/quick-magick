@@ -6,10 +6,10 @@ To receive a [BSD-3-Clause license](https://opensource.org/license/bsd-3-clause)
 
 Approved charities:
 
- - [Car for ukraine](https://car4ukraine.com/)
- - [Médecins Sans Frontières (Doctors Without Borders)](https://www.msf.org/)
- - [Palestine Children’s Relief Fund](https://www.pcrf.net/)
- - [The International Consortium of Investigative Journalists](https://www.icij.org/)
- - [World Wide Fund for Nature (WWF)](https://www.worldwildlife.org/)
+ - [Car for ukraine](https://car4ukraine.com/) 🇺🇦
+ - [Médecins Sans Frontières (Doctors Without Borders)](https://www.msf.org/) 🚑
+ - [Palestine Children’s Relief Fund](https://www.pcrf.net/) 🇵🇸
+ - [The International Consortium of Investigative Journalists](https://www.icij.org/) 🕵️
+ - [World Wide Fund (WWF)](https://www.worldwildlife.org/) 🐼
 
 After making your donation, please contact me at n.brunberg@gmail.com with proof of donation (e.g., a receipt or verification link). Upon verification, you will receive a permanent license grant for the BSD-3-Clause license as well as a copy of the code with BSD-3.0 headers.
