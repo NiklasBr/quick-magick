@@ -13,7 +13,7 @@ use NiklasBr\FakerImages\Enums\Type;
 
 final readonly class SolidColorFormatter implements ImagickPseudoImageFormatterInterface
 {
-    public static function format(Type $imageType, null|float|int|string $arg): string
+    public static function format(Type $imageType, ?string $arg): string
     {
         return "{$imageType->value}:{$arg}";
     }

@@ -27,7 +27,7 @@ it('writes a default values file to disk', function () {
 });
 
 it('writes a linear gradient image file to disk', function () {
-    $imageData = FakerImagesProvider::image(category: Type::LINEAR_GRADIENT, word: 'red-blue');
+    $imageData = FakerImagesProvider::image(category: Type::LINEAR_GRADIENT, imagickArgs: '#ffC300-magenta');
 
     $putResult = file_put_contents(__DIR__.'/linear_gradient.png', $imageData);
 
@@ -39,7 +39,7 @@ it('writes a linear gradient image file to disk', function () {
 });
 
 it('creates a two-color gradient image', function () {
-    $result = FakerImagesProvider::image(category: Type::LINEAR_GRADIENT, word: '#1100ff-magenta');
+    $result = FakerImagesProvider::image(category: Type::LINEAR_GRADIENT, imagickArgs: '#ffC300-magenta');
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
     $imgData = getimagesizefromstring($result);
@@ -58,11 +58,17 @@ it('throws an exception when there is no proper color', function () {
         ->and(function () {
             Validator::isValidColor('blåbär');
         })->toThrow(InvalidColorValue::class)
+        ->and(function () {
+            Validator::isValidColor('black-nope');
+        })->toThrow(InvalidColorValue::class)
+        ->and(function () {
+            Validator::isValidColor('foo-red');
+        })->toThrow(InvalidColorValue::class)
     ;
 });
 
 it('writes a radial gradient image file to disk', function () {
-    $imageData = FakerImagesProvider::image(category: Type::RADIAL_GRADIENT, word: 'green-yellow');
+    $imageData = FakerImagesProvider::image(category: Type::RADIAL_GRADIENT, imagickArgs: 'green-yellow');
 
     $putResult = file_put_contents(__DIR__.'/radial_gradient.png', $imageData);
 
@@ -74,7 +80,7 @@ it('writes a radial gradient image file to disk', function () {
 });
 
 it('writes a pattern image file to disk', function () {
-    $imageData = FakerImagesProvider::image(category: Type::PATTERN, word: 'SMALLFISHSCALES');
+    $imageData = FakerImagesProvider::image(category: Type::PATTERN, imagickArgs: 'SMALLFISHSCALES');
 
     $putResult = file_put_contents(__DIR__.'/pattern.png', $imageData);
 
@@ -87,12 +93,12 @@ it('writes a pattern image file to disk', function () {
 
 it('throws an exception when there is no proper pattern-pattern', function () {
     expect(function () {
-        FakerImagesProvider::image(category: Type::PATTERN, word: 'BAD PATTERN');
+        FakerImagesProvider::image(category: Type::PATTERN, imagickArgs: 'BAD PATTERN');
     })->toThrow(\InvalidArgumentException::class);
 });
 
 it('writes a plasma image file to disk', function () {
-    $imageData = FakerImagesProvider::image(category: Type::PLASMA);
+    $imageData = FakerImagesProvider::image(category: Type::PLASMA, imagickArgs: 'fractal-magenta');
 
     $putResult = file_put_contents(__DIR__.'/plasma.png', $imageData);
 
@@ -105,6 +111,6 @@ it('writes a plasma image file to disk', function () {
 
 it('throws an exception when there is no proper plasma-pattern', function () {
     expect(function () {
-        FakerImagesProvider::image(category: Type::PLASMA, word: 'BAD PLASMA');
+        FakerImagesProvider::image(category: Type::PLASMA, imagickArgs: 'BAD PLASMA');
     })->toThrow(\InvalidArgumentException::class);
 });

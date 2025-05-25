@@ -4,7 +4,7 @@ A high-performance placeholder image generator with full test coverage and no ne
 
 ## Installation
 
-Install this Faker provider using [Composer](https://getcomposer.org/):
+Install this Faker [provider](https://fakerphp.org/#faker-internals-understanding-providers) using [Composer](https://getcomposer.org/):
 ```shell
 composer require niklasbr/faker-images
 ```
@@ -18,7 +18,12 @@ use NiklasBr\FakerImages\FakerImagesProvider;
 
 $faker = Factory::create();
 $faker->addProvider(new FakerImagesProvider($faker));
+
+// Simple image with default parameters
 $imageData = $faker->image();
+
+// A large linear gradient
+$imageData = $faker->image(width: 1600, height: 1200, category: Type::LINEAR_GRADIENT, word: '#1100ff-magenta')
 ```
 
 ## License

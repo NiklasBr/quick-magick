@@ -73,7 +73,7 @@ final class PatternsFormatter implements ImagickPseudoImageFormatterInterface
         'VERTICALSAW',
     ];
 
-    public static function format(Type $imageType, null|float|int|string $arg): string
+    public static function format(Type $imageType, ?string $arg): string
     {
         if (!\in_array($arg, self::$validPatterns, true)) {
             throw new \InvalidArgumentException('Unsupported pattern');

@@ -17,8 +17,14 @@ final readonly class Validator
     /**
      * @throws InvalidColorValue
      */
-    public static function isValidColor(string $color): bool
+    public static function isValidColor(string $colorString): void
     {
-        return Color\Factory::fromString($color) instanceof Color\Color;
+        if (str_contains($colorString, '-')) {
+            foreach (explode('-', $colorString) as $colorString) {
+                Color\Factory::fromString($colorString);
+            }
+        } else {
+            Color\Factory::fromString($colorString);
+        }
     }
 }

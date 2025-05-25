@@ -16,5 +16,5 @@ interface ImagickPseudoImageFormatterInterface
     /**
      * @throws \InvalidArgumentException If missing or unable to use any required argument
      */
-    public static function format(Type $imageType, null|float|int|string $arg): string;
+    public static function format(Type $imageType, ?string $arg): string;
 }

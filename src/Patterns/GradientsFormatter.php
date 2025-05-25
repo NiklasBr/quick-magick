@@ -22,15 +22,9 @@ final readonly class GradientsFormatter implements ImagickPseudoImageFormatterIn
     /**
      * @throws InvalidColorValue
      */
-    public static function format(Type $imageType, null|float|int|string $arg): string
+    public static function format(Type $imageType, ?string $arg): string
     {
-        if (str_contains($arg, '-')) {
-            foreach (explode('-', $arg) as $color) {
-                Validator::isValidColor($color);
-            }
-        } else {
-            Validator::isValidColor($arg);
-        }
+        Validator::isValidColor((string) $arg);
 
         return "{$imageType->value}:{$arg}";
     }
