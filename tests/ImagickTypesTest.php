@@ -11,6 +11,8 @@ namespace NiklasBr\FakerImages\Tests;
 
 use NiklasBr\FakerImages\Enums\Type;
 use NiklasBr\FakerImages\FakerImagesProvider;
+use NiklasBr\FakerImages\Validator;
+use Spatie\Color\Exceptions\InvalidColorValue;
 
 it('writes a default values file to disk', function () {
     $imageData = FakerImagesProvider::image();
@@ -33,6 +35,29 @@ it('writes a linear gradient image file to disk', function () {
         ->not()->toBeFalse()
         ->toEqual(\strlen($imageData))
         ->and(__DIR__.'/linear_gradient.png')->toBeFile()
+    ;
+});
+
+it('creates a two-color gradient image', function () {
+    $result = FakerImagesProvider::image(category: Type::LINEAR_GRADIENT, word: '#1100ff-magenta');
+
+    /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
+    $imgData = getimagesizefromstring($result);
+
+    expect($imgData)
+        ->not()->toBeFalse()
+        ->toBeArray()
+        ->and($imgData['mime'])->toMatch('/image\/png/')
+    ;
+});
+
+it('throws an exception when there is no proper color', function () {
+    expect(function () {
+        Validator::isValidColor('rgb()');
+    })->toThrow(InvalidColorValue::class)
+        ->and(function () {
+            Validator::isValidColor('blåbär');
+        })->toThrow(InvalidColorValue::class)
     ;
 });
 

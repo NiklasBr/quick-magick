@@ -16,7 +16,8 @@
     "require": {
         "php": "^8.3",
         "ext-imagick": "*",
-        "fakerphp/faker": "^1.24.1"
+        "fakerphp/faker": "^1.24.1",
+        "spatie/color": "^1.8"
     },
     "require-dev": {
         "pestphp/pest": "^3.8.2",

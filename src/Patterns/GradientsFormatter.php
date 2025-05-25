@@ -10,6 +10,8 @@ declare(strict_types=1);
 namespace NiklasBr\FakerImages\Patterns;
 
 use NiklasBr\FakerImages\Enums\Type;
+use NiklasBr\FakerImages\Validator;
+use Spatie\Color\Exceptions\InvalidColorValue;
 
 // https://www.imagemagick.org/script/gradient.php
 // gradient:
@@ -17,8 +19,19 @@ use NiklasBr\FakerImages\Enums\Type;
 // gradient:fromColor-toColor
 final readonly class GradientsFormatter implements ImagickPseudoImageFormatterInterface
 {
+    /**
+     * @throws InvalidColorValue
+     */
     public static function format(Type $imageType, null|float|int|string $arg): string
     {
+        if (str_contains($arg, '-')) {
+            foreach (explode('-', $arg) as $color) {
+                Validator::isValidColor($color);
+            }
+        } else {
+            Validator::isValidColor($arg);
+        }
+
         return "{$imageType->value}:{$arg}";
     }
 }
