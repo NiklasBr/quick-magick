@@ -111,6 +111,12 @@ it('writes a plasma image file to disk', function () {
 
 it('throws an exception when there is no proper plasma-pattern', function () {
     expect(function () {
-        FakerImagesProvider::image(category: Type::PLASMA, imagickArgs: 'BAD PLASMA');
+        FakerImagesProvider::image(category: Type::PLASMA, imagickArgs: 'meatballs');
     })->toThrow(\InvalidArgumentException::class);
+});
+
+it('throws an exception when there is no proper plasma-pattern-color', function () {
+    expect(function () {
+        FakerImagesProvider::image(category: Type::PLASMA, imagickArgs: 'fractal-gesundheit');
+    })->toThrow(InvalidColorValue::class);
 });
