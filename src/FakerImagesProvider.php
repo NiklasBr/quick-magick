@@ -43,7 +43,7 @@ final class FakerImagesProvider extends Base
             return $img->getImageBlob();
         }
 
-        if (!is_dir($dir) || !is_writable($dir)) {
+        if (!\is_dir($dir) || !\is_writable($dir)) {
             throw new \InvalidArgumentException(\sprintf('Cannot write to directory "%s"', $dir));
         }
 
@@ -76,7 +76,7 @@ final class FakerImagesProvider extends Base
         $image = new \Imagick();
         $image->newPseudoImage($width, $height, $pseudoString);
         $image->setImageFormat($format->value);
-        $image->setFilename(\uniqid() . "_{$width}x{$height}.{$format->value}");
+        $image->setFilename(\uniqid()."_{$width}x{$height}.{$format->value}");
 
         return $image;
     }

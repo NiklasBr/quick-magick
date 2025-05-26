@@ -13,6 +13,19 @@ use NiklasBr\FakerImages\Enums\Type;
 use NiklasBr\FakerImages\FakerImagesProvider;
 use Spatie\Color\Exceptions\InvalidColorValue;
 
+dataset('valid colors', [
+    '#5560eb',
+    'red-#aaa',
+]);
+
+dataset('invalid plasma args', [
+    'meatballs',
+    'fractal-gesundheit',
+    'red-fractal',
+    'red-catapult',
+    'wheat-',
+]);
+
 it('Accepts plasma argument', function () {
     $result = FakerImagesProvider::image(category: Type::PLASMA);
 
@@ -25,21 +38,23 @@ it('Accepts plasma argument', function () {
     ;
 });
 
-it('throws an exception when there is no proper plasma-pattern', function () {
-    expect(function () {
-        FakerImagesProvider::image(category: Type::PLASMA, imagickArgs: 'meatballs');
-    })->toThrow(InvalidColorValue::class);
-});
+it('works with normal color string {color}', function (string $color) {
+    $result = FakerImagesProvider::image(category: Type::PLASMA, imagickArgs: $color);
 
-it('throws an exception when there is no proper plasma-pattern-color', function () {
-    expect(function () {
-        FakerImagesProvider::image(category: Type::PLASMA, imagickArgs: 'fractal-gesundheit');
-    })->toThrow(InvalidColorValue::class)
-        ->and(function () {
-            FakerImagesProvider::image(category: Type::PLASMA, imagickArgs: 'fractal-red-catapult');
-        })->toThrow(InvalidColorValue::class)
+    /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
+    $imgData = getimagesizefromstring($result);
+    expect($imgData)
+        ->not()->toBeFalse()
+        ->toBeArray()
+        ->and($imgData['mime'])->toMatch('/image\/png/')
     ;
-});
+})->with('valid colors');
+
+it('throws an exception when {pattern} is not proper', function (string $pattern) {
+    expect(function () use ($pattern) {
+        FakerImagesProvider::image(category: Type::PLASMA, imagickArgs: $pattern);
+    })->toThrow(InvalidColorValue::class);
+})->with('invalid plasma args');
 
 it('writes a plasma image file to disk', function () {
     $imageData = FakerImagesProvider::image(category: Type::PLASMA, imagickArgs: 'fractal-maroon');

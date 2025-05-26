@@ -28,6 +28,11 @@ return (new Config())
             'location' => 'after_open',
         ],
         'modernize_strpos' => true,
+        'native_function_invocation' => [
+            'include' => ['@compiler_optimized'],
+            'scope' => 'namespaced',
+            'strict' => false,
+        ],
         'numeric_literal_separator' => true,
         'attribute_empty_parentheses' => true,
         'declare_strict_types' => true,
