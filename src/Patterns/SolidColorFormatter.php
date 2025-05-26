@@ -11,12 +11,16 @@ namespace NiklasBr\FakerImages\Patterns;
 
 use NiklasBr\FakerImages\Enums\Type;
 use NiklasBr\FakerImages\Validator;
+use Spatie\Color\Exceptions\InvalidColorValue;
 
 final readonly class SolidColorFormatter implements ImagickPseudoImageFormatterInterface
 {
+    /**
+     * @throws InvalidColorValue
+     */
     public static function format(Type $imageType, ?string $arg): string
     {
-        Validator::isValidColor($arg);
+        Validator::isValidColor((string) $arg);
 
         return "{$imageType->value}:{$arg}";
     }
