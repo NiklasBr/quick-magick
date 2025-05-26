@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:2012e334-a0be-43ea-8f7b-310d876ad1dc">
+<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:5295d1a1-f8ca-4b44-93a5-c17e987c5dba">
   <metadata>
-    <timestamp><![CDATA[2025-05-26T17:59:31Z]]></timestamp>
+    <timestamp><![CDATA[2025-05-26T18:03:35Z]]></timestamp>
     <tools>
       <tool>
         <name><![CDATA[composer]]></name>
@@ -32,8 +32,8 @@
       </licenses>
       <purl><![CDATA[pkg:composer/niklasbr/faker-images@dev-main]]></purl>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[5845d45f31d3d273b4c4c447ad01302e9e3858a7]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[5845d45f31d3d273b4c4c447ad01302e9e3858a7]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[6916760e4f4c714341d5b3b7b688fde5590bb124]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[6916760e4f4c714341d5b3b7b688fde5590bb124]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
       </properties>
     </component>
