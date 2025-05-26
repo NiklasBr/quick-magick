@@ -55,6 +55,6 @@ $imageData = $faker->image(category: Type::PATTERN, imagickArgs: 'SMALLFISHSCALE
 
 This package is available under two licenses:
 
-- [Affero GPL Version 3, 19 November 2007](LICENSE-AGPL-3.0.md). This is the default license.
+- [Affero GPL Version 3, 19 November 2007](LICENSE-AGPL-3.0.md), this is the default license.
 
-- [BSD-3.0 via commercial agreement](LICENSE-Commercial.md) which also includes a limited warranty and promise fitness, available upon donation to charity.
+- [BSD-3.0 via commercial agreement](LICENSE-Commercial.md) which also includes a limited warranty and fitness-for-purpose promise, available upon donation to charity.
