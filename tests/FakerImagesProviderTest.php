@@ -97,6 +97,12 @@ it('writes a default values file to disk', function () {
     ;
 });
 
+it('throws an error when it cannot fid the directory', function () {
+    expect(function () {
+        FakerImagesProvider::image(dir: './should-not-exist');
+    })->toThrow(\InvalidArgumentException::class);
+});
+
 it('throws an exception when there is no proper color', function () {
     expect(function () {
         Validator::isValidColor('rgb()');

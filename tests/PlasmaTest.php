@@ -14,6 +14,7 @@ use NiklasBr\FakerImages\FakerImagesProvider;
 use Spatie\Color\Exceptions\InvalidColorValue;
 
 dataset('valid colors', [
+    '', // Default
     '#5560eb',
     'red-#aaa',
 ]);
