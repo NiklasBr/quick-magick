@@ -16,7 +16,7 @@ final class PatternsFormatter implements ImagickPseudoImageFormatterInterface
     /**
      * @var string[]
      */
-    private static array $validPatterns = [
+    public static array $validPatterns = [
         'BRICKS',
         'CHECKERBOARD',
         'CIRCLES',

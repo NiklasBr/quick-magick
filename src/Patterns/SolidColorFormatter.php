@@ -10,11 +10,14 @@ declare(strict_types=1);
 namespace NiklasBr\FakerImages\Patterns;
 
 use NiklasBr\FakerImages\Enums\Type;
+use NiklasBr\FakerImages\Validator;
 
 final readonly class SolidColorFormatter implements ImagickPseudoImageFormatterInterface
 {
     public static function format(Type $imageType, ?string $arg): string
     {
+        Validator::isValidColor($arg);
+
         return "{$imageType->value}:{$arg}";
     }
 }

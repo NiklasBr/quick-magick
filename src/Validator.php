@@ -19,8 +19,8 @@ final readonly class Validator
      */
     public static function isValidColor(string $colorString): void
     {
-        if (str_contains($colorString, '-')) {
-            foreach (explode('-', $colorString) as $colorString) {
+        if (\str_contains($colorString, '-')) {
+            foreach (\explode('-', $colorString) as $colorString) {
                 Color\Factory::fromString($colorString);
             }
         } else {

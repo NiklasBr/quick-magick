@@ -14,6 +14,18 @@ use Faker\Provider\Base;
 use NiklasBr\FakerImages\Enums\Format;
 use NiklasBr\FakerImages\Enums\Type;
 use NiklasBr\FakerImages\FakerImagesProvider;
+use NiklasBr\FakerImages\Validator;
+use Spatie\Color\Exceptions\InvalidColorValue;
+
+it('registers properly with Faker', function () {
+    $faker = Factory::create();
+    $faker->addProvider(new FakerImagesProvider($faker));
+
+    expect($faker->getProviders())
+        ->toBeArray()
+        ->toContainOnlyInstancesOf(Base::class)
+    ;
+});
 
 it('returns image data with default parameters', function () {
     $result = FakerImagesProvider::image();
@@ -73,12 +85,30 @@ it('throws an exception when there is no proper ImageType', function () {
     })->toThrow(\UnexpectedValueException::class);
 });
 
-it('registers properly with Faker', function () {
-    $faker = Factory::create();
-    $faker->addProvider(new FakerImagesProvider($faker));
+it('writes a default values file to disk', function () {
+    $imageData = FakerImagesProvider::image();
 
-    expect($faker->getProviders())
-        ->toBeArray()
-        ->toContainOnlyInstancesOf(Base::class)
+    $putResult = file_put_contents(__DIR__.'/out/default_output.png', $imageData);
+
+    expect($putResult)
+        ->not()->toBeFalse()
+        ->toEqual(\strlen($imageData))
+        ->and(__DIR__.'/out/default_output.png')->toBeFile()
+    ;
+});
+
+it('throws an exception when there is no proper color', function () {
+    expect(function () {
+        Validator::isValidColor('rgb()');
+    })->toThrow(InvalidColorValue::class)
+        ->and(function () {
+            Validator::isValidColor('blåbär');
+        })->toThrow(InvalidColorValue::class)
+        ->and(function () {
+            Validator::isValidColor('black-nope');
+        })->toThrow(InvalidColorValue::class)
+        ->and(function () {
+            Validator::isValidColor('foo-red');
+        })->toThrow(InvalidColorValue::class)
     ;
 });

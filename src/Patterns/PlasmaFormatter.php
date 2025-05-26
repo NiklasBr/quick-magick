@@ -23,26 +23,45 @@ final class PlasmaFormatter implements ImagickPseudoImageFormatterInterface
     ];
 
     /**
+     * @param null|string $arg Accepts: "plasma", "color", "color1-color2", "plasma-color"
+     *
      * @throws InvalidColorValue
      */
     public static function format(Type $imageType, ?string $arg): string
     {
         // https://usage.imagemagick.org/canvas/#plasma
-        if (!empty($arg)) {
-            if (str_contains($arg, '-')) {
-                $args = explode('-', $arg);
-                if (!empty($args[0]) && !\in_array($args[0], self::$validPatterns, true)) {
-                    throw new \InvalidArgumentException('Unsupported pattern');
-                }
-
-                Validator::isValidColor($args[1]);
-            } else {
-                if (!\in_array($arg, self::$validPatterns, true)) {
-                    throw new \InvalidArgumentException('Unsupported pattern');
-                }
-            }
-        }
+        self::validateArgs($arg);
 
         return "{$imageType->value}:{$arg}";
+    }
+
+    /**
+     * @throws InvalidColorValue
+     */
+    private static function validateArgs(?string $arg): void
+    {
+        if (empty($arg)) {
+            // Will result in 'fractal:' with no argument
+            return;
+        }
+
+        if (!\str_contains($arg, '-')) {
+            // Single color after 'plasma:'
+            Validator::isValidColor($arg);
+
+            return;
+        }
+
+        [$color1, $color2] = \explode('-', $arg, 2);
+
+        // Will result in 'fractal:plasma', valid
+        if (\in_array($color1, self::$validPatterns, true)) {
+            Validator::isValidColor($color2);
+
+            return;
+        }
+
+        Validator::isValidColor($color1);
+        Validator::isValidColor($color2);
     }
 }
