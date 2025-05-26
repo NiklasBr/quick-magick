@@ -7,11 +7,11 @@
 
 declare(strict_types=1);
 
-namespace NiklasBr\FakerImages\Patterns;
+namespace NiklasBr\FakerImages\Formatters;
 
 use NiklasBr\FakerImages\Enums\Type;
 
-interface ImagickPseudoImageFormatterInterface
+interface ImagickPseudoImageInterface
 {
     /**
      * @throws \InvalidArgumentException If missing or unable to use any required argument

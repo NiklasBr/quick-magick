@@ -12,10 +12,10 @@ namespace NiklasBr\FakerImages;
 use Faker\Provider\Base;
 use NiklasBr\FakerImages\Enums\Format;
 use NiklasBr\FakerImages\Enums\Type;
-use NiklasBr\FakerImages\Patterns\GradientsFormatter;
-use NiklasBr\FakerImages\Patterns\PatternsFormatter;
-use NiklasBr\FakerImages\Patterns\PlasmaFormatter;
-use NiklasBr\FakerImages\Patterns\SolidColorFormatter;
+use NiklasBr\FakerImages\Formatters\Gradients;
+use NiklasBr\FakerImages\Formatters\Patterns;
+use NiklasBr\FakerImages\Formatters\Plasma;
+use NiklasBr\FakerImages\Formatters\SolidColor;
 use Spatie\Color\Exceptions\InvalidColorValue;
 
 final class FakerImagesProvider extends Base
@@ -60,10 +60,10 @@ final class FakerImagesProvider extends Base
     private static function imageTypeToPseudoString(?Type $imageType, ?string $arg, bool $randomize): string
     {
         return match ($imageType) {
-            Type::PATTERN => PatternsFormatter::format($imageType, $arg),
-            Type::SOLID_COLOR => SolidColorFormatter::format($imageType, $arg),
-            Type::RADIAL_GRADIENT, Type::LINEAR_GRADIENT => GradientsFormatter::format($imageType, $arg),
-            Type::PLASMA => PlasmaFormatter::format($imageType, $arg),
+            Type::PATTERN => Patterns::format($imageType, $arg),
+            Type::SOLID_COLOR => SolidColor::format($imageType, $arg),
+            Type::RADIAL_GRADIENT, Type::LINEAR_GRADIENT => Gradients::format($imageType, $arg),
+            Type::PLASMA => Plasma::format($imageType, $arg),
             default => throw new \UnexpectedValueException('Missing image type category')
         };
     }

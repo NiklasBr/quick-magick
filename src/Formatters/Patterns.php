@@ -7,11 +7,11 @@
 
 declare(strict_types=1);
 
-namespace NiklasBr\FakerImages\Patterns;
+namespace NiklasBr\FakerImages\Formatters;
 
 use NiklasBr\FakerImages\Enums\Type;
 
-final class PatternsFormatter implements ImagickPseudoImageFormatterInterface
+final class Patterns implements ImagickPseudoImageInterface
 {
     /**
      * @var string[]

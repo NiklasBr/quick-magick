@@ -11,9 +11,9 @@ namespace NiklasBr\FakerImages\Tests;
 
 use NiklasBr\FakerImages\Enums\Type;
 use NiklasBr\FakerImages\FakerImagesProvider;
-use NiklasBr\FakerImages\Patterns\PatternsFormatter;
+use NiklasBr\FakerImages\Formatters\Patterns;
 
-dataset('patterns', PatternsFormatter::$validPatterns);
+dataset('patterns', Patterns::$validPatterns);
 
 it('creates pattern image for {format}', function (string $format) {
     $result = FakerImagesProvider::image(category: Type::PATTERN, imagickArgs: $format);

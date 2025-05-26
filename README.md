@@ -7,7 +7,7 @@ A high-performance placeholder image generator with full test coverage and no ne
 
 Install this Faker [provider](https://fakerphp.org/#faker-internals-understanding-providers) using [Composer](https://getcomposer.org/):
 ```shell
-composer require niklasbr/faker-images
+composer require niklasbr/quick-magick
 ```
 
 

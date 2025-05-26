@@ -7,13 +7,13 @@
 
 declare(strict_types=1);
 
-namespace NiklasBr\FakerImages\Patterns;
+namespace NiklasBr\FakerImages\Formatters;
 
 use NiklasBr\FakerImages\Enums\Type;
 use NiklasBr\FakerImages\Validator;
 use Spatie\Color\Exceptions\InvalidColorValue;
 
-final readonly class SolidColorFormatter implements ImagickPseudoImageFormatterInterface
+final readonly class SolidColor implements ImagickPseudoImageInterface
 {
     /**
      * @throws InvalidColorValue
