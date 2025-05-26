@@ -1,9 +1,9 @@
 name: Generate SBOM
 
 on:
-    push:
-        branches: [ main ]
-    pull_request:
+    schedule:
+        # Early every monday morning
+        - cron: '0 2 * * 1'
 
 jobs:
     sbom:
