@@ -42,9 +42,9 @@ jobs:
               run: |
                   git config --global user.name "github-actions[bot]"
                   git config --global user.email "github-actions[bot]@users.noreply.github.com"
-                  git add sbom/sbom.xml
+                  git add sbom.xml
                   # Only commit if there are changes
-                  git diff --cached --quiet sbom/sbom.xml || git commit -m "chore: update SBOM [skip ci]"
+                  git diff --cached --quiet sbom.xml || git commit -m "chore: update SBOM [skip ci]"
                   git push
               env:
                   # Use the GitHub token for authentication
