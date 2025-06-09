@@ -33,6 +33,6 @@ jobs:
               uses: timkrase/phpunit-coverage-badge@v1.2.1
               if: github.ref == 'refs/heads/main'
               with:
-                  coverage_badge_path: 'badge-coverage.svg'
+                  coverage_badge_path: '.github/badge-coverage.svg'
                   push_badge: true
                   repo_token: ${{ secrets.GITHUB_TOKEN }}
