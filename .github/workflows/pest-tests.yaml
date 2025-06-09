@@ -27,12 +27,14 @@ jobs:
             - uses: ramsey/composer-install@v3
 
             - name: Run Pest tests
-              run: composer pest:test -- --ci --coverage-clover=clover.xml
+              run: composer pest:test -- --ci --coverage-clover=.github/clover.xml
 
             - name: Generate code coverage badge
               uses: timkrase/phpunit-coverage-badge@v1.2.1
               if: github.ref == 'refs/heads/main'
               with:
+                  report: '.github/clover.xml'
                   coverage_badge_path: '.github/badge-coverage.svg'
                   push_badge: true
                   repo_token: ${{ secrets.GITHUB_TOKEN }}
+                  commit_message: 'chore: update coverage badge [skip ci]'
