@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1749490617">
+  <project timestamp="1749490617">
+    <file name="/home/runner/work/quick-magick/quick-magick/src/Enums/Format.php">
+      <metrics loc="17" ncloc="13" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/home/runner/work/quick-magick/quick-magick/src/Enums/Type.php">
+      <metrics loc="25" ncloc="20" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <package name="NiklasBr\QuickMagick\Formatters">
+      <file name="/home/runner/work/quick-magick/quick-magick/src/Formatters/Gradients.php">
+        <class name="NiklasBr\QuickMagick\Formatters\Gradients" namespace="NiklasBr\QuickMagick\Formatters">
+          <metrics complexity="4" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="12" coveredelements="12"/>
+        </class>
+        <line num="23" type="method" name="format" visibility="public" complexity="1" crap="1" count="10"/>
+        <line num="25" type="stmt" count="10"/>
+        <line num="27" type="stmt" count="10"/>
+        <line num="38" type="method" name="validateArgs" visibility="private" complexity="3" crap="3" count="10"/>
+        <line num="40" type="stmt" count="10"/>
+        <line num="42" type="stmt" count="2"/>
+        <line num="45" type="stmt" count="8"/>
+        <line num="47" type="stmt" count="2"/>
+        <line num="49" type="stmt" count="2"/>
+        <line num="52" type="stmt" count="6"/>
+        <line num="54" type="stmt" count="6"/>
+        <line num="55" type="stmt" count="6"/>
+        <metrics loc="58" ncloc="39" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="12" coveredelements="12"/>
+      </file>
+      <file name="/home/runner/work/quick-magick/quick-magick/src/Formatters/Patterns.php">
+        <class name="NiklasBr\QuickMagick\Formatters\Patterns" namespace="NiklasBr\QuickMagick\Formatters">
+          <metrics complexity="2" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+        </class>
+        <line num="76" type="method" name="format" visibility="public" complexity="2" crap="2" count="56"/>
+        <line num="78" type="stmt" count="56"/>
+        <line num="79" type="stmt" count="1"/>
+        <line num="82" type="stmt" count="55"/>
+        <metrics loc="85" ncloc="78" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+      </file>
+      <file name="/home/runner/work/quick-magick/quick-magick/src/Formatters/Plasma.php">
+        <class name="NiklasBr\QuickMagick\Formatters\Plasma" namespace="NiklasBr\QuickMagick\Formatters">
+          <metrics complexity="5" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="13" elements="15" coveredelements="15"/>
+        </class>
+        <line num="30" type="method" name="format" visibility="public" complexity="1" crap="1" count="10"/>
+        <line num="33" type="stmt" count="10"/>
+        <line num="35" type="stmt" count="5"/>
+        <line num="41" type="method" name="validateArgs" visibility="private" complexity="4" crap="4" count="10"/>
+        <line num="43" type="stmt" count="10"/>
+        <line num="45" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="9"/>
+        <line num="50" type="stmt" count="3"/>
+        <line num="52" type="stmt" count="2"/>
+        <line num="55" type="stmt" count="6"/>
+        <line num="58" type="stmt" count="6"/>
+        <line num="59" type="stmt" count="2"/>
+        <line num="61" type="stmt" count="1"/>
+        <line num="64" type="stmt" count="4"/>
+        <line num="65" type="stmt" count="4"/>
+        <metrics loc="68" ncloc="49" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="13" elements="15" coveredelements="15"/>
+      </file>
+      <file name="/home/runner/work/quick-magick/quick-magick/src/Formatters/SolidColor.php">
+        <class name="NiklasBr\QuickMagick\Formatters\SolidColor" namespace="NiklasBr\QuickMagick\Formatters">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+        </class>
+        <line num="21" type="method" name="format" visibility="public" complexity="1" crap="1" count="13"/>
+        <line num="23" type="stmt" count="13"/>
+        <line num="25" type="stmt" count="12"/>
+        <metrics loc="28" ncloc="21" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </file>
+    </package>
+    <file name="/home/runner/work/quick-magick/quick-magick/src/Formatters/PseudoImageInterface.php">
+      <metrics loc="21" ncloc="14" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <package name="NiklasBr\QuickMagick">
+      <file name="/home/runner/work/quick-magick/quick-magick/src/QuickMagick.php">
+        <class name="NiklasBr\QuickMagick\QuickMagick" namespace="NiklasBr\QuickMagick">
+          <metrics complexity="15" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="36" coveredstatements="33" elements="40" coveredelements="36"/>
+        </class>
+        <line num="35" type="method" name="image" visibility="public" complexity="1" crap="1" count="88"/>
+        <line num="37" type="stmt" count="88"/>
+        <line num="38" type="stmt" count="88"/>
+        <line num="39" type="stmt" count="88"/>
+        <line num="40" type="stmt" count="88"/>
+        <line num="41" type="stmt" count="88"/>
+        <line num="42" type="stmt" count="88"/>
+        <line num="44" type="stmt" count="80"/>
+        <line num="59" type="method" name="createImageFile" visibility="public" complexity="7" crap="7.19" count="2"/>
+        <line num="61" type="stmt" count="2"/>
+        <line num="62" type="stmt" count="2"/>
+        <line num="63" type="stmt" count="2"/>
+        <line num="64" type="stmt" count="2"/>
+        <line num="65" type="stmt" count="2"/>
+        <line num="66" type="stmt" count="2"/>
+        <line num="69" type="stmt" count="2"/>
+        <line num="72" type="stmt" count="2"/>
+        <line num="73" type="stmt" count="1"/>
+        <line num="74" type="stmt" count="0"/>
+        <line num="76" type="stmt" count="1"/>
+        <line num="78" type="stmt" count="1"/>
+        <line num="79" type="stmt" count="1"/>
+        <line num="80" type="stmt" count="1"/>
+        <line num="82" type="stmt" count="0"/>
+        <line num="85" type="stmt" count="1"/>
+        <line num="86" type="stmt" count="1"/>
+        <line num="87" type="stmt" count="0"/>
+        <line num="90" type="stmt" count="1"/>
+        <line num="98" type="method" name="imageTypeToPseudoString" visibility="private" complexity="6" crap="6" count="90"/>
+        <line num="101" type="stmt" count="90"/>
+        <line num="102" type="stmt" count="34"/>
+        <line num="103" type="stmt" count="21"/>
+        <line num="104" type="stmt" count="11"/>
+        <line num="105" type="stmt" count="83"/>
+        <line num="112" type="method" name="img" visibility="private" complexity="1" crap="1" count="82"/>
+        <line num="114" type="stmt" count="82"/>
+        <line num="115" type="stmt" count="82"/>
+        <line num="116" type="stmt" count="82"/>
+        <line num="117" type="stmt" count="82"/>
+        <line num="119" type="stmt" count="82"/>
+        <metrics loc="122" ncloc="84" classes="1" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="36" coveredstatements="33" elements="40" coveredelements="36"/>
+      </file>
+    </package>
+    <package name="NiklasBr\QuickMagick\Validators">
+      <file name="/home/runner/work/quick-magick/quick-magick/src/Validators/ColorValidator.php">
+        <class name="NiklasBr\QuickMagick\Validators\ColorValidator" namespace="NiklasBr\QuickMagick\Validators">
+          <metrics complexity="3" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+        </class>
+        <line num="20" type="method" name="isValidColor" visibility="public" complexity="3" crap="3" count="34"/>
+        <line num="22" type="stmt" count="34"/>
+        <line num="23" type="stmt" count="2"/>
+        <line num="24" type="stmt" count="2"/>
+        <line num="27" type="stmt" count="32"/>
+        <metrics loc="31" ncloc="24" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+      </file>
+    </package>
+    <metrics files="9" loc="455" ncloc="342" classes="6" methods="11" coveredmethods="10" conditionals="0" coveredconditionals="0" statements="68" coveredstatements="65" elements="79" coveredelements="75"/>
+  </project>
+</coverage>
