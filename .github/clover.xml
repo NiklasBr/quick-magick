@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1749491859">
-  <project timestamp="1749491859">
+<coverage generated="1749492318">
+  <project timestamp="1749492318">
     <file name="/home/runner/work/quick-magick/quick-magick/src/Enums/Format.php">
       <metrics loc="17" ncloc="13" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
