@@ -15,10 +15,10 @@ composer require niklasbr/quick-magick
 
 ```php
 use Faker\Factory;
-use NiklasBr\FakerImages\FakerImagesProvider;
+use NiklasBr\QuickMagick\QuickMagick;
 
 $faker = Factory::create();
-$faker->addProvider(new FakerImagesProvider($faker));
+$faker->addProvider(new QuickMagick($faker));
 ```
 ```php
 // Simple image with only default parameters

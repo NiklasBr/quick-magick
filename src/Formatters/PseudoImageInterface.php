@@ -7,11 +7,11 @@
 
 declare(strict_types=1);
 
-namespace NiklasBr\FakerImages\Formatters;
+namespace NiklasBr\QuickMagick\Formatters;
 
-use NiklasBr\FakerImages\Enums\Type;
+use NiklasBr\QuickMagick\Enums\Type;
 
-interface ImagickPseudoImageInterface
+interface PseudoImageInterface
 {
     /**
      * @throws \InvalidArgumentException If missing or unable to use any required argument

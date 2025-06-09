@@ -7,11 +7,11 @@
 
 declare(strict_types=1);
 
-namespace NiklasBr\FakerImages\Formatters;
+namespace NiklasBr\QuickMagick\Formatters;
 
-use NiklasBr\FakerImages\Enums\Type;
+use NiklasBr\QuickMagick\Enums\Type;
 
-final class Patterns implements ImagickPseudoImageInterface
+final class Patterns implements PseudoImageInterface
 {
     /**
      * @var string[]
@@ -80,5 +80,13 @@ final class Patterns implements ImagickPseudoImageInterface
         }
 
         return "{$imageType->value}:{$arg}";
+    }
+
+    /**
+     * @return string[]
+     */
+    public static function getValidPatterns(): array
+    {
+        return self::$validPatterns;
     }
 }

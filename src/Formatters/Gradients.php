@@ -7,17 +7,17 @@
 
 declare(strict_types=1);
 
-namespace NiklasBr\FakerImages\Formatters;
+namespace NiklasBr\QuickMagick\Formatters;
 
-use NiklasBr\FakerImages\Enums\Type;
-use NiklasBr\FakerImages\Validator;
+use NiklasBr\QuickMagick\Enums\Type;
+use NiklasBr\QuickMagick\Validator;
 use Spatie\Color\Exceptions\InvalidColorValue;
 
 // https://www.imagemagick.org/script/gradient.php
 // gradient:
 // gradient:fromColor
 // gradient:fromColor-toColor
-final readonly class Gradients implements ImagickPseudoImageInterface
+final readonly class Gradients implements PseudoImageInterface
 {
     /**
      * @param null|string $arg Accepts: "color", "color1-color2"

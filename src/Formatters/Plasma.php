@@ -7,13 +7,13 @@
 
 declare(strict_types=1);
 
-namespace NiklasBr\FakerImages\Formatters;
+namespace NiklasBr\QuickMagick\Formatters;
 
-use NiklasBr\FakerImages\Enums\Type;
-use NiklasBr\FakerImages\Validator;
+use NiklasBr\QuickMagick\Enums\Type;
+use NiklasBr\QuickMagick\Validator;
 use Spatie\Color\Exceptions\InvalidColorValue;
 
-final class Plasma implements ImagickPseudoImageInterface
+final class Plasma implements PseudoImageInterface
 {
     /**
      * @var string[]

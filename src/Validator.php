@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace NiklasBr\FakerImages;
+namespace NiklasBr\QuickMagick;
 
 use Spatie\Color;
 use Spatie\Color\Exceptions\InvalidColorValue;

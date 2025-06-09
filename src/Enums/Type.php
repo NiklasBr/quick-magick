@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace NiklasBr\FakerImages\Enums;
+namespace NiklasBr\QuickMagick\Enums;
 
 // https://www.imagemagick.org/script/formats.php
 enum Type: string

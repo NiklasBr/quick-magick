@@ -26,8 +26,8 @@
     },
     "autoload": {
         "psr-4": {
-            "NiklasBr\\FakerImages\\": "src/",
-            "NiklasBr\\FakerImages\\Tests\\": "tests/"
+            "NiklasBr\\QuickMagick\\": "src/",
+            "NiklasBr\\QuickMagick\\Tests\\": "tests/"
         }
     },
     "config": {
@@ -36,10 +36,10 @@
         }
     },
     "scripts": {
-        "phpstan:analyse": "vendor/bin/phpstan analyse",
+        "cs:check": "vendor/bin/php-cs-fixer check --verbose --diff",
+        "cs:fix": "vendor/bin/php-cs-fixer fix",
         "pest:test": "vendor/bin/pest --parallel",
         "pest:coverage": "vendor/bin/pest --coverage",
-        "cs:check": "vendor/bin/php-cs-fixer check --verbose --diff",
-        "cs:fix": "vendor/bin/php-cs-fixer fix"
+        "phpstan:analyse": "vendor/bin/phpstan analyse"
     }
 }

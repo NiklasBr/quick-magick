@@ -7,19 +7,19 @@
 
 declare(strict_types=1);
 
-namespace NiklasBr\FakerImages\Tests;
+namespace NiklasBr\QuickMagick\Tests;
 
 use Faker\Factory;
 use Faker\Provider\Base;
-use NiklasBr\FakerImages\Enums\Format;
-use NiklasBr\FakerImages\Enums\Type;
-use NiklasBr\FakerImages\FakerImagesProvider;
-use NiklasBr\FakerImages\Validator;
+use NiklasBr\QuickMagick\Enums\Format;
+use NiklasBr\QuickMagick\Enums\Type;
+use NiklasBr\QuickMagick\QuickMagick;
+use NiklasBr\QuickMagick\Validator;
 use Spatie\Color\Exceptions\InvalidColorValue;
 
 it('registers properly with Faker', function () {
     $faker = Factory::create();
-    $faker->addProvider(new FakerImagesProvider($faker));
+    $faker->addProvider(new QuickMagick($faker));
 
     expect($faker->getProviders())
         ->toBeArray()
@@ -28,14 +28,14 @@ it('registers properly with Faker', function () {
 });
 
 it('returns image data with default parameters', function () {
-    $result = FakerImagesProvider::image();
+    $result = QuickMagick::image();
 
     // https://evanhahn.com/worlds-smallest-png/
     expect(\strlen($result))->toBeGreaterThan(8 + 25 + 22 + 12);
 });
 
 it('returns image data with custom dimensions', function () {
-    $result = FakerImagesProvider::image(width: 91, height: 85);
+    $result = QuickMagick::image(width: 91, height: 85);
 
     /** @phpstan-var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
     $imgData = getimagesizefromstring($result);
@@ -50,7 +50,7 @@ it('returns image data with custom dimensions', function () {
 });
 
 it('returns a JPEG when requested', function () {
-    $result = FakerImagesProvider::image(format: Format::JPG);
+    $result = QuickMagick::image(format: Format::JPG);
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
     $imgData = getimagesizefromstring($result);
@@ -63,43 +63,35 @@ it('returns a JPEG when requested', function () {
 });
 
 it('returns a filepath when requested', function () {
-    $result = FakerImagesProvider::image(dir: './');
+    $result = QuickMagick::createImageFile(filePath: './');
 
     expect($result)
         ->toContain(\DIRECTORY_SEPARATOR, '.')
         ->toEndWith('.png')
-        ->not()->toStartWith(\DIRECTORY_SEPARATOR)
+        ->toBeFile($result)
     ;
 
-    $result = FakerImagesProvider::image(dir: __DIR__);
+    unlink($result);
+
+    $result = QuickMagick::createImageFile(filePath: __DIR__);
     expect($result)
         ->toContain(\DIRECTORY_SEPARATOR, '.')
         ->toEndWith('.png')
         ->toStartWith(\DIRECTORY_SEPARATOR)
     ;
+
+    unlink($result);
 });
 
 it('throws an exception when there is no proper ImageType', function () {
     expect(function () {
-        FakerImagesProvider::image(category: Type::UNKNOWN);
+        QuickMagick::image(type: Type::UNKNOWN);
     })->toThrow(\UnexpectedValueException::class);
-});
-
-it('writes a default values file to disk', function () {
-    $imageData = FakerImagesProvider::image();
-
-    $putResult = file_put_contents(__DIR__.'/out/default_output.png', $imageData);
-
-    expect($putResult)
-        ->not()->toBeFalse()
-        ->toEqual(\strlen($imageData))
-        ->and(__DIR__.'/out/default_output.png')->toBeFile()
-    ;
 });
 
 it('throws an error when it cannot fid the directory', function () {
     expect(function () {
-        FakerImagesProvider::image(dir: './should-not-exist');
+        QuickMagick::createImageFile(filePath: '/should-not-exist');
     })->toThrow(\InvalidArgumentException::class);
 });
 
