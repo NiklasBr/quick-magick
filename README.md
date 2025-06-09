@@ -3,6 +3,9 @@
 A high-performance placeholder image generator with full test coverage and no network requests to third-party services.
 
 ![Coverage](.github/badge-coverage.svg "Badge: Code coverage percentage")
+![PHPStan](https://img.shields.io/badge/PHPStan-level%2010-brightgreen "Badge: PHP Stan level")
+![Dependabot](https://img.shields.io/badge/Dependabot-Enabled-blue?logo=dependabot "Badge: Dependabot active")
+
 
 ## Installation
 
