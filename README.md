@@ -2,7 +2,7 @@
 
 A high-performance placeholder image generator with full test coverage and no network requests to third-party services.
 
-![Coverage](badge-coverage.svg)
+![Coverage](./github/badge-coverage.svg "Badge: Code coverage percentage")
 
 ## Installation
 
