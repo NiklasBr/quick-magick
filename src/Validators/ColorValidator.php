@@ -7,12 +7,12 @@
 
 declare(strict_types=1);
 
-namespace NiklasBr\QuickMagick;
+namespace NiklasBr\QuickMagick\Validators;
 
 use Spatie\Color;
 use Spatie\Color\Exceptions\InvalidColorValue;
 
-final readonly class Validator
+final readonly class ColorValidator
 {
     /**
      * @throws InvalidColorValue

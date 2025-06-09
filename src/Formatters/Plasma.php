@@ -10,7 +10,7 @@ declare(strict_types=1);
 namespace NiklasBr\QuickMagick\Formatters;
 
 use NiklasBr\QuickMagick\Enums\Type;
-use NiklasBr\QuickMagick\Validator;
+use NiklasBr\QuickMagick\Validators\ColorValidator;
 use Spatie\Color\Exceptions\InvalidColorValue;
 
 final class Plasma implements PseudoImageInterface
@@ -47,7 +47,7 @@ final class Plasma implements PseudoImageInterface
 
         if (!\str_contains($arg, '-')) {
             // Single color after 'plasma:'
-            Validator::isValidColor($arg);
+            ColorValidator::isValidColor($arg);
 
             return;
         }
@@ -56,12 +56,12 @@ final class Plasma implements PseudoImageInterface
 
         // Will result in 'fractal:plasma', valid
         if (\in_array($color1, self::$validPatterns, true)) {
-            Validator::isValidColor($color2);
+            ColorValidator::isValidColor($color2);
 
             return;
         }
 
-        Validator::isValidColor($color1);
-        Validator::isValidColor($color2);
+        ColorValidator::isValidColor($color1);
+        ColorValidator::isValidColor($color2);
     }
 }

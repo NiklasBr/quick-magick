@@ -20,9 +20,6 @@ use Spatie\Color\Exceptions\InvalidColorValue;
 
 final class QuickMagick extends Base
 {
-    // Currently validating if traits can be used for better code structure
-    use Traits\PlasmaTrait;
-
     /**
      * Generates and returns image data.
      *

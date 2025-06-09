@@ -14,8 +14,15 @@ use Faker\Provider\Base;
 use NiklasBr\QuickMagick\Enums\Format;
 use NiklasBr\QuickMagick\Enums\Type;
 use NiklasBr\QuickMagick\QuickMagick;
-use NiklasBr\QuickMagick\Validator;
+use NiklasBr\QuickMagick\Validators\ColorValidator;
 use Spatie\Color\Exceptions\InvalidColorValue;
+
+dataset('invalid colors', [
+    'rgb()',
+    'blåbär',
+    'black-nope',
+    'foo-red',
+]);
 
 it('registers properly with Faker', function () {
     $faker = Factory::create();
@@ -95,18 +102,8 @@ it('throws an error when it cannot fid the directory', function () {
     })->toThrow(\InvalidArgumentException::class);
 });
 
-it('throws an exception when there is no proper color', function () {
-    expect(function () {
-        Validator::isValidColor('rgb()');
-    })->toThrow(InvalidColorValue::class)
-        ->and(function () {
-            Validator::isValidColor('blåbär');
-        })->toThrow(InvalidColorValue::class)
-        ->and(function () {
-            Validator::isValidColor('black-nope');
-        })->toThrow(InvalidColorValue::class)
-        ->and(function () {
-            Validator::isValidColor('foo-red');
-        })->toThrow(InvalidColorValue::class)
-    ;
-});
+it('throws an exception when {color} is not proper', function (string $color) {
+    expect(function () use ($color) {
+        ColorValidator::isValidColor($color);
+    })->toThrow(InvalidColorValue::class);
+})->with('invalid colors');

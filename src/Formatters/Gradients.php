@@ -10,13 +10,9 @@ declare(strict_types=1);
 namespace NiklasBr\QuickMagick\Formatters;
 
 use NiklasBr\QuickMagick\Enums\Type;
-use NiklasBr\QuickMagick\Validator;
+use NiklasBr\QuickMagick\Validators\ColorValidator;
 use Spatie\Color\Exceptions\InvalidColorValue;
 
-// https://www.imagemagick.org/script/gradient.php
-// gradient:
-// gradient:fromColor
-// gradient:fromColor-toColor
 final readonly class Gradients implements PseudoImageInterface
 {
     /**
@@ -32,6 +28,11 @@ final readonly class Gradients implements PseudoImageInterface
     }
 
     /**
+     * https://www.imagemagick.org/script/gradient.php
+     * gradient:
+     * gradient:fromColor
+     * gradient:fromColor-toColor.
+     *
      * @throws InvalidColorValue
      */
     private static function validateArgs(?string $arg): void
@@ -43,14 +44,14 @@ final readonly class Gradients implements PseudoImageInterface
 
         if (!\str_contains($arg, '-')) {
             // Single color after 'plasma:'
-            Validator::isValidColor($arg);
+            ColorValidator::isValidColor($arg);
 
             return;
         }
 
         [$color1, $color2] = \explode('-', $arg, 2);
 
-        Validator::isValidColor($color1);
-        Validator::isValidColor($color2);
+        ColorValidator::isValidColor($color1);
+        ColorValidator::isValidColor($color2);
     }
 }

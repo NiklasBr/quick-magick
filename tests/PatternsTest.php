@@ -13,7 +13,7 @@ use NiklasBr\QuickMagick\Enums\Type;
 use NiklasBr\QuickMagick\Formatters\Patterns;
 use NiklasBr\QuickMagick\QuickMagick;
 
-dataset('patterns', Patterns::getValidPatterns());
+dataset('valid patterns', Patterns::$validPatterns);
 
 it('creates pattern image for {format}', function (string $format) {
     $result = QuickMagick::image(type: Type::PATTERN, imagickArgs: $format);
@@ -26,7 +26,7 @@ it('creates pattern image for {format}', function (string $format) {
         ->toBeArray()
         ->and($imgData['mime'])->toMatch('/image\/png/')
     ;
-})->with('patterns');
+})->with('valid patterns');
 
 it('writes a pattern image file to disk', function () {
     $imageData = QuickMagick::image(type: Type::PATTERN, imagickArgs: 'SMALLFISHSCALES');

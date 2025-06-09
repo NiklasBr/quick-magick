@@ -81,12 +81,4 @@ final class Patterns implements PseudoImageInterface
 
         return "{$imageType->value}:{$arg}";
     }
-
-    /**
-     * @return string[]
-     */
-    public static function getValidPatterns(): array
-    {
-        return self::$validPatterns;
-    }
 }
