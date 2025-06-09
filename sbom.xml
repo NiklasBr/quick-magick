@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:1581c328-3f61-43ca-9c66-cceb173e8f46">
+<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:6d68ee6a-d601-45fe-94b0-0ac29f2708ea">
   <metadata>
-    <timestamp><![CDATA[2025-06-02T02:34:27Z]]></timestamp>
+    <timestamp><![CDATA[2025-06-09T02:35:58Z]]></timestamp>
     <tools>
       <tool>
         <name><![CDATA[composer]]></name>
@@ -32,8 +32,8 @@
       </licenses>
       <purl><![CDATA[pkg:composer/niklasbr/quick-magick@dev-main]]></purl>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[6baf026aa7cdc01fdfaa3b23b5d8352184741b47]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[6baf026aa7cdc01fdfaa3b23b5d8352184741b47]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[2ee0177c7ba3d3ee7281ebe1f504d9995245d88c]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[2ee0177c7ba3d3ee7281ebe1f504d9995245d88c]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
       </properties>
     </component>
@@ -390,26 +390,26 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="filp/whoops-2.18.0.0">
+    <component type="library" bom-ref="filp/whoops-2.18.1.0">
       <author><![CDATA[Filipe Dobreira]]></author>
       <group><![CDATA[filp]]></group>
       <name><![CDATA[whoops]]></name>
-      <version><![CDATA[2.18.0]]></version>
+      <version><![CDATA[2.18.1]]></version>
       <description><![CDATA[php error handling for cool kids]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/filp/whoops@2.18.0]]></purl>
+      <purl><![CDATA[pkg:composer/filp/whoops@2.18.1]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/filp/whoops/zipball/a7de6c3c6c3c022f5cfc337f8ede6a14460cf77e]]></url>
-          <comment><![CDATA[dist reference: a7de6c3c6c3c022f5cfc337f8ede6a14460cf77e]]></comment>
+          <url><![CDATA[https://api.github.com/repos/filp/whoops/zipball/8fcc6a862f2e7b94eb4221fd0819ddba3d30ab26]]></url>
+          <comment><![CDATA[dist reference: 8fcc6a862f2e7b94eb4221fd0819ddba3d30ab26]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/filp/whoops.git]]></url>
-          <comment><![CDATA[source reference: a7de6c3c6c3c022f5cfc337f8ede6a14460cf77e]]></comment>
+          <comment><![CDATA[source reference: 8fcc6a862f2e7b94eb4221fd0819ddba3d30ab26]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://filp.github.io/whoops/]]></url>
@@ -420,13 +420,13 @@
           <comment><![CDATA[as detected from Composer manifest 'support.issues']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/filp/whoops/tree/2.18.0]]></url>
+          <url><![CDATA[https://github.com/filp/whoops/tree/2.18.1]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[a7de6c3c6c3c022f5cfc337f8ede6a14460cf77e]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[a7de6c3c6c3c022f5cfc337f8ede6a14460cf77e]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[8fcc6a862f2e7b94eb4221fd0819ddba3d30ab26]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[8fcc6a862f2e7b94eb4221fd0819ddba3d30ab26]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -3254,7 +3254,7 @@
       <dependency ref="symfony/deprecation-contracts-3.6.0.0"/>
     </dependency>
     <dependency ref="fidry/cpu-core-counter-1.2.0.0"/>
-    <dependency ref="filp/whoops-2.18.0.0">
+    <dependency ref="filp/whoops-2.18.1.0">
       <dependency ref="psr/log-3.0.2.0"/>
     </dependency>
     <dependency ref="friendsofphp/php-cs-fixer-3.75.0.0">
@@ -3283,7 +3283,7 @@
     <dependency ref="myclabs/deep-copy-1.13.1.0"/>
     <dependency ref="nikic/php-parser-5.5.0.0"/>
     <dependency ref="nunomaduro/collision-8.8.0.0">
-      <dependency ref="filp/whoops-2.18.0.0"/>
+      <dependency ref="filp/whoops-2.18.1.0"/>
       <dependency ref="nunomaduro/termwind-2.3.1.0"/>
       <dependency ref="symfony/console-7.3.0.0"/>
     </dependency>
