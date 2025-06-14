@@ -96,15 +96,37 @@ it('returns a filepath when requested', function () {
     unlink($result);
 });
 
+it('creates a file with a filename',  function () {
+    $result = QuickMagick::createImageFile(filePath: './testpng.png');
+
+    expect($result)
+        ->toContain(\DIRECTORY_SEPARATOR, '.')
+        ->toEndWith('testpng.png')
+        ->toBeFile($result)
+    ;
+});
+
 it('throws an exception when there is no proper ImageType', function () {
     expect(function () {
         QuickMagick::image(type: Type::UNKNOWN);
     })->toThrow(\UnexpectedValueException::class);
 });
 
-it('throws an error when it cannot fid the directory', function () {
+it('throws an error when it cannot find the directory', function () {
     expect(function () {
         QuickMagick::createImageFile(filePath: '/should-not-exist');
+    })->toThrow(\InvalidArgumentException::class);
+});
+
+it('throws an error when it cannot write to the directory', function () {
+    expect(function () {
+        QuickMagick::createImageFile(filePath: '/');
+    })->toThrow(\InvalidArgumentException::class);
+});
+
+it('throws an error when it cannot write an invalid filename', function () {
+    expect(function () {
+        QuickMagick::createImageFile(filePath: '/' . \str_repeat(".boom-", 50) . '.png');
     })->toThrow(\InvalidArgumentException::class);
 });
 

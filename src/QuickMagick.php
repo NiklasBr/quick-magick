@@ -80,10 +80,7 @@ final class QuickMagick extends Base
             $filePath = $resolvedPath;
         }
 
-        $result = \file_put_contents($filePath, $img->getImageBlob());
-        if (!$result) {
-            throw new \RuntimeException("Cannot write image to path {$filePath}");
-        }
+        \file_put_contents($filePath, $img->getImageBlob());
 
         return $filePath;
     }
