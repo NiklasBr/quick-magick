@@ -2,14 +2,29 @@
     "name": "niklasbr/quick-magick",
     "description": "Image placeholder provider for Faker",
     "type": "library",
+    "keywords": [
+        "faker",
+        "image",
+        "placeholder",
+        "imagick",
+        "testing",
+        "php",
+        "development"
+    ],
     "authors": [
         {
             "name": "Niklas Brunberg"
         }
     ],
+    "homepage": "https://github.com/niklasbr/quick-magick",
+    "support": {
+        "issues": "https://github.com/niklasbr/quick-magick/issues",
+        "source": "https://github.com/niklasbr/quick-magick",
+        "docs": "https://github.com/niklasbr/quick-magick#readme"
+    },
     "license": [
         "AGPL-3.0-only",
-        "BSD-3-Clause available, see README for details"
+        "BSD-3-Clause as donationware"
     ],
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -26,7 +41,11 @@
     },
     "autoload": {
         "psr-4": {
-            "NiklasBr\\QuickMagick\\": "src/",
+            "NiklasBr\\QuickMagick\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
             "NiklasBr\\QuickMagick\\Tests\\": "tests/"
         }
     },
