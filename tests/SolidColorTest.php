@@ -14,12 +14,14 @@ use NiklasBr\QuickMagick\QuickMagick;
 use Spatie\Color\Exceptions\InvalidColorValue;
 
 dataset('colors', [
-    'red',
-    'silver',
-    'rgba(123,123,123,0.1)',
-    '#AAFF01',
-    '#FFBBEE01',
-    'hsl(80,10%,42%)',
+    'red',                         // Valid simple named color
+    'silver',                      // Valid simple named color
+    'rgba(123,123,123,0.1)',       // Valid RGB with alpha channel
+    '#AAFF01',                     // Valid standard hex
+    '#FFBBEE01',                   // Valid standard hex with alpha
+    'hsl(80,10%,42%)',             // Valid HSL
+    '#f09',                        // 3-digit hex
+    'rgb(255,0,153)',              // Standard rgb()
 ]);
 
 it('creates a solid color for {color}', function (string $format) {

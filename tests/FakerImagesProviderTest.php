@@ -18,10 +18,16 @@ use NiklasBr\QuickMagick\Validators\ColorValidator;
 use Spatie\Color\Exceptions\InvalidColorValue;
 
 dataset('invalid colors', [
-    'rgb()',
-    'blåbär',
-    'black-nope',
-    'foo-red',
+    'rgb()',                 // Missing all values
+    'blåbär',                // Invalid
+    'black-nope',            // Invalid combination
+    'foo-red',               // Invalid combination
+    'rgb(255,255)',          // Missing one value
+    'rgba(255,0,0,2)',       // Alpha out of range (should be 0-1)
+    '#12345',                // Invalid hex length
+    '#GGG',                  // Invalid hex characters
+    'red()',                 // Function call, not valid
+    'rgb(256,0,0)',          // Value out of range (max 255)
 ]);
 
 it('registers properly with Faker', function () {
