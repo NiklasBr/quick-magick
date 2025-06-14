@@ -69,20 +69,18 @@ final class QuickMagick extends Base
         $resolvedPath = realpath($filePath) ?: $filePath;
 
         // If path is a directory, append the filename
-        if (is_dir($resolvedPath)) {
-            if (!is_writable($resolvedPath)) {
+        if (\is_dir($resolvedPath)) {
+            if (!\is_writable($resolvedPath)) {
                 throw new \InvalidArgumentException("Cannot write to directory {$resolvedPath}");
             }
             $filePath = $resolvedPath.\DIRECTORY_SEPARATOR.$img->getFilename();
+        } elseif (!\is_dir($dir = \dirname($resolvedPath)) || !\is_writable($dir)) {
+            throw new \InvalidArgumentException("Cannot write image to directory {$dir}");
         } else {
-            $dir = \dirname($resolvedPath);
-            if (!is_dir($dir) || !is_writable($dir)) {
-                throw new \InvalidArgumentException("Cannot write image to directory {$dir}");
-            }
             $filePath = $resolvedPath;
         }
 
-        $result = file_put_contents($filePath, $img->getImageBlob());
+        $result = \file_put_contents($filePath, $img->getImageBlob());
         if (!$result) {
             throw new \RuntimeException("Cannot write image to path {$filePath}");
         }
