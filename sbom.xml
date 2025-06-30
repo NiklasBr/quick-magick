@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:ccd4c8dd-cb02-48a6-afae-6fd2c12f4956">
+<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:71483500-8295-417a-ae21-e1ad350463c0">
   <metadata>
-    <timestamp><![CDATA[2025-06-23T02:38:01Z]]></timestamp>
+    <timestamp><![CDATA[2025-06-30T02:36:57Z]]></timestamp>
     <tools>
       <tool>
         <name><![CDATA[composer]]></name>
@@ -50,8 +50,8 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[e1d63bd80c4a30490d556f91f4bc30046d4ce233]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[e1d63bd80c4a30490d556f91f4bc30046d4ce233]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[17758455ece3645c50546261cffeeae406ea0fdd]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[17758455ece3645c50546261cffeeae406ea0fdd]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
       </properties>
     </component>
@@ -596,26 +596,26 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="nunomaduro/collision-8.8.1.0">
+    <component type="library" bom-ref="nunomaduro/collision-8.8.2.0">
       <author><![CDATA[Nuno Maduro]]></author>
       <group><![CDATA[nunomaduro]]></group>
       <name><![CDATA[collision]]></name>
-      <version><![CDATA[v8.8.1]]></version>
+      <version><![CDATA[v8.8.2]]></version>
       <description><![CDATA[Cli error handling for console/command-line PHP applications.]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/nunomaduro/collision@v8.8.1]]></purl>
+      <purl><![CDATA[pkg:composer/nunomaduro/collision@v8.8.2]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/nunomaduro/collision/zipball/44ccb82e3e21efb5446748d2a3c81a030ac22bd5]]></url>
-          <comment><![CDATA[dist reference: 44ccb82e3e21efb5446748d2a3c81a030ac22bd5]]></comment>
+          <url><![CDATA[https://api.github.com/repos/nunomaduro/collision/zipball/60207965f9b7b7a4ce15a0f75d57f9dadb105bdb]]></url>
+          <comment><![CDATA[dist reference: 60207965f9b7b7a4ce15a0f75d57f9dadb105bdb]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/nunomaduro/collision.git]]></url>
-          <comment><![CDATA[source reference: 44ccb82e3e21efb5446748d2a3c81a030ac22bd5]]></comment>
+          <comment><![CDATA[source reference: 60207965f9b7b7a4ce15a0f75d57f9dadb105bdb]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/nunomaduro/collision/issues]]></url>
@@ -627,8 +627,8 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[44ccb82e3e21efb5446748d2a3c81a030ac22bd5]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[44ccb82e3e21efb5446748d2a3c81a030ac22bd5]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[60207965f9b7b7a4ce15a0f75d57f9dadb105bdb]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[60207965f9b7b7a4ce15a0f75d57f9dadb105bdb]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -2504,39 +2504,39 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="symfony/console-7.3.0.0">
+    <component type="library" bom-ref="symfony/console-7.3.1.0">
       <author><![CDATA[Fabien Potencier, Symfony Community]]></author>
       <group><![CDATA[symfony]]></group>
       <name><![CDATA[console]]></name>
-      <version><![CDATA[v7.3.0]]></version>
+      <version><![CDATA[v7.3.1]]></version>
       <description><![CDATA[Eases the creation of beautiful and testable command line interfaces]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/symfony/console@v7.3.0]]></purl>
+      <purl><![CDATA[pkg:composer/symfony/console@v7.3.1]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/symfony/console/zipball/66c1440edf6f339fd82ed6c7caa76cb006211b44]]></url>
-          <comment><![CDATA[dist reference: 66c1440edf6f339fd82ed6c7caa76cb006211b44]]></comment>
+          <url><![CDATA[https://api.github.com/repos/symfony/console/zipball/9e27aecde8f506ba0fd1d9989620c04a87697101]]></url>
+          <comment><![CDATA[dist reference: 9e27aecde8f506ba0fd1d9989620c04a87697101]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/symfony/console.git]]></url>
-          <comment><![CDATA[source reference: 66c1440edf6f339fd82ed6c7caa76cb006211b44]]></comment>
+          <comment><![CDATA[source reference: 9e27aecde8f506ba0fd1d9989620c04a87697101]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://symfony.com]]></url>
           <comment><![CDATA[as detected from Composer manifest 'homepage']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/symfony/console/tree/v7.3.0]]></url>
+          <url><![CDATA[https://github.com/symfony/console/tree/v7.3.1]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[66c1440edf6f339fd82ed6c7caa76cb006211b44]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[66c1440edf6f339fd82ed6c7caa76cb006211b44]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[9e27aecde8f506ba0fd1d9989620c04a87697101]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[9e27aecde8f506ba0fd1d9989620c04a87697101]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -3253,7 +3253,7 @@
       <dependency ref="phpunit/php-timer-7.0.1.0"/>
       <dependency ref="phpunit/phpunit-11.5.15.0"/>
       <dependency ref="sebastian/environment-7.2.1.0"/>
-      <dependency ref="symfony/console-7.3.0.0"/>
+      <dependency ref="symfony/console-7.3.1.0"/>
       <dependency ref="symfony/process-7.3.0.0"/>
     </dependency>
     <dependency ref="clue/ndjson-react-1.3.0.0">
@@ -3286,7 +3286,7 @@
       <dependency ref="react/socket-1.16.0.0"/>
       <dependency ref="react/stream-1.4.0.0"/>
       <dependency ref="sebastian/diff-6.0.2.0"/>
-      <dependency ref="symfony/console-7.3.0.0"/>
+      <dependency ref="symfony/console-7.3.1.0"/>
       <dependency ref="symfony/event-dispatcher-7.3.0.0"/>
       <dependency ref="symfony/filesystem-7.3.0.0"/>
       <dependency ref="symfony/finder-7.3.0.0"/>
@@ -3300,17 +3300,17 @@
     <dependency ref="jean85/pretty-package-versions-2.1.1.0"/>
     <dependency ref="myclabs/deep-copy-1.13.1.0"/>
     <dependency ref="nikic/php-parser-5.5.0.0"/>
-    <dependency ref="nunomaduro/collision-8.8.1.0">
+    <dependency ref="nunomaduro/collision-8.8.2.0">
       <dependency ref="filp/whoops-2.18.3.0"/>
       <dependency ref="nunomaduro/termwind-2.3.1.0"/>
-      <dependency ref="symfony/console-7.3.0.0"/>
+      <dependency ref="symfony/console-7.3.1.0"/>
     </dependency>
     <dependency ref="nunomaduro/termwind-2.3.1.0">
-      <dependency ref="symfony/console-7.3.0.0"/>
+      <dependency ref="symfony/console-7.3.1.0"/>
     </dependency>
     <dependency ref="pestphp/pest-3.8.2.0">
       <dependency ref="brianium/paratest-7.8.3.0"/>
-      <dependency ref="nunomaduro/collision-8.8.1.0"/>
+      <dependency ref="nunomaduro/collision-8.8.2.0"/>
       <dependency ref="nunomaduro/termwind-2.3.1.0"/>
       <dependency ref="pestphp/pest-plugin-3.0.0.0"/>
       <dependency ref="pestphp/pest-plugin-arch-3.1.1.0"/>
@@ -3444,7 +3444,7 @@
     <dependency ref="sebastian/version-5.0.2.0"/>
     <dependency ref="spatie/color-1.8.0.0"/>
     <dependency ref="staabm/side-effects-detector-1.0.5.0"/>
-    <dependency ref="symfony/console-7.3.0.0">
+    <dependency ref="symfony/console-7.3.1.0">
       <dependency ref="symfony/deprecation-contracts-3.6.0.0"/>
       <dependency ref="symfony/polyfill-mbstring-1.32.0.0"/>
       <dependency ref="symfony/service-contracts-3.6.0.0"/>
