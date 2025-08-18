@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:04717c6f-97c8-404c-871b-4dae497d4c62">
+<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:96a0fca0-1db4-452c-a082-a37287073a40">
   <metadata>
-    <timestamp><![CDATA[2025-08-11T02:41:54Z]]></timestamp>
+    <timestamp><![CDATA[2025-08-18T02:39:25Z]]></timestamp>
     <tools>
       <tool>
         <name><![CDATA[composer]]></name>
@@ -50,8 +50,8 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[ea367b8b7d7c7beaca0f3df540a350a851f094f6]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[ea367b8b7d7c7beaca0f3df540a350a851f094f6]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[4d55f090881e1783b1e0d307b0998e9b35a3f695]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[4d55f090881e1783b1e0d307b0998e9b35a3f695]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
       </properties>
     </component>
@@ -371,39 +371,39 @@
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="fidry/cpu-core-counter-1.2.0.0">
+    <component type="library" bom-ref="fidry/cpu-core-counter-1.3.0.0">
       <author><![CDATA[Théo FIDRY]]></author>
       <group><![CDATA[fidry]]></group>
       <name><![CDATA[cpu-core-counter]]></name>
-      <version><![CDATA[1.2.0]]></version>
+      <version><![CDATA[1.3.0]]></version>
       <description><![CDATA[Tiny utility to get the number of CPU cores.]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/fidry/cpu-core-counter@1.2.0]]></purl>
+      <purl><![CDATA[pkg:composer/fidry/cpu-core-counter@1.3.0]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/theofidry/cpu-core-counter/zipball/8520451a140d3f46ac33042715115e290cf5785f]]></url>
-          <comment><![CDATA[dist reference: 8520451a140d3f46ac33042715115e290cf5785f]]></comment>
+          <url><![CDATA[https://api.github.com/repos/theofidry/cpu-core-counter/zipball/db9508f7b1474469d9d3c53b86f817e344732678]]></url>
+          <comment><![CDATA[dist reference: db9508f7b1474469d9d3c53b86f817e344732678]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/theofidry/cpu-core-counter.git]]></url>
-          <comment><![CDATA[source reference: 8520451a140d3f46ac33042715115e290cf5785f]]></comment>
+          <comment><![CDATA[source reference: db9508f7b1474469d9d3c53b86f817e344732678]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/theofidry/cpu-core-counter/issues]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.issues']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/theofidry/cpu-core-counter/tree/1.2.0]]></url>
+          <url><![CDATA[https://github.com/theofidry/cpu-core-counter/tree/1.3.0]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[8520451a140d3f46ac33042715115e290cf5785f]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[8520451a140d3f46ac33042715115e290cf5785f]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[db9508f7b1474469d9d3c53b86f817e344732678]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[db9508f7b1474469d9d3c53b86f817e344732678]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -449,39 +449,39 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="friendsofphp/php-cs-fixer-3.85.1.0">
+    <component type="library" bom-ref="friendsofphp/php-cs-fixer-3.86.0.0">
       <author><![CDATA[Fabien Potencier, Dariusz Rumiński]]></author>
       <group><![CDATA[friendsofphp]]></group>
       <name><![CDATA[php-cs-fixer]]></name>
-      <version><![CDATA[v3.85.1]]></version>
+      <version><![CDATA[v3.86.0]]></version>
       <description><![CDATA[A tool to automatically fix PHP code style]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/friendsofphp/php-cs-fixer@v3.85.1]]></purl>
+      <purl><![CDATA[pkg:composer/friendsofphp/php-cs-fixer@v3.86.0]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/2fb6d7f6c3398dca5786a1635b27405d73a417ba]]></url>
-          <comment><![CDATA[dist reference: 2fb6d7f6c3398dca5786a1635b27405d73a417ba]]></comment>
+          <url><![CDATA[https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/4a952bd19dc97879b0620f495552ef09b55f7d36]]></url>
+          <comment><![CDATA[dist reference: 4a952bd19dc97879b0620f495552ef09b55f7d36]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git]]></url>
-          <comment><![CDATA[source reference: 2fb6d7f6c3398dca5786a1635b27405d73a417ba]]></comment>
+          <comment><![CDATA[source reference: 4a952bd19dc97879b0620f495552ef09b55f7d36]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.issues']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.85.1]]></url>
+          <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.86.0]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[2fb6d7f6c3398dca5786a1635b27405d73a417ba]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[2fb6d7f6c3398dca5786a1635b27405d73a417ba]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[4a952bd19dc97879b0620f495552ef09b55f7d36]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[4a952bd19dc97879b0620f495552ef09b55f7d36]]></property>
         <property name="cdx:composer:package:type"><![CDATA[application]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -559,39 +559,39 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="nikic/php-parser-5.6.0.0">
+    <component type="library" bom-ref="nikic/php-parser-5.6.1.0">
       <author><![CDATA[Nikita Popov]]></author>
       <group><![CDATA[nikic]]></group>
       <name><![CDATA[php-parser]]></name>
-      <version><![CDATA[v5.6.0]]></version>
+      <version><![CDATA[v5.6.1]]></version>
       <description><![CDATA[A PHP parser written in PHP]]></description>
       <licenses>
         <license>
           <id><![CDATA[BSD-3-Clause]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/nikic/php-parser@v5.6.0]]></purl>
+      <purl><![CDATA[pkg:composer/nikic/php-parser@v5.6.1]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/nikic/PHP-Parser/zipball/221b0d0fdf1369c71047ad1d18bb5880017bbc56]]></url>
-          <comment><![CDATA[dist reference: 221b0d0fdf1369c71047ad1d18bb5880017bbc56]]></comment>
+          <url><![CDATA[https://api.github.com/repos/nikic/PHP-Parser/zipball/f103601b29efebd7ff4a1ca7b3eeea9e3336a2a2]]></url>
+          <comment><![CDATA[dist reference: f103601b29efebd7ff4a1ca7b3eeea9e3336a2a2]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/nikic/PHP-Parser.git]]></url>
-          <comment><![CDATA[source reference: 221b0d0fdf1369c71047ad1d18bb5880017bbc56]]></comment>
+          <comment><![CDATA[source reference: f103601b29efebd7ff4a1ca7b3eeea9e3336a2a2]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/nikic/PHP-Parser/issues]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.issues']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/nikic/PHP-Parser/tree/v5.6.0]]></url>
+          <url><![CDATA[https://github.com/nikic/PHP-Parser/tree/v5.6.1]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[221b0d0fdf1369c71047ad1d18bb5880017bbc56]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[221b0d0fdf1369c71047ad1d18bb5880017bbc56]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[f103601b29efebd7ff4a1ca7b3eeea9e3336a2a2]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[f103601b29efebd7ff4a1ca7b3eeea9e3336a2a2]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -919,39 +919,39 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="phpdocumentor/reflection-docblock-5.6.2.0">
+    <component type="library" bom-ref="phpdocumentor/reflection-docblock-5.6.3.0">
       <author><![CDATA[Mike van Riel, Jaap van Otterdijk]]></author>
       <group><![CDATA[phpdocumentor]]></group>
       <name><![CDATA[reflection-docblock]]></name>
-      <version><![CDATA[5.6.2]]></version>
+      <version><![CDATA[5.6.3]]></version>
       <description><![CDATA[With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/phpdocumentor/reflection-docblock@5.6.2]]></purl>
+      <purl><![CDATA[pkg:composer/phpdocumentor/reflection-docblock@5.6.3]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/92dde6a5919e34835c506ac8c523ef095a95ed62]]></url>
-          <comment><![CDATA[dist reference: 92dde6a5919e34835c506ac8c523ef095a95ed62]]></comment>
+          <url><![CDATA[https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/94f8051919d1b0369a6bcc7931d679a511c03fe9]]></url>
+          <comment><![CDATA[dist reference: 94f8051919d1b0369a6bcc7931d679a511c03fe9]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/phpDocumentor/ReflectionDocBlock.git]]></url>
-          <comment><![CDATA[source reference: 92dde6a5919e34835c506ac8c523ef095a95ed62]]></comment>
+          <comment><![CDATA[source reference: 94f8051919d1b0369a6bcc7931d679a511c03fe9]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/phpDocumentor/ReflectionDocBlock/issues]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.issues']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/phpDocumentor/ReflectionDocBlock/tree/5.6.2]]></url>
+          <url><![CDATA[https://github.com/phpDocumentor/ReflectionDocBlock/tree/5.6.3]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[92dde6a5919e34835c506ac8c523ef095a95ed62]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[92dde6a5919e34835c506ac8c523ef095a95ed62]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[94f8051919d1b0369a6bcc7931d679a511c03fe9]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[94f8051919d1b0369a6bcc7931d679a511c03fe9]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -2293,26 +2293,26 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="sebastian/recursion-context-6.0.2.0">
+    <component type="library" bom-ref="sebastian/recursion-context-6.0.3.0">
       <author><![CDATA[Sebastian Bergmann, Jeff Welch, Adam Harvey]]></author>
       <group><![CDATA[sebastian]]></group>
       <name><![CDATA[recursion-context]]></name>
-      <version><![CDATA[6.0.2]]></version>
+      <version><![CDATA[6.0.3]]></version>
       <description><![CDATA[Provides functionality to recursively process PHP variables]]></description>
       <licenses>
         <license>
           <id><![CDATA[BSD-3-Clause]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/sebastian/recursion-context@6.0.2]]></purl>
+      <purl><![CDATA[pkg:composer/sebastian/recursion-context@6.0.3]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/694d156164372abbd149a4b85ccda2e4670c0e16]]></url>
-          <comment><![CDATA[dist reference: 694d156164372abbd149a4b85ccda2e4670c0e16]]></comment>
+          <url><![CDATA[https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/f6458abbf32a6c8174f8f26261475dc133b3d9dc]]></url>
+          <comment><![CDATA[dist reference: f6458abbf32a6c8174f8f26261475dc133b3d9dc]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/sebastianbergmann/recursion-context.git]]></url>
-          <comment><![CDATA[source reference: 694d156164372abbd149a4b85ccda2e4670c0e16]]></comment>
+          <comment><![CDATA[source reference: f6458abbf32a6c8174f8f26261475dc133b3d9dc]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://github.com/sebastianbergmann/recursion-context]]></url>
@@ -2327,13 +2327,13 @@
           <comment><![CDATA[as detected from Composer manifest 'support.security']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/sebastianbergmann/recursion-context/tree/6.0.2]]></url>
+          <url><![CDATA[https://github.com/sebastianbergmann/recursion-context/tree/6.0.3]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[694d156164372abbd149a4b85ccda2e4670c0e16]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[694d156164372abbd149a4b85ccda2e4670c0e16]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[f6458abbf32a6c8174f8f26261475dc133b3d9dc]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[f6458abbf32a6c8174f8f26261475dc133b3d9dc]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -3246,7 +3246,7 @@
   </components>
   <dependencies>
     <dependency ref="brianium/paratest-7.8.3.0">
-      <dependency ref="fidry/cpu-core-counter-1.2.0.0"/>
+      <dependency ref="fidry/cpu-core-counter-1.3.0.0"/>
       <dependency ref="jean85/pretty-package-versions-2.1.1.0"/>
       <dependency ref="phpunit/php-code-coverage-11.0.10.0"/>
       <dependency ref="phpunit/php-file-iterator-5.1.0.0"/>
@@ -3271,15 +3271,15 @@
       <dependency ref="psr/container-2.0.2.0"/>
       <dependency ref="symfony/deprecation-contracts-3.6.0.0"/>
     </dependency>
-    <dependency ref="fidry/cpu-core-counter-1.2.0.0"/>
+    <dependency ref="fidry/cpu-core-counter-1.3.0.0"/>
     <dependency ref="filp/whoops-2.18.4.0">
       <dependency ref="psr/log-3.0.2.0"/>
     </dependency>
-    <dependency ref="friendsofphp/php-cs-fixer-3.85.1.0">
+    <dependency ref="friendsofphp/php-cs-fixer-3.86.0.0">
       <dependency ref="clue/ndjson-react-1.3.0.0"/>
       <dependency ref="composer/semver-3.4.3.0"/>
       <dependency ref="composer/xdebug-handler-3.0.5.0"/>
-      <dependency ref="fidry/cpu-core-counter-1.2.0.0"/>
+      <dependency ref="fidry/cpu-core-counter-1.3.0.0"/>
       <dependency ref="react/child-process-0.6.6.0"/>
       <dependency ref="react/event-loop-1.5.0.0"/>
       <dependency ref="react/promise-3.2.0.0"/>
@@ -3299,7 +3299,7 @@
     </dependency>
     <dependency ref="jean85/pretty-package-versions-2.1.1.0"/>
     <dependency ref="myclabs/deep-copy-1.13.4.0"/>
-    <dependency ref="nikic/php-parser-5.6.0.0"/>
+    <dependency ref="nikic/php-parser-5.6.1.0"/>
     <dependency ref="nunomaduro/collision-8.8.2.0">
       <dependency ref="filp/whoops-2.18.4.0"/>
       <dependency ref="nunomaduro/termwind-2.3.1.0"/>
@@ -3323,7 +3323,7 @@
       <dependency ref="ta-tikoma/phpunit-architecture-test-0.8.5.0"/>
     </dependency>
     <dependency ref="pestphp/pest-plugin-mutate-3.0.5.0">
-      <dependency ref="nikic/php-parser-5.6.0.0"/>
+      <dependency ref="nikic/php-parser-5.6.1.0"/>
       <dependency ref="pestphp/pest-plugin-3.0.0.0"/>
       <dependency ref="psr/simple-cache-3.0.0.0"/>
     </dependency>
@@ -3332,7 +3332,7 @@
     </dependency>
     <dependency ref="phar-io/version-3.2.1.0"/>
     <dependency ref="phpdocumentor/reflection-common-2.2.0.0"/>
-    <dependency ref="phpdocumentor/reflection-docblock-5.6.2.0">
+    <dependency ref="phpdocumentor/reflection-docblock-5.6.3.0">
       <dependency ref="doctrine/deprecations-1.1.5.0"/>
       <dependency ref="phpdocumentor/reflection-common-2.2.0.0"/>
       <dependency ref="phpdocumentor/type-resolver-1.10.0.0"/>
@@ -3347,7 +3347,7 @@
     <dependency ref="phpstan/phpdoc-parser-2.2.0.0"/>
     <dependency ref="phpstan/phpstan-2.1.22.0"/>
     <dependency ref="phpunit/php-code-coverage-11.0.10.0">
-      <dependency ref="nikic/php-parser-5.6.0.0"/>
+      <dependency ref="nikic/php-parser-5.6.1.0"/>
       <dependency ref="phpunit/php-file-iterator-5.1.0.0"/>
       <dependency ref="phpunit/php-text-template-4.0.1.0"/>
       <dependency ref="sebastian/code-unit-reverse-lookup-4.0.1.0"/>
@@ -3420,26 +3420,26 @@
       <dependency ref="sebastian/exporter-6.3.0.0"/>
     </dependency>
     <dependency ref="sebastian/complexity-4.0.1.0">
-      <dependency ref="nikic/php-parser-5.6.0.0"/>
+      <dependency ref="nikic/php-parser-5.6.1.0"/>
     </dependency>
     <dependency ref="sebastian/diff-6.0.2.0"/>
     <dependency ref="sebastian/environment-7.2.1.0"/>
     <dependency ref="sebastian/exporter-6.3.0.0">
-      <dependency ref="sebastian/recursion-context-6.0.2.0"/>
+      <dependency ref="sebastian/recursion-context-6.0.3.0"/>
     </dependency>
     <dependency ref="sebastian/global-state-7.0.2.0">
       <dependency ref="sebastian/object-reflector-4.0.1.0"/>
-      <dependency ref="sebastian/recursion-context-6.0.2.0"/>
+      <dependency ref="sebastian/recursion-context-6.0.3.0"/>
     </dependency>
     <dependency ref="sebastian/lines-of-code-3.0.1.0">
-      <dependency ref="nikic/php-parser-5.6.0.0"/>
+      <dependency ref="nikic/php-parser-5.6.1.0"/>
     </dependency>
     <dependency ref="sebastian/object-enumerator-6.0.1.0">
       <dependency ref="sebastian/object-reflector-4.0.1.0"/>
-      <dependency ref="sebastian/recursion-context-6.0.2.0"/>
+      <dependency ref="sebastian/recursion-context-6.0.3.0"/>
     </dependency>
     <dependency ref="sebastian/object-reflector-4.0.1.0"/>
-    <dependency ref="sebastian/recursion-context-6.0.2.0"/>
+    <dependency ref="sebastian/recursion-context-6.0.3.0"/>
     <dependency ref="sebastian/type-5.1.3.0"/>
     <dependency ref="sebastian/version-5.0.2.0"/>
     <dependency ref="spatie/color-1.8.0.0"/>
@@ -3486,8 +3486,8 @@
       <dependency ref="symfony/polyfill-mbstring-1.32.0.0"/>
     </dependency>
     <dependency ref="ta-tikoma/phpunit-architecture-test-0.8.5.0">
-      <dependency ref="nikic/php-parser-5.6.0.0"/>
-      <dependency ref="phpdocumentor/reflection-docblock-5.6.2.0"/>
+      <dependency ref="nikic/php-parser-5.6.1.0"/>
+      <dependency ref="phpdocumentor/reflection-docblock-5.6.3.0"/>
       <dependency ref="phpunit/phpunit-11.5.15.0"/>
       <dependency ref="symfony/finder-7.3.2.0"/>
     </dependency>
@@ -3497,7 +3497,7 @@
       <dependency ref="fakerphp/faker-1.24.1.0"/>
       <dependency ref="spatie/color-1.8.0.0"/>
       <dependency ref="pestphp/pest-3.8.2.0"/>
-      <dependency ref="friendsofphp/php-cs-fixer-3.85.1.0"/>
+      <dependency ref="friendsofphp/php-cs-fixer-3.86.0.0"/>
       <dependency ref="phpstan/phpstan-2.1.22.0"/>
     </dependency>
   </dependencies>
