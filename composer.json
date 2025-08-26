@@ -35,7 +35,7 @@
         "spatie/color": "^1.8"
     },
     "require-dev": {
-        "pestphp/pest": "^3.8.2",
+        "pestphp/pest": "^3.8.2 || ^4.0.0",
         "friendsofphp/php-cs-fixer": "^3.75.0",
         "phpstan/phpstan": "^2.1.17"
     },
