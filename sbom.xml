@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:706dcd91-719f-40de-8c64-28acc35c872f">
+<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:7a9f4bef-4302-4bfb-9d4d-81066bb23832">
   <metadata>
-    <timestamp><![CDATA[2025-09-29T02:29:01Z]]></timestamp>
+    <timestamp><![CDATA[2025-10-06T02:28:25Z]]></timestamp>
     <tools>
       <tool>
         <name><![CDATA[composer]]></name>
@@ -50,8 +50,8 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[ceccf2160e3c4c337cee528ae8c6710bcd46f36b]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[ceccf2160e3c4c337cee528ae8c6710bcd46f36b]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[c68cc52f47b0c262fde7b94e39542382af8228a0]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[c68cc52f47b0c262fde7b94e39542382af8228a0]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
       </properties>
     </component>
@@ -1029,25 +1029,21 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="phpstan/phpstan-2.1.29.0">
+    <component type="library" bom-ref="phpstan/phpstan-2.1.30.0">
       <group><![CDATA[phpstan]]></group>
       <name><![CDATA[phpstan]]></name>
-      <version><![CDATA[2.1.29]]></version>
+      <version><![CDATA[2.1.30]]></version>
       <description><![CDATA[PHPStan - PHP Static Analysis Tool]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/phpstan/phpstan@2.1.29]]></purl>
+      <purl><![CDATA[pkg:composer/phpstan/phpstan@2.1.30]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/phpstan/phpstan/zipball/d618573eed4a1b6b75e37b2e0b65ac65c885d88e]]></url>
-          <comment><![CDATA[dist reference: d618573eed4a1b6b75e37b2e0b65ac65c885d88e]]></comment>
-        </reference>
-        <reference type="vcs">
-          <url><![CDATA[https://github.com/phpstan/phpstan-phar-composer-source.git]]></url>
-          <comment><![CDATA[source reference: git]]></comment>
+          <url><![CDATA[https://api.github.com/repos/phpstan/phpstan/zipball/a4a7f159927983dd4f7c8020ed227d80b7f39d7d]]></url>
+          <comment><![CDATA[dist reference: a4a7f159927983dd4f7c8020ed227d80b7f39d7d]]></comment>
         </reference>
         <reference type="documentation">
           <url><![CDATA[https://phpstan.org/user-guide/getting-started]]></url>
@@ -1071,8 +1067,7 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[d618573eed4a1b6b75e37b2e0b65ac65c885d88e]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[git]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[a4a7f159927983dd4f7c8020ed227d80b7f39d7d]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -3383,7 +3378,7 @@
       <dependency ref="phpstan/phpdoc-parser-2.3.0.0"/>
     </dependency>
     <dependency ref="phpstan/phpdoc-parser-2.3.0.0"/>
-    <dependency ref="phpstan/phpstan-2.1.29.0"/>
+    <dependency ref="phpstan/phpstan-2.1.30.0"/>
     <dependency ref="phpunit/php-code-coverage-11.0.11.0">
       <dependency ref="nikic/php-parser-5.6.1.0"/>
       <dependency ref="phpunit/php-file-iterator-5.1.0.0"/>
@@ -3537,7 +3532,7 @@
       <dependency ref="spatie/color-1.8.0.0"/>
       <dependency ref="pestphp/pest-3.8.4.0"/>
       <dependency ref="friendsofphp/php-cs-fixer-3.88.2.0"/>
-      <dependency ref="phpstan/phpstan-2.1.29.0"/>
+      <dependency ref="phpstan/phpstan-2.1.30.0"/>
     </dependency>
   </dependencies>
 </bom>
