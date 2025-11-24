@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:f9a65d44-30e8-49d0-8a81-cbdfbe81befc">
+<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:515f658c-240b-4af5-866b-f69787d7a78f">
   <metadata>
-    <timestamp><![CDATA[2025-11-17T02:31:40Z]]></timestamp>
+    <timestamp><![CDATA[2025-11-24T02:34:28Z]]></timestamp>
     <tools>
       <tool>
         <name><![CDATA[composer]]></name>
-        <version><![CDATA[2.9.1]]></version>
+        <version><![CDATA[2.9.2]]></version>
       </tool>
       <tool>
         <vendor><![CDATA[cyclonedx]]></vendor>
@@ -20,7 +20,7 @@
       <author><![CDATA[Niklas Brunberg]]></author>
       <group><![CDATA[niklasbr]]></group>
       <name><![CDATA[quick-magick]]></name>
-      <version><![CDATA[dev-main d96aee5]]></version>
+      <version><![CDATA[dev-main]]></version>
       <description><![CDATA[Image placeholder provider for Faker]]></description>
       <licenses>
         <license>
@@ -30,7 +30,7 @@
           <name><![CDATA[BSD-3-Clause as donationware]]></name>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/niklasbr/quick-magick@dev-main%20d96aee5]]></purl>
+      <purl><![CDATA[pkg:composer/niklasbr/quick-magick@dev-main]]></purl>
       <externalReferences>
         <reference type="website">
           <url><![CDATA[https://github.com/niklasbr/quick-magick]]></url>
@@ -50,8 +50,8 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[d96aee598d6e18f19bc9cd6df682a2b7ecf788ed]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[d96aee598d6e18f19bc9cd6df682a2b7ecf788ed]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[df0abc7b50b33bcd507489b597270b8d9e56a684]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[df0abc7b50b33bcd507489b597270b8d9e56a684]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
       </properties>
     </component>
@@ -449,39 +449,39 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="friendsofphp/php-cs-fixer-3.89.2.0">
+    <component type="library" bom-ref="friendsofphp/php-cs-fixer-3.90.0.0">
       <author><![CDATA[Fabien Potencier, Dariusz Rumiński]]></author>
       <group><![CDATA[friendsofphp]]></group>
       <name><![CDATA[php-cs-fixer]]></name>
-      <version><![CDATA[v3.89.2]]></version>
+      <version><![CDATA[v3.90.0]]></version>
       <description><![CDATA[A tool to automatically fix PHP code style]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/friendsofphp/php-cs-fixer@v3.89.2]]></purl>
+      <purl><![CDATA[pkg:composer/friendsofphp/php-cs-fixer@v3.90.0]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/7569658f91e475ec93b99bd5964b059ad1336dcf]]></url>
-          <comment><![CDATA[dist reference: 7569658f91e475ec93b99bd5964b059ad1336dcf]]></comment>
+          <url><![CDATA[https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/ad732c2e9299c9743f9c55ae53cc0e7642ab1155]]></url>
+          <comment><![CDATA[dist reference: ad732c2e9299c9743f9c55ae53cc0e7642ab1155]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git]]></url>
-          <comment><![CDATA[source reference: 7569658f91e475ec93b99bd5964b059ad1336dcf]]></comment>
+          <comment><![CDATA[source reference: ad732c2e9299c9743f9c55ae53cc0e7642ab1155]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.issues']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.89.2]]></url>
+          <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.90.0]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[7569658f91e475ec93b99bd5964b059ad1336dcf]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[7569658f91e475ec93b99bd5964b059ad1336dcf]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[ad732c2e9299c9743f9c55ae53cc0e7642ab1155]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[ad732c2e9299c9743f9c55ae53cc0e7642ab1155]]></property>
         <property name="cdx:composer:package:type"><![CDATA[application]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -596,26 +596,26 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="nunomaduro/collision-8.8.2.0">
+    <component type="library" bom-ref="nunomaduro/collision-8.8.3.0">
       <author><![CDATA[Nuno Maduro]]></author>
       <group><![CDATA[nunomaduro]]></group>
       <name><![CDATA[collision]]></name>
-      <version><![CDATA[v8.8.2]]></version>
+      <version><![CDATA[v8.8.3]]></version>
       <description><![CDATA[Cli error handling for console/command-line PHP applications.]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/nunomaduro/collision@v8.8.2]]></purl>
+      <purl><![CDATA[pkg:composer/nunomaduro/collision@v8.8.3]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/nunomaduro/collision/zipball/60207965f9b7b7a4ce15a0f75d57f9dadb105bdb]]></url>
-          <comment><![CDATA[dist reference: 60207965f9b7b7a4ce15a0f75d57f9dadb105bdb]]></comment>
+          <url><![CDATA[https://api.github.com/repos/nunomaduro/collision/zipball/1dc9e88d105699d0fee8bb18890f41b274f6b4c4]]></url>
+          <comment><![CDATA[dist reference: 1dc9e88d105699d0fee8bb18890f41b274f6b4c4]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/nunomaduro/collision.git]]></url>
-          <comment><![CDATA[source reference: 60207965f9b7b7a4ce15a0f75d57f9dadb105bdb]]></comment>
+          <comment><![CDATA[source reference: 1dc9e88d105699d0fee8bb18890f41b274f6b4c4]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/nunomaduro/collision/issues]]></url>
@@ -627,45 +627,45 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[60207965f9b7b7a4ce15a0f75d57f9dadb105bdb]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[60207965f9b7b7a4ce15a0f75d57f9dadb105bdb]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[1dc9e88d105699d0fee8bb18890f41b274f6b4c4]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[1dc9e88d105699d0fee8bb18890f41b274f6b4c4]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="nunomaduro/termwind-2.3.2.0">
+    <component type="library" bom-ref="nunomaduro/termwind-2.3.3.0">
       <author><![CDATA[Nuno Maduro]]></author>
       <group><![CDATA[nunomaduro]]></group>
       <name><![CDATA[termwind]]></name>
-      <version><![CDATA[v2.3.2]]></version>
+      <version><![CDATA[v2.3.3]]></version>
       <description><![CDATA[Its like Tailwind CSS, but for the console.]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/nunomaduro/termwind@v2.3.2]]></purl>
+      <purl><![CDATA[pkg:composer/nunomaduro/termwind@v2.3.3]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/nunomaduro/termwind/zipball/eb61920a53057a7debd718a5b89c2178032b52c0]]></url>
-          <comment><![CDATA[dist reference: eb61920a53057a7debd718a5b89c2178032b52c0]]></comment>
+          <url><![CDATA[https://api.github.com/repos/nunomaduro/termwind/zipball/6fb2a640ff502caace8e05fd7be3b503a7e1c017]]></url>
+          <comment><![CDATA[dist reference: 6fb2a640ff502caace8e05fd7be3b503a7e1c017]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/nunomaduro/termwind.git]]></url>
-          <comment><![CDATA[source reference: eb61920a53057a7debd718a5b89c2178032b52c0]]></comment>
+          <comment><![CDATA[source reference: 6fb2a640ff502caace8e05fd7be3b503a7e1c017]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/nunomaduro/termwind/issues]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.issues']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/nunomaduro/termwind/tree/v2.3.2]]></url>
+          <url><![CDATA[https://github.com/nunomaduro/termwind/tree/v2.3.3]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[eb61920a53057a7debd718a5b89c2178032b52c0]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[eb61920a53057a7debd718a5b89c2178032b52c0]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[6fb2a640ff502caace8e05fd7be3b503a7e1c017]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[6fb2a640ff502caace8e05fd7be3b503a7e1c017]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -919,76 +919,76 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="phpdocumentor/reflection-docblock-5.6.3.0">
+    <component type="library" bom-ref="phpdocumentor/reflection-docblock-5.6.4.0">
       <author><![CDATA[Mike van Riel, Jaap van Otterdijk]]></author>
       <group><![CDATA[phpdocumentor]]></group>
       <name><![CDATA[reflection-docblock]]></name>
-      <version><![CDATA[5.6.3]]></version>
+      <version><![CDATA[5.6.4]]></version>
       <description><![CDATA[With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/phpdocumentor/reflection-docblock@5.6.3]]></purl>
+      <purl><![CDATA[pkg:composer/phpdocumentor/reflection-docblock@5.6.4]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/94f8051919d1b0369a6bcc7931d679a511c03fe9]]></url>
-          <comment><![CDATA[dist reference: 94f8051919d1b0369a6bcc7931d679a511c03fe9]]></comment>
+          <url><![CDATA[https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/90a04bcbf03784066f16038e87e23a0a83cee3c2]]></url>
+          <comment><![CDATA[dist reference: 90a04bcbf03784066f16038e87e23a0a83cee3c2]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/phpDocumentor/ReflectionDocBlock.git]]></url>
-          <comment><![CDATA[source reference: 94f8051919d1b0369a6bcc7931d679a511c03fe9]]></comment>
+          <comment><![CDATA[source reference: 90a04bcbf03784066f16038e87e23a0a83cee3c2]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/phpDocumentor/ReflectionDocBlock/issues]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.issues']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/phpDocumentor/ReflectionDocBlock/tree/5.6.3]]></url>
+          <url><![CDATA[https://github.com/phpDocumentor/ReflectionDocBlock/tree/5.6.4]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[94f8051919d1b0369a6bcc7931d679a511c03fe9]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[94f8051919d1b0369a6bcc7931d679a511c03fe9]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[90a04bcbf03784066f16038e87e23a0a83cee3c2]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[90a04bcbf03784066f16038e87e23a0a83cee3c2]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="phpdocumentor/type-resolver-1.10.0.0">
+    <component type="library" bom-ref="phpdocumentor/type-resolver-1.11.1.0">
       <author><![CDATA[Mike van Riel]]></author>
       <group><![CDATA[phpdocumentor]]></group>
       <name><![CDATA[type-resolver]]></name>
-      <version><![CDATA[1.10.0]]></version>
+      <version><![CDATA[1.11.1]]></version>
       <description><![CDATA[A PSR-5 based resolver of Class names, Types and Structural Element Names]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/phpdocumentor/type-resolver@1.10.0]]></purl>
+      <purl><![CDATA[pkg:composer/phpdocumentor/type-resolver@1.11.1]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/679e3ce485b99e84c775d28e2e96fade9a7fb50a]]></url>
-          <comment><![CDATA[dist reference: 679e3ce485b99e84c775d28e2e96fade9a7fb50a]]></comment>
+          <url><![CDATA[https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/f626740b38009078de0dc8b2b9dc4e7f749c6eba]]></url>
+          <comment><![CDATA[dist reference: f626740b38009078de0dc8b2b9dc4e7f749c6eba]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/phpDocumentor/TypeResolver.git]]></url>
-          <comment><![CDATA[source reference: 679e3ce485b99e84c775d28e2e96fade9a7fb50a]]></comment>
+          <comment><![CDATA[source reference: f626740b38009078de0dc8b2b9dc4e7f749c6eba]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/phpDocumentor/TypeResolver/issues]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.issues']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/phpDocumentor/TypeResolver/tree/1.10.0]]></url>
+          <url><![CDATA[https://github.com/phpDocumentor/TypeResolver/tree/1.11.1]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[679e3ce485b99e84c775d28e2e96fade9a7fb50a]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[679e3ce485b99e84c775d28e2e96fade9a7fb50a]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[f626740b38009078de0dc8b2b9dc4e7f749c6eba]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[f626740b38009078de0dc8b2b9dc4e7f749c6eba]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -1563,76 +1563,76 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="react/dns-1.13.0.0">
+    <component type="library" bom-ref="react/dns-1.14.0.0">
       <author><![CDATA[Christian Lück, Cees-Jan Kiewiet, Jan Sorgalla, Chris Boden]]></author>
       <group><![CDATA[react]]></group>
       <name><![CDATA[dns]]></name>
-      <version><![CDATA[v1.13.0]]></version>
+      <version><![CDATA[v1.14.0]]></version>
       <description><![CDATA[Async DNS resolver for ReactPHP]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/react/dns@v1.13.0]]></purl>
+      <purl><![CDATA[pkg:composer/react/dns@v1.14.0]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/reactphp/dns/zipball/eb8ae001b5a455665c89c1df97f6fb682f8fb0f5]]></url>
-          <comment><![CDATA[dist reference: eb8ae001b5a455665c89c1df97f6fb682f8fb0f5]]></comment>
+          <url><![CDATA[https://api.github.com/repos/reactphp/dns/zipball/7562c05391f42701c1fccf189c8225fece1cd7c3]]></url>
+          <comment><![CDATA[dist reference: 7562c05391f42701c1fccf189c8225fece1cd7c3]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/reactphp/dns.git]]></url>
-          <comment><![CDATA[source reference: eb8ae001b5a455665c89c1df97f6fb682f8fb0f5]]></comment>
+          <comment><![CDATA[source reference: 7562c05391f42701c1fccf189c8225fece1cd7c3]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/reactphp/dns/issues]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.issues']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/reactphp/dns/tree/v1.13.0]]></url>
+          <url><![CDATA[https://github.com/reactphp/dns/tree/v1.14.0]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[eb8ae001b5a455665c89c1df97f6fb682f8fb0f5]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[eb8ae001b5a455665c89c1df97f6fb682f8fb0f5]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[7562c05391f42701c1fccf189c8225fece1cd7c3]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[7562c05391f42701c1fccf189c8225fece1cd7c3]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="react/event-loop-1.5.0.0">
+    <component type="library" bom-ref="react/event-loop-1.6.0.0">
       <author><![CDATA[Christian Lück, Cees-Jan Kiewiet, Jan Sorgalla, Chris Boden]]></author>
       <group><![CDATA[react]]></group>
       <name><![CDATA[event-loop]]></name>
-      <version><![CDATA[v1.5.0]]></version>
+      <version><![CDATA[v1.6.0]]></version>
       <description><![CDATA[ReactPHP's core reactor event loop that libraries can use for evented I/O.]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/react/event-loop@v1.5.0]]></purl>
+      <purl><![CDATA[pkg:composer/react/event-loop@v1.6.0]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/reactphp/event-loop/zipball/bbe0bd8c51ffc05ee43f1729087ed3bdf7d53354]]></url>
-          <comment><![CDATA[dist reference: bbe0bd8c51ffc05ee43f1729087ed3bdf7d53354]]></comment>
+          <url><![CDATA[https://api.github.com/repos/reactphp/event-loop/zipball/ba276bda6083df7e0050fd9b33f66ad7a4ac747a]]></url>
+          <comment><![CDATA[dist reference: ba276bda6083df7e0050fd9b33f66ad7a4ac747a]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/reactphp/event-loop.git]]></url>
-          <comment><![CDATA[source reference: bbe0bd8c51ffc05ee43f1729087ed3bdf7d53354]]></comment>
+          <comment><![CDATA[source reference: ba276bda6083df7e0050fd9b33f66ad7a4ac747a]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/reactphp/event-loop/issues]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.issues']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/reactphp/event-loop/tree/v1.5.0]]></url>
+          <url><![CDATA[https://github.com/reactphp/event-loop/tree/v1.6.0]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[bbe0bd8c51ffc05ee43f1729087ed3bdf7d53354]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[bbe0bd8c51ffc05ee43f1729087ed3bdf7d53354]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[ba276bda6083df7e0050fd9b33f66ad7a4ac747a]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[ba276bda6083df7e0050fd9b33f66ad7a4ac747a]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -1674,39 +1674,39 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="react/socket-1.16.0.0">
+    <component type="library" bom-ref="react/socket-1.17.0.0">
       <author><![CDATA[Christian Lück, Cees-Jan Kiewiet, Jan Sorgalla, Chris Boden]]></author>
       <group><![CDATA[react]]></group>
       <name><![CDATA[socket]]></name>
-      <version><![CDATA[v1.16.0]]></version>
+      <version><![CDATA[v1.17.0]]></version>
       <description><![CDATA[Async, streaming plaintext TCP/IP and secure TLS socket server and client connections for ReactPHP]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/react/socket@v1.16.0]]></purl>
+      <purl><![CDATA[pkg:composer/react/socket@v1.17.0]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/reactphp/socket/zipball/23e4ff33ea3e160d2d1f59a0e6050e4b0fb0eac1]]></url>
-          <comment><![CDATA[dist reference: 23e4ff33ea3e160d2d1f59a0e6050e4b0fb0eac1]]></comment>
+          <url><![CDATA[https://api.github.com/repos/reactphp/socket/zipball/ef5b17b81f6f60504c539313f94f2d826c5faa08]]></url>
+          <comment><![CDATA[dist reference: ef5b17b81f6f60504c539313f94f2d826c5faa08]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/reactphp/socket.git]]></url>
-          <comment><![CDATA[source reference: 23e4ff33ea3e160d2d1f59a0e6050e4b0fb0eac1]]></comment>
+          <comment><![CDATA[source reference: ef5b17b81f6f60504c539313f94f2d826c5faa08]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/reactphp/socket/issues]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.issues']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/reactphp/socket/tree/v1.16.0]]></url>
+          <url><![CDATA[https://github.com/reactphp/socket/tree/v1.17.0]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[23e4ff33ea3e160d2d1f59a0e6050e4b0fb0eac1]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[23e4ff33ea3e160d2d1f59a0e6050e4b0fb0eac1]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[ef5b17b81f6f60504c539313f94f2d826c5faa08]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[ef5b17b81f6f60504c539313f94f2d826c5faa08]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -3201,39 +3201,39 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="theseer/tokenizer-1.3.0.0">
+    <component type="library" bom-ref="theseer/tokenizer-1.3.1.0">
       <author><![CDATA[Arne Blankerts]]></author>
       <group><![CDATA[theseer]]></group>
       <name><![CDATA[tokenizer]]></name>
-      <version><![CDATA[1.3.0]]></version>
+      <version><![CDATA[1.3.1]]></version>
       <description><![CDATA[A small library for converting tokenized PHP source code into XML and potentially other formats]]></description>
       <licenses>
         <license>
           <id><![CDATA[BSD-3-Clause]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/theseer/tokenizer@1.3.0]]></purl>
+      <purl><![CDATA[pkg:composer/theseer/tokenizer@1.3.1]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/theseer/tokenizer/zipball/d74205c497bfbca49f34d4bc4c19c17e22db4ebb]]></url>
-          <comment><![CDATA[dist reference: d74205c497bfbca49f34d4bc4c19c17e22db4ebb]]></comment>
+          <url><![CDATA[https://api.github.com/repos/theseer/tokenizer/zipball/b7489ce515e168639d17feec34b8847c326b0b3c]]></url>
+          <comment><![CDATA[dist reference: b7489ce515e168639d17feec34b8847c326b0b3c]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/theseer/tokenizer.git]]></url>
-          <comment><![CDATA[source reference: d74205c497bfbca49f34d4bc4c19c17e22db4ebb]]></comment>
+          <comment><![CDATA[source reference: b7489ce515e168639d17feec34b8847c326b0b3c]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/theseer/tokenizer/issues]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.issues']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/theseer/tokenizer/tree/1.3.0]]></url>
+          <url><![CDATA[https://github.com/theseer/tokenizer/tree/1.3.1]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[d74205c497bfbca49f34d4bc4c19c17e22db4ebb]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[d74205c497bfbca49f34d4bc4c19c17e22db4ebb]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[b7489ce515e168639d17feec34b8847c326b0b3c]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[b7489ce515e168639d17feec34b8847c326b0b3c]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -3307,14 +3307,14 @@
     <dependency ref="filp/whoops-2.18.4.0">
       <dependency ref="psr/log-3.0.2.0"/>
     </dependency>
-    <dependency ref="friendsofphp/php-cs-fixer-3.89.2.0">
+    <dependency ref="friendsofphp/php-cs-fixer-3.90.0.0">
       <dependency ref="clue/ndjson-react-1.3.0.0"/>
       <dependency ref="composer/semver-3.4.4.0"/>
       <dependency ref="composer/xdebug-handler-3.0.5.0"/>
       <dependency ref="fidry/cpu-core-counter-1.3.0.0"/>
       <dependency ref="react/child-process-0.6.6.0"/>
-      <dependency ref="react/event-loop-1.5.0.0"/>
-      <dependency ref="react/socket-1.16.0.0"/>
+      <dependency ref="react/event-loop-1.6.0.0"/>
+      <dependency ref="react/socket-1.17.0.0"/>
       <dependency ref="react/stream-1.4.0.0"/>
       <dependency ref="sebastian/diff-6.0.2.0"/>
       <dependency ref="symfony/console-7.3.6.0"/>
@@ -3332,18 +3332,18 @@
     <dependency ref="jean85/pretty-package-versions-2.1.1.0"/>
     <dependency ref="myclabs/deep-copy-1.13.4.0"/>
     <dependency ref="nikic/php-parser-5.6.2.0"/>
-    <dependency ref="nunomaduro/collision-8.8.2.0">
+    <dependency ref="nunomaduro/collision-8.8.3.0">
       <dependency ref="filp/whoops-2.18.4.0"/>
-      <dependency ref="nunomaduro/termwind-2.3.2.0"/>
+      <dependency ref="nunomaduro/termwind-2.3.3.0"/>
       <dependency ref="symfony/console-7.3.6.0"/>
     </dependency>
-    <dependency ref="nunomaduro/termwind-2.3.2.0">
+    <dependency ref="nunomaduro/termwind-2.3.3.0">
       <dependency ref="symfony/console-7.3.6.0"/>
     </dependency>
     <dependency ref="pestphp/pest-3.8.4.0">
       <dependency ref="brianium/paratest-7.8.4.0"/>
-      <dependency ref="nunomaduro/collision-8.8.2.0"/>
-      <dependency ref="nunomaduro/termwind-2.3.2.0"/>
+      <dependency ref="nunomaduro/collision-8.8.3.0"/>
+      <dependency ref="nunomaduro/termwind-2.3.3.0"/>
       <dependency ref="pestphp/pest-plugin-3.0.0.0"/>
       <dependency ref="pestphp/pest-plugin-arch-3.1.1.0"/>
       <dependency ref="pestphp/pest-plugin-mutate-3.0.5.0"/>
@@ -3364,14 +3364,14 @@
     </dependency>
     <dependency ref="phar-io/version-3.2.1.0"/>
     <dependency ref="phpdocumentor/reflection-common-2.2.0.0"/>
-    <dependency ref="phpdocumentor/reflection-docblock-5.6.3.0">
+    <dependency ref="phpdocumentor/reflection-docblock-5.6.4.0">
       <dependency ref="doctrine/deprecations-1.1.5.0"/>
       <dependency ref="phpdocumentor/reflection-common-2.2.0.0"/>
-      <dependency ref="phpdocumentor/type-resolver-1.10.0.0"/>
+      <dependency ref="phpdocumentor/type-resolver-1.11.1.0"/>
       <dependency ref="phpstan/phpdoc-parser-2.3.0.0"/>
       <dependency ref="webmozart/assert-1.12.1.0"/>
     </dependency>
-    <dependency ref="phpdocumentor/type-resolver-1.10.0.0">
+    <dependency ref="phpdocumentor/type-resolver-1.11.1.0">
       <dependency ref="doctrine/deprecations-1.1.5.0"/>
       <dependency ref="phpdocumentor/reflection-common-2.2.0.0"/>
       <dependency ref="phpstan/phpdoc-parser-2.3.0.0"/>
@@ -3387,7 +3387,7 @@
       <dependency ref="sebastian/environment-7.2.1.0"/>
       <dependency ref="sebastian/lines-of-code-3.0.1.0"/>
       <dependency ref="sebastian/version-5.0.2.0"/>
-      <dependency ref="theseer/tokenizer-1.3.0.0"/>
+      <dependency ref="theseer/tokenizer-1.3.1.0"/>
     </dependency>
     <dependency ref="phpunit/php-file-iterator-5.1.0.0"/>
     <dependency ref="phpunit/php-invoker-5.0.1.0"/>
@@ -3423,26 +3423,26 @@
     </dependency>
     <dependency ref="react/child-process-0.6.6.0">
       <dependency ref="evenement/evenement-3.0.2.0"/>
-      <dependency ref="react/event-loop-1.5.0.0"/>
+      <dependency ref="react/event-loop-1.6.0.0"/>
       <dependency ref="react/stream-1.4.0.0"/>
     </dependency>
-    <dependency ref="react/dns-1.13.0.0">
+    <dependency ref="react/dns-1.14.0.0">
       <dependency ref="react/cache-1.2.0.0"/>
-      <dependency ref="react/event-loop-1.5.0.0"/>
+      <dependency ref="react/event-loop-1.6.0.0"/>
       <dependency ref="react/promise-3.3.0.0"/>
     </dependency>
-    <dependency ref="react/event-loop-1.5.0.0"/>
+    <dependency ref="react/event-loop-1.6.0.0"/>
     <dependency ref="react/promise-3.3.0.0"/>
-    <dependency ref="react/socket-1.16.0.0">
+    <dependency ref="react/socket-1.17.0.0">
       <dependency ref="evenement/evenement-3.0.2.0"/>
-      <dependency ref="react/dns-1.13.0.0"/>
-      <dependency ref="react/event-loop-1.5.0.0"/>
+      <dependency ref="react/dns-1.14.0.0"/>
+      <dependency ref="react/event-loop-1.6.0.0"/>
       <dependency ref="react/promise-3.3.0.0"/>
       <dependency ref="react/stream-1.4.0.0"/>
     </dependency>
     <dependency ref="react/stream-1.4.0.0">
       <dependency ref="evenement/evenement-3.0.2.0"/>
-      <dependency ref="react/event-loop-1.5.0.0"/>
+      <dependency ref="react/event-loop-1.6.0.0"/>
     </dependency>
     <dependency ref="sebastian/cli-parser-3.0.2.0"/>
     <dependency ref="sebastian/code-unit-3.0.3.0"/>
@@ -3520,17 +3520,17 @@
     </dependency>
     <dependency ref="ta-tikoma/phpunit-architecture-test-0.8.5.0">
       <dependency ref="nikic/php-parser-5.6.2.0"/>
-      <dependency ref="phpdocumentor/reflection-docblock-5.6.3.0"/>
+      <dependency ref="phpdocumentor/reflection-docblock-5.6.4.0"/>
       <dependency ref="phpunit/phpunit-11.5.33.0"/>
       <dependency ref="symfony/finder-7.3.5.0"/>
     </dependency>
-    <dependency ref="theseer/tokenizer-1.3.0.0"/>
+    <dependency ref="theseer/tokenizer-1.3.1.0"/>
     <dependency ref="webmozart/assert-1.12.1.0"/>
     <dependency ref="niklasbr/quick-magick-dev-main">
       <dependency ref="fakerphp/faker-1.24.1.0"/>
       <dependency ref="spatie/color-1.8.0.0"/>
       <dependency ref="pestphp/pest-3.8.4.0"/>
-      <dependency ref="friendsofphp/php-cs-fixer-3.89.2.0"/>
+      <dependency ref="friendsofphp/php-cs-fixer-3.90.0.0"/>
       <dependency ref="phpstan/phpstan-2.1.32.0"/>
     </dependency>
   </dependencies>
