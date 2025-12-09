@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1749895327">
-  <project timestamp="1749895327">
-    <file name="/home/runner/work/quick-magick/quick-magick/src/Enums/Format.php">
-      <metrics loc="17" ncloc="13" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
-    </file>
-    <file name="/home/runner/work/quick-magick/quick-magick/src/Enums/Type.php">
-      <metrics loc="25" ncloc="20" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
-    </file>
+<coverage generated="1765289504">
+  <project timestamp="1765289504" name="Clover Coverage">
+    <package name="NiklasBr\QuickMagick\Enums">
+      <file name="/home/runner/work/quick-magick/quick-magick/src/Enums/Format.php">
+        <class name="NiklasBr\QuickMagick\Enums\Format" namespace="NiklasBr\QuickMagick\Enums">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="17" ncloc="13" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/home/runner/work/quick-magick/quick-magick/src/Enums/Type.php">
+        <class name="NiklasBr\QuickMagick\Enums\Type" namespace="NiklasBr\QuickMagick\Enums">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="25" ncloc="20" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
     <package name="NiklasBr\QuickMagick\Formatters">
       <file name="/home/runner/work/quick-magick/quick-magick/src/Formatters/Gradients.php">
         <class name="NiklasBr\QuickMagick\Formatters\Gradients" namespace="NiklasBr\QuickMagick\Formatters">
