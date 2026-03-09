@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:90483395-5321-4479-93a5-50ac1e94ae26">
+<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:2c96ae7c-4ff6-483e-8714-b020514fea8e">
   <metadata>
-    <timestamp><![CDATA[2026-03-02T02:55:33Z]]></timestamp>
+    <timestamp><![CDATA[2026-03-09T04:08:09Z]]></timestamp>
     <tools>
       <tool>
         <name><![CDATA[composer]]></name>
@@ -50,8 +50,8 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[bdc547d2a92e19482f175e6baccb93f655f67bd9]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[bdc547d2a92e19482f175e6baccb93f655f67bd9]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[103a58f03b0fa6addffb28c0ebda72c2159746ca]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[103a58f03b0fa6addffb28c0ebda72c2159746ca]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
       </properties>
     </component>
@@ -2441,39 +2441,39 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="symfony/console-7.4.6.0">
+    <component type="library" bom-ref="symfony/console-7.4.7.0">
       <author><![CDATA[Fabien Potencier, Symfony Community]]></author>
       <group><![CDATA[symfony]]></group>
       <name><![CDATA[console]]></name>
-      <version><![CDATA[v7.4.6]]></version>
+      <version><![CDATA[v7.4.7]]></version>
       <description><![CDATA[Eases the creation of beautiful and testable command line interfaces]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/symfony/console@v7.4.6]]></purl>
+      <purl><![CDATA[pkg:composer/symfony/console@v7.4.7]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/symfony/console/zipball/6d643a93b47398599124022eb24d97c153c12f27]]></url>
-          <comment><![CDATA[dist reference: 6d643a93b47398599124022eb24d97c153c12f27]]></comment>
+          <url><![CDATA[https://api.github.com/repos/symfony/console/zipball/e1e6770440fb9c9b0cf725f81d1361ad1835329d]]></url>
+          <comment><![CDATA[dist reference: e1e6770440fb9c9b0cf725f81d1361ad1835329d]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/symfony/console.git]]></url>
-          <comment><![CDATA[source reference: 6d643a93b47398599124022eb24d97c153c12f27]]></comment>
+          <comment><![CDATA[source reference: e1e6770440fb9c9b0cf725f81d1361ad1835329d]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://symfony.com]]></url>
           <comment><![CDATA[as detected from Composer manifest 'homepage']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/symfony/console/tree/v7.4.6]]></url>
+          <url><![CDATA[https://github.com/symfony/console/tree/v7.4.7]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[6d643a93b47398599124022eb24d97c153c12f27]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[6d643a93b47398599124022eb24d97c153c12f27]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[e1e6770440fb9c9b0cf725f81d1361ad1835329d]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[e1e6770440fb9c9b0cf725f81d1361ad1835329d]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -3227,7 +3227,7 @@
       <dependency ref="phpunit/php-timer-8.0.0.0"/>
       <dependency ref="phpunit/phpunit-12.5.12.0"/>
       <dependency ref="sebastian/environment-8.0.3.0"/>
-      <dependency ref="symfony/console-7.4.6.0"/>
+      <dependency ref="symfony/console-7.4.7.0"/>
       <dependency ref="symfony/process-7.4.5.0"/>
     </dependency>
     <dependency ref="clue/ndjson-react-1.3.0.0">
@@ -3259,7 +3259,7 @@
       <dependency ref="react/socket-1.17.0.0"/>
       <dependency ref="react/stream-1.4.0.0"/>
       <dependency ref="sebastian/diff-7.0.0.0"/>
-      <dependency ref="symfony/console-7.4.6.0"/>
+      <dependency ref="symfony/console-7.4.7.0"/>
       <dependency ref="symfony/event-dispatcher-7.4.4.0"/>
       <dependency ref="symfony/filesystem-7.4.6.0"/>
       <dependency ref="symfony/finder-7.4.6.0"/>
@@ -3277,10 +3277,10 @@
     <dependency ref="nunomaduro/collision-8.9.1.0">
       <dependency ref="filp/whoops-2.18.4.0"/>
       <dependency ref="nunomaduro/termwind-2.4.0.0"/>
-      <dependency ref="symfony/console-7.4.6.0"/>
+      <dependency ref="symfony/console-7.4.7.0"/>
     </dependency>
     <dependency ref="nunomaduro/termwind-2.4.0.0">
-      <dependency ref="symfony/console-7.4.6.0"/>
+      <dependency ref="symfony/console-7.4.7.0"/>
     </dependency>
     <dependency ref="pestphp/pest-4.4.1.0">
       <dependency ref="brianium/paratest-7.19.0.0"/>
@@ -3420,7 +3420,7 @@
     <dependency ref="sebastian/version-6.0.0.0"/>
     <dependency ref="spatie/color-2.1.0.0"/>
     <dependency ref="staabm/side-effects-detector-1.0.5.0"/>
-    <dependency ref="symfony/console-7.4.6.0">
+    <dependency ref="symfony/console-7.4.7.0">
       <dependency ref="symfony/deprecation-contracts-3.6.0.0"/>
       <dependency ref="symfony/polyfill-mbstring-1.33.0.0"/>
       <dependency ref="symfony/service-contracts-3.6.1.0"/>
