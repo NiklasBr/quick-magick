@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:2c96ae7c-4ff6-483e-8714-b020514fea8e">
+<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:6463a311-02f6-49c8-a877-68d5f843a36d">
   <metadata>
-    <timestamp><![CDATA[2026-03-09T04:08:09Z]]></timestamp>
+    <timestamp><![CDATA[2026-03-16T03:00:55Z]]></timestamp>
     <tools>
       <tool>
         <name><![CDATA[composer]]></name>
@@ -50,8 +50,8 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[103a58f03b0fa6addffb28c0ebda72c2159746ca]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[103a58f03b0fa6addffb28c0ebda72c2159746ca]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[82dde8336dccf66ac2ddc15e243b5d21321645a7]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[82dde8336dccf66ac2ddc15e243b5d21321645a7]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
       </properties>
     </component>
@@ -670,39 +670,39 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="pestphp/pest-4.4.1.0">
+    <component type="library" bom-ref="pestphp/pest-4.4.2.0">
       <author><![CDATA[Nuno Maduro]]></author>
       <group><![CDATA[pestphp]]></group>
       <name><![CDATA[pest]]></name>
-      <version><![CDATA[v4.4.1]]></version>
+      <version><![CDATA[v4.4.2]]></version>
       <description><![CDATA[The elegant PHP Testing Framework.]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/pestphp/pest@v4.4.1]]></purl>
+      <purl><![CDATA[pkg:composer/pestphp/pest@v4.4.2]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/pestphp/pest/zipball/f96a1b27864b585b0b29b0ee7331176726f7e54a]]></url>
-          <comment><![CDATA[dist reference: f96a1b27864b585b0b29b0ee7331176726f7e54a]]></comment>
+          <url><![CDATA[https://api.github.com/repos/pestphp/pest/zipball/5d42e8fe3ae1d9fdf7c9f73ee88138fd30265701]]></url>
+          <comment><![CDATA[dist reference: 5d42e8fe3ae1d9fdf7c9f73ee88138fd30265701]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/pestphp/pest.git]]></url>
-          <comment><![CDATA[source reference: f96a1b27864b585b0b29b0ee7331176726f7e54a]]></comment>
+          <comment><![CDATA[source reference: 5d42e8fe3ae1d9fdf7c9f73ee88138fd30265701]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/pestphp/pest/issues]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.issues']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/pestphp/pest/tree/v4.4.1]]></url>
+          <url><![CDATA[https://github.com/pestphp/pest/tree/v4.4.2]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[f96a1b27864b585b0b29b0ee7331176726f7e54a]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[f96a1b27864b585b0b29b0ee7331176726f7e54a]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[5d42e8fe3ae1d9fdf7c9f73ee88138fd30265701]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[5d42e8fe3ae1d9fdf7c9f73ee88138fd30265701]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -1960,26 +1960,26 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="sebastian/environment-8.0.3.0">
+    <component type="library" bom-ref="sebastian/environment-8.0.4.0">
       <author><![CDATA[Sebastian Bergmann]]></author>
       <group><![CDATA[sebastian]]></group>
       <name><![CDATA[environment]]></name>
-      <version><![CDATA[8.0.3]]></version>
+      <version><![CDATA[8.0.4]]></version>
       <description><![CDATA[Provides functionality to handle HHVM/PHP environments]]></description>
       <licenses>
         <license>
           <id><![CDATA[BSD-3-Clause]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/sebastian/environment@8.0.3]]></purl>
+      <purl><![CDATA[pkg:composer/sebastian/environment@8.0.4]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/sebastianbergmann/environment/zipball/24a711b5c916efc6d6e62aa65aa2ec98fef77f68]]></url>
-          <comment><![CDATA[dist reference: 24a711b5c916efc6d6e62aa65aa2ec98fef77f68]]></comment>
+          <url><![CDATA[https://api.github.com/repos/sebastianbergmann/environment/zipball/7b8842c2d8e85d0c3a5831236bf5869af6ab2a11]]></url>
+          <comment><![CDATA[dist reference: 7b8842c2d8e85d0c3a5831236bf5869af6ab2a11]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/sebastianbergmann/environment.git]]></url>
-          <comment><![CDATA[source reference: 24a711b5c916efc6d6e62aa65aa2ec98fef77f68]]></comment>
+          <comment><![CDATA[source reference: 7b8842c2d8e85d0c3a5831236bf5869af6ab2a11]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://github.com/sebastianbergmann/environment]]></url>
@@ -1994,13 +1994,13 @@
           <comment><![CDATA[as detected from Composer manifest 'support.security']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/sebastianbergmann/environment/tree/8.0.3]]></url>
+          <url><![CDATA[https://github.com/sebastianbergmann/environment/tree/8.0.4]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[24a711b5c916efc6d6e62aa65aa2ec98fef77f68]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[24a711b5c916efc6d6e62aa65aa2ec98fef77f68]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[7b8842c2d8e85d0c3a5831236bf5869af6ab2a11]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[7b8842c2d8e85d0c3a5831236bf5869af6ab2a11]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -3226,7 +3226,7 @@
       <dependency ref="phpunit/php-file-iterator-6.0.1.0"/>
       <dependency ref="phpunit/php-timer-8.0.0.0"/>
       <dependency ref="phpunit/phpunit-12.5.12.0"/>
-      <dependency ref="sebastian/environment-8.0.3.0"/>
+      <dependency ref="sebastian/environment-8.0.4.0"/>
       <dependency ref="symfony/console-7.4.7.0"/>
       <dependency ref="symfony/process-7.4.5.0"/>
     </dependency>
@@ -3282,7 +3282,7 @@
     <dependency ref="nunomaduro/termwind-2.4.0.0">
       <dependency ref="symfony/console-7.4.7.0"/>
     </dependency>
-    <dependency ref="pestphp/pest-4.4.1.0">
+    <dependency ref="pestphp/pest-4.4.2.0">
       <dependency ref="brianium/paratest-7.19.0.0"/>
       <dependency ref="nunomaduro/collision-8.9.1.0"/>
       <dependency ref="nunomaduro/termwind-2.4.0.0"/>
@@ -3330,7 +3330,7 @@
       <dependency ref="phpunit/php-file-iterator-6.0.1.0"/>
       <dependency ref="phpunit/php-text-template-5.0.0.0"/>
       <dependency ref="sebastian/complexity-5.0.0.0"/>
-      <dependency ref="sebastian/environment-8.0.3.0"/>
+      <dependency ref="sebastian/environment-8.0.4.0"/>
       <dependency ref="sebastian/lines-of-code-4.0.0.0"/>
       <dependency ref="sebastian/version-6.0.0.0"/>
       <dependency ref="theseer/tokenizer-2.0.1.0"/>
@@ -3351,7 +3351,7 @@
       <dependency ref="sebastian/cli-parser-4.2.0.0"/>
       <dependency ref="sebastian/comparator-7.1.4.0"/>
       <dependency ref="sebastian/diff-7.0.0.0"/>
-      <dependency ref="sebastian/environment-8.0.3.0"/>
+      <dependency ref="sebastian/environment-8.0.4.0"/>
       <dependency ref="sebastian/exporter-7.0.2.0"/>
       <dependency ref="sebastian/global-state-8.0.2.0"/>
       <dependency ref="sebastian/object-enumerator-7.0.0.0"/>
@@ -3399,7 +3399,7 @@
       <dependency ref="nikic/php-parser-5.7.0.0"/>
     </dependency>
     <dependency ref="sebastian/diff-7.0.0.0"/>
-    <dependency ref="sebastian/environment-8.0.3.0"/>
+    <dependency ref="sebastian/environment-8.0.4.0"/>
     <dependency ref="sebastian/exporter-7.0.2.0">
       <dependency ref="sebastian/recursion-context-7.0.1.0"/>
     </dependency>
@@ -3474,7 +3474,7 @@
     <dependency ref="niklasbr/quick-magick-dev-main">
       <dependency ref="fakerphp/faker-1.24.1.0"/>
       <dependency ref="spatie/color-2.1.0.0"/>
-      <dependency ref="pestphp/pest-4.4.1.0"/>
+      <dependency ref="pestphp/pest-4.4.2.0"/>
       <dependency ref="friendsofphp/php-cs-fixer-3.94.2.0"/>
       <dependency ref="phpstan/phpstan-2.1.40.0"/>
     </dependency>
