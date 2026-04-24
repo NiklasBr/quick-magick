@@ -19,7 +19,7 @@ dataset('valid colors', [
     '#ffC300-magenta',
 ]);
 
-it('works with normal linear single or double color string {color}', function (string $color) {
+it('works with normal linear single or double color string {color}', function (string $color): void {
     $result = QuickMagick::image(type: Type::LINEAR_GRADIENT, imagickArgs: $color);
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
@@ -31,7 +31,7 @@ it('works with normal linear single or double color string {color}', function (s
     ;
 })->with('valid colors');
 
-it('works with normal radial single or double color string {color}', function (string $color) {
+it('works with normal radial single or double color string {color}', function (string $color): void {
     $result = QuickMagick::image(type: Type::RADIAL_GRADIENT, imagickArgs: $color);
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
@@ -43,7 +43,7 @@ it('works with normal radial single or double color string {color}', function (s
     ;
 })->with('valid colors');
 
-it('writes a linear gradient image file to disk', function () {
+it('writes a linear gradient image file to disk', function (): void {
     $imageData = QuickMagick::image(type: Type::LINEAR_GRADIENT, imagickArgs: '#ffC300-magenta');
 
     $putResult = file_put_contents(__DIR__.'/out/linear_gradient.png', $imageData);
@@ -55,7 +55,7 @@ it('writes a linear gradient image file to disk', function () {
     ;
 });
 
-it('writes a radial gradient image file to disk', function () {
+it('writes a radial gradient image file to disk', function (): void {
     $imageData = QuickMagick::image(type: Type::RADIAL_GRADIENT, imagickArgs: 'green-yellow');
 
     $putResult = file_put_contents(__DIR__.'/out/radial_gradient.png', $imageData);

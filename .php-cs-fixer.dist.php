@@ -24,7 +24,7 @@ return (new Config())
         'header_comment' => [
             'header' => '© '.date('Y').' Niklas Brunberg'.PHP_EOL.'Licensed under AGPL-3.0-only; BSD-3-Clause available via commercial agreement.',
             'comment_type' => 'PHPDoc',
-            'validator' => '/© \d{4} .* Licensed under AGPL-3.0-only; BSD-3-Clause available via commercial agreement/s',
+            'validator' => '/©\s+\d{4}\s+Niklas Brunberg\s+Licensed under AGPL-3\.0-only; BSD-3-Clause available via commercial agreement\./s',
             'location' => 'after_open',
         ],
         'modernize_strpos' => true,
@@ -38,6 +38,7 @@ return (new Config())
         'declare_strict_types' => true,
         'final_class' => true,
         'static_lambda' => false, // Interferes with tests
+        '@autoPHPMigration:risky' => true,
     ])
     ->setFinder(
         (new Finder())

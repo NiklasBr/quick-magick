@@ -1,0 +1,24 @@
+# Run this command to start the container:
+# docker compose up -d
+# Then, you can access the container with:
+# docker compose exec app bash
+# Run composer install
+# Then I can run tests and other scripts.
+services:
+  app:
+    image: thecodingmachine/php:8.5-v5-cli
+    command:
+      - sh
+      - -lc
+      - |
+        if [ ! -f composer.lock ]; then
+          composer install --no-interaction --prefer-dist;
+        fi
+        exec sleep infinity
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/code
+    working_dir: /code
+    environment:
+      - PHP_EXTENSION_IMAGICK=1

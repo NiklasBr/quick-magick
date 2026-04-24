@@ -27,7 +27,7 @@ dataset('invalid plasma args', [
     'wheat-',
 ]);
 
-it('Accepts plasma argument', function () {
+it('Accepts plasma argument', function (): void {
     $result = QuickMagick::image(type: Type::PLASMA);
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
@@ -39,7 +39,7 @@ it('Accepts plasma argument', function () {
     ;
 });
 
-it('works with normal color string {color}', function (string $color) {
+it('works with normal color string {color}', function (string $color): void {
     $result = QuickMagick::image(type: Type::PLASMA, imagickArgs: $color);
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
@@ -51,13 +51,13 @@ it('works with normal color string {color}', function (string $color) {
     ;
 })->with('valid colors');
 
-it('throws an exception when {pattern} is not proper', function (string $pattern) {
-    expect(function () use ($pattern) {
+it('throws an exception when {pattern} is not proper', function (string $pattern): void {
+    expect(function () use ($pattern): void {
         QuickMagick::image(type: Type::PLASMA, imagickArgs: $pattern);
     })->toThrow(InvalidColorValue::class);
 })->with('invalid plasma args');
 
-it('writes a plasma image file to disk', function () {
+it('writes a plasma image file to disk', function (): void {
     $imageData = QuickMagick::image(type: Type::PLASMA, imagickArgs: 'fractal-maroon');
 
     $putResult = file_put_contents(__DIR__.'/out/plasma.png', $imageData);

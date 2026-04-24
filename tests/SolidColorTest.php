@@ -24,7 +24,7 @@ dataset('colors', [
     'rgb(255,0,153)',              // Standard rgb()
 ]);
 
-it('creates a solid color for {color}', function (string $format) {
+it('creates a solid color for {color}', function (string $format): void {
     $result = QuickMagick::image(imagickArgs: $format);
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
@@ -37,7 +37,7 @@ it('creates a solid color for {color}', function (string $format) {
     ;
 })->with('colors');
 
-it('writes a solid image file to disk', function () {
+it('writes a solid image file to disk', function (): void {
     $imageData = QuickMagick::image(type: Type::SOLID_COLOR);
 
     $putResult = file_put_contents(__DIR__.'/out/pattern.png', $imageData);
@@ -49,8 +49,8 @@ it('writes a solid image file to disk', function () {
     ;
 });
 
-it('throws an exception when there is no proper color', function () {
-    expect(function () {
+it('throws an exception when there is no proper color', function (): void {
+    expect(function (): void {
         QuickMagick::image(type: Type::SOLID_COLOR, imagickArgs: 'towels');
     })->toThrow(InvalidColorValue::class);
 });

@@ -15,7 +15,7 @@ use NiklasBr\QuickMagick\QuickMagick;
 
 dataset('valid patterns', Patterns::$validPatterns);
 
-it('creates pattern image for {format}', function (string $format) {
+it('creates pattern image for {format}', function (string $format): void {
     $result = QuickMagick::image(type: Type::PATTERN, imagickArgs: $format);
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
@@ -28,7 +28,7 @@ it('creates pattern image for {format}', function (string $format) {
     ;
 })->with('valid patterns');
 
-it('writes a pattern image file to disk', function () {
+it('writes a pattern image file to disk', function (): void {
     $imageData = QuickMagick::image(type: Type::PATTERN, imagickArgs: 'SMALLFISHSCALES');
 
     $putResult = file_put_contents(__DIR__.'/out/pattern.png', $imageData);
@@ -40,8 +40,8 @@ it('writes a pattern image file to disk', function () {
     ;
 });
 
-it('throws an exception when there is no proper pattern-pattern', function () {
-    expect(function () {
+it('throws an exception when there is no proper pattern-pattern', function (): void {
+    expect(function (): void {
         QuickMagick::image(type: Type::PATTERN, imagickArgs: 'BAD PATTERN');
     })->toThrow(\InvalidArgumentException::class);
 });

@@ -30,7 +30,7 @@ dataset('invalid colors', [
     'rgb(256,0,0)',          // Value out of range (max 255)
 ]);
 
-it('registers properly with Faker', function () {
+it('registers properly with Faker', function (): void {
     $faker = Factory::create();
     $faker->addProvider(new QuickMagick($faker));
 
@@ -40,14 +40,14 @@ it('registers properly with Faker', function () {
     ;
 });
 
-it('returns image data with default parameters', function () {
+it('returns image data with default parameters', function (): void {
     $result = QuickMagick::image();
 
     // https://evanhahn.com/worlds-smallest-png/
     expect(\strlen($result))->toBeGreaterThan(8 + 25 + 22 + 12);
 });
 
-it('returns image data with custom dimensions', function () {
+it('returns image data with custom dimensions', function (): void {
     $result = QuickMagick::image(width: 91, height: 85);
 
     /** @phpstan-var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
@@ -62,7 +62,7 @@ it('returns image data with custom dimensions', function () {
     ;
 });
 
-it('returns a JPEG when requested', function () {
+it('returns a JPEG when requested', function (): void {
     $result = QuickMagick::image(format: Format::JPG);
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
@@ -75,7 +75,7 @@ it('returns a JPEG when requested', function () {
     ;
 });
 
-it('returns a filepath when requested', function () {
+it('returns a filepath when requested', function (): void {
     $result = QuickMagick::createImageFile(filePath: './');
 
     expect($result)
@@ -96,8 +96,8 @@ it('returns a filepath when requested', function () {
     unlink($result);
 });
 
-it('creates a file with a filename',  function () {
-    $result = QuickMagick::createImageFile(filePath: './testpng.png');
+it('creates a file with a filename', function (): void {
+    $result = QuickMagick::createImageFile(filePath: 'tests/out/testpng.png');
 
     expect($result)
         ->toContain(\DIRECTORY_SEPARATOR, '.')
@@ -106,32 +106,32 @@ it('creates a file with a filename',  function () {
     ;
 });
 
-it('throws an exception when there is no proper ImageType', function () {
-    expect(function () {
+it('throws an exception when there is no proper ImageType', function (): void {
+    expect(function (): void {
         QuickMagick::image(type: Type::UNKNOWN);
     })->toThrow(\UnexpectedValueException::class);
 });
 
-it('throws an error when it cannot find the directory', function () {
-    expect(function () {
+it('throws an error when it cannot find the directory', function (): void {
+    expect(function (): void {
         QuickMagick::createImageFile(filePath: '/should-not-exist');
     })->toThrow(\InvalidArgumentException::class);
 });
 
-it('throws an error when it cannot write to the directory', function () {
-    expect(function () {
+it('throws an error when it cannot write to the directory', function (): void {
+    expect(function (): void {
         QuickMagick::createImageFile(filePath: '/');
     })->toThrow(\InvalidArgumentException::class);
 });
 
-it('throws an error when it cannot write an invalid filename', function () {
-    expect(function () {
-        QuickMagick::createImageFile(filePath: '/' . \str_repeat(".boom-", 50) . '.png');
+it('throws an error when it cannot write an invalid filename', function (): void {
+    expect(function (): void {
+        QuickMagick::createImageFile(filePath: '/'.\str_repeat('.boom-', 50).'.png');
     })->toThrow(\InvalidArgumentException::class);
 });
 
-it('throws an exception when {color} is not proper', function (string $color) {
-    expect(function () use ($color) {
+it('throws an exception when {color} is not proper', function (string $color): void {
+    expect(function () use ($color): void {
         ColorValidator::isValidColor($color);
     })->toThrow(InvalidColorValue::class);
 })->with('invalid colors');
