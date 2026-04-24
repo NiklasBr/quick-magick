@@ -118,6 +118,32 @@ it('supports type without explicit args using per-type defaults', function (): v
     ;
 });
 
+it('accepts category by enum value string', function (): void {
+    $result = QuickMagick::imageData(category: 'pattern', word: 'SMALLFISHSCALES');
+
+    /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
+    $imgData = getimagesizefromstring($result);
+
+    expect($imgData)
+        ->not()->toBeFalse()
+        ->toBeArray()
+        ->and($imgData['mime'])->toMatch('/image\/png/')
+    ;
+});
+
+it('accepts category by enum name string', function (): void {
+    $result = QuickMagick::imageData(category: 'PATTERN', word: 'SMALLFISHSCALES');
+
+    /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
+    $imgData = getimagesizefromstring($result);
+
+    expect($imgData)
+        ->not()->toBeFalse()
+        ->toBeArray()
+        ->and($imgData['mime'])->toMatch('/image\/png/')
+    ;
+});
+
 it('supports word with explicit type and format enum', function (): void {
     $result = QuickMagick::imageData(category: Category::PATTERN, word: 'smallfishscales', format: Format::JPEG);
 
@@ -261,6 +287,24 @@ it('throws an exception when there is no proper ImageType', function (): void {
     })->toThrow(\UnexpectedValueException::class);
 });
 
+it('throws an exception when category string is unsupported', function (): void {
+    expect(function (): void {
+        QuickMagick::imageData(category: 'not-a-real-category');
+    })->toThrow(\InvalidArgumentException::class);
+});
+
+it('throws an exception when format is unsupported by Imagick', function (): void {
+    expect(function (): void {
+        QuickMagick::imageData(format: 'definitely_unsupported');
+    })->toThrow(\InvalidArgumentException::class);
+});
+
+it('rethrows Imagick exception for non-label/caption pseudo-image failures', function (): void {
+    expect(function (): void {
+        QuickMagick::imageData(category: Category::MAGICK, word: '/definitely/not/a/real/image/path.png');
+    })->toThrow(\ImagickException::class);
+});
+
 it('throws an error when it cannot find the directory', function (): void {
     expect(function (): void {
         QuickMagick::createImageFile(filePath: '/should-not-exist');
@@ -277,6 +321,21 @@ it('throws an error when it cannot write an invalid filename', function (): void
     expect(function (): void {
         QuickMagick::createImageFile(filePath: '/'.\str_repeat('.boom-', 50).'.png');
     })->toThrow(\InvalidArgumentException::class);
+});
+
+it('throws runtime exception when writing fails after path validation', function (): void {
+    expect(function (): void {
+        $tooLongFileName = \str_repeat('a', 300).'.png';
+
+        // On many systems this raises a native warning before writeImageFile throws RuntimeException.
+        \set_error_handler(static fn (): bool => true, E_WARNING);
+
+        try {
+            QuickMagick::createImageFile(filePath: 'tests/out/'.$tooLongFileName);
+        } finally {
+            \restore_error_handler();
+        }
+    })->toThrow(\RuntimeException::class);
 });
 
 it('throws an exception when {color} is not proper', function (string $color): void {
