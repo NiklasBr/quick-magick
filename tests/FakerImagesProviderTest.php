@@ -214,7 +214,7 @@ it('returns a JPEG when requested', function (): void {
 });
 
 it('returns a filepath when requested', function (): void {
-    $result = QuickMagick::createImageFile(filePath: './');
+    $result = QuickMagick::createImageFile(filePath: './', gray: true);
 
     expect($result)
         ->toContain(\DIRECTORY_SEPARATOR, '.')
