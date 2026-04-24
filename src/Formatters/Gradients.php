@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace NiklasBr\QuickMagick\Formatters;
 
-use NiklasBr\QuickMagick\Enums\Type;
+use NiklasBr\QuickMagick\Enums\Category;
 use NiklasBr\QuickMagick\Validators\ColorValidator;
 use Spatie\Color\Exceptions\InvalidColorValue;
 
@@ -20,7 +20,7 @@ final readonly class Gradients implements PseudoImageInterface
      *
      * @throws InvalidColorValue
      */
-    public static function format(Type $imageType, ?string $arg): string
+    public static function format(Category $imageType, ?string $arg): string
     {
         self::validateArgs((string) $arg);
 
@@ -35,23 +35,23 @@ final readonly class Gradients implements PseudoImageInterface
      *
      * @throws InvalidColorValue
      */
-    private static function validateArgs(?string $arg): void
+    private static function validateArgs(?string $argument): void
     {
-        if (empty($arg)) {
+        if (empty($argument)) {
             // Will result in 'gradient:' with no argument
             return;
         }
 
-        if (!\str_contains($arg, '-')) {
-            // Single color after 'plasma:'
-            ColorValidator::isValidColor($arg);
+        if (!\str_contains($argument, '-')) {
+            // Single color after 'gradient:'
+            ColorValidator::isValidColor($argument);
 
             return;
         }
 
-        [$color1, $color2] = \explode('-', $arg, 2);
+        [$startColor, $endColor] = \explode('-', $argument, 2);
 
-        ColorValidator::isValidColor($color1);
-        ColorValidator::isValidColor($color2);
+        ColorValidator::isValidColor($startColor);
+        ColorValidator::isValidColor($endColor);
     }
 }

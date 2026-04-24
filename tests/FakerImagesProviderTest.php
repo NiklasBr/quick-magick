@@ -11,8 +11,8 @@ namespace NiklasBr\QuickMagick\Tests;
 
 use Faker\Factory;
 use Faker\Provider\Base;
+use NiklasBr\QuickMagick\Enums\Category;
 use NiklasBr\QuickMagick\Enums\Format;
-use NiklasBr\QuickMagick\Enums\Type;
 use NiklasBr\QuickMagick\QuickMagick;
 use NiklasBr\QuickMagick\Validators\ColorValidator;
 use Spatie\Color\Exceptions\InvalidColorValue;
@@ -41,14 +41,44 @@ it('registers properly with Faker', function (): void {
 });
 
 it('returns image data with default parameters', function (): void {
-    $result = QuickMagick::image();
+    $result = QuickMagick::imageData();
 
     // https://evanhahn.com/worlds-smallest-png/
     expect(\strlen($result))->toBeGreaterThan(8 + 25 + 22 + 12);
 });
 
+it('returns an image data URL with default parameters', function (): void {
+    $result = QuickMagick::imageUrl();
+
+    expect($result)->toStartWith('data:image/png;base64,');
+});
+
+it('returns a deterministic image URL without random fragment when randomize is false', function (): void {
+    $result = QuickMagick::imageUrl(randomize: false);
+
+    expect($result)
+        ->toStartWith('data:image/png;base64,')
+        ->not()->toContain('#')
+    ;
+});
+
+it('returns a cache-busted image URL when randomize is true', function (): void {
+    $result = QuickMagick::imageUrl(randomize: true);
+
+    expect($result)
+        ->toStartWith('data:image/png;base64,')
+        ->toContain('#')
+    ;
+});
+
+it('returns an image URL honoring output format', function (): void {
+    $result = QuickMagick::imageUrl(format: Format::JPEG, randomize: false);
+
+    expect($result)->toStartWith('data:image/jpeg;base64,');
+});
+
 it('returns image data with custom dimensions', function (): void {
-    $result = QuickMagick::image(width: 91, height: 85);
+    $result = QuickMagick::imageData(width: 91, height: 85);
 
     /** @phpstan-var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
     $imgData = getimagesizefromstring($result);
@@ -62,8 +92,90 @@ it('returns image data with custom dimensions', function (): void {
     ;
 });
 
+it('supports word argument alongside type', function (): void {
+    $result = QuickMagick::imageData(category: Category::LINEAR_GRADIENT, word: '#1100ff-magenta');
+
+    /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
+    $imgData = getimagesizefromstring($result);
+
+    expect($imgData)
+        ->not()->toBeFalse()
+        ->toBeArray()
+        ->and($imgData['mime'])->toMatch('/image\/png/')
+    ;
+});
+
+it('supports type without explicit args using per-type defaults', function (): void {
+    $result = QuickMagick::imageData(category: Category::PATTERN, word: 'SMALLFISHSCALES');
+
+    /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
+    $imgData = getimagesizefromstring($result);
+
+    expect($imgData)
+        ->not()->toBeFalse()
+        ->toBeArray()
+        ->and($imgData['mime'])->toMatch('/image\/png/')
+    ;
+});
+
+it('supports word with explicit type and format enum', function (): void {
+    $result = QuickMagick::imageData(category: Category::PATTERN, word: 'smallfishscales', format: Format::JPEG);
+
+    /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
+    $imgData = getimagesizefromstring($result);
+
+    expect($imgData)
+        ->not()->toBeFalse()
+        ->toBeArray()
+        ->and($imgData['mime'])->toMatch('/image\/jpeg/')
+    ;
+});
+
+it('supports xc pseudo image type', function (): void {
+    $result = QuickMagick::imageData(category: Category::XC, word: '#33aa66');
+
+    /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
+    $imgData = getimagesizefromstring($result);
+
+    expect($imgData)
+        ->not()->toBeFalse()
+        ->toBeArray()
+        ->and($imgData['mime'])->toMatch('/image\/png/')
+    ;
+});
+
+it('supports label pseudo image type', function (): void {
+    $result = QuickMagick::imageData(width: 240, height: 80, category: Category::LABEL, word: 'quick-magick');
+
+    /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
+    $imgData = getimagesizefromstring($result);
+
+    expect($imgData)
+        ->not()->toBeFalse()
+        ->toBeArray()
+        ->and($imgData[0])->toBe(240)
+        ->and($imgData[1])->toBe(80)
+        ->and($imgData['mime'])->toMatch('/image\/png/')
+    ;
+});
+
+it('supports caption pseudo image type', function (): void {
+    $result = QuickMagick::imageData(width: 300, height: 120, category: Category::CAPTION, word: 'Quick Magick caption test');
+
+    /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
+    $imgData = getimagesizefromstring($result);
+
+    expect($imgData)
+        ->not()->toBeFalse()
+        ->toBeArray()
+        ->and($imgData[0])->toBe(300)
+        ->and($imgData[1])->toBe(120)
+        ->and($imgData['mime'])->toMatch('/image\/png/')
+    ;
+});
+
 it('returns a JPEG when requested', function (): void {
-    $result = QuickMagick::image(format: Format::JPG);
+    $result = QuickMagick::imageData(format: Format::JPEG);
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
     $imgData = getimagesizefromstring($result);
@@ -106,9 +218,46 @@ it('creates a file with a filename', function (): void {
     ;
 });
 
+it('creates a faker-compatible image file path', function (): void {
+    $result = QuickMagick::image(dir: 'tests/out', randomize: false, fullPath: false, format: Format::JPEG);
+
+    expect($result)
+        ->toBe('image_640x480.jpeg')
+        ->and('tests/out/'.$result)->toBeFile()
+    ;
+});
+
+it('creates image file from category-only faker call', function (): void {
+    $result = QuickMagick::image(
+        dir: 'tests/out',
+        category: Category::PATTERN,
+        word: 'SMALLFISHSCALES',
+        fullPath: true,
+        randomize: false,
+    );
+
+    expect($result)
+        ->toEndWith('image_640x480.png')
+        ->toBeFile($result)
+    ;
+});
+
+it('supports gray image generation mode', function (): void {
+    $result = QuickMagick::imageData(gray: true);
+
+    /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
+    $imgData = getimagesizefromstring($result);
+
+    expect($imgData)
+        ->not()->toBeFalse()
+        ->toBeArray()
+        ->and($imgData['mime'])->toMatch('/image\/png/')
+    ;
+});
+
 it('throws an exception when there is no proper ImageType', function (): void {
     expect(function (): void {
-        QuickMagick::image(type: Type::UNKNOWN);
+        QuickMagick::imageData(category: Category::UNKNOWN);
     })->toThrow(\UnexpectedValueException::class);
 });
 

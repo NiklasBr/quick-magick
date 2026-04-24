@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace NiklasBr\QuickMagick\Formatters;
 
-use NiklasBr\QuickMagick\Enums\Type;
+use NiklasBr\QuickMagick\Enums\Category;
 
 final class Patterns implements PseudoImageInterface
 {
@@ -73,12 +73,14 @@ final class Patterns implements PseudoImageInterface
         'VERTICALSAW',
     ];
 
-    public static function format(Type $imageType, ?string $arg): string
+    public static function format(Category $imageType, ?string $arg): string
     {
-        if (!\in_array($arg, self::$validPatterns, true)) {
+        $normalizedPattern = \strtoupper((string) $arg);
+
+        if (!\in_array($normalizedPattern, self::$validPatterns, true)) {
             throw new \InvalidArgumentException('Unsupported pattern');
         }
 
-        return "{$imageType->value}:{$arg}";
+        return "{$imageType->value}:{$normalizedPattern}";
     }
 }

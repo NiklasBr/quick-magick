@@ -10,107 +10,186 @@ declare(strict_types=1);
 namespace NiklasBr\QuickMagick;
 
 use Faker\Provider\Base;
+use NiklasBr\QuickMagick\Enums\Category;
 use NiklasBr\QuickMagick\Enums\Format;
-use NiklasBr\QuickMagick\Enums\Type;
-use NiklasBr\QuickMagick\Formatters\Gradients;
-use NiklasBr\QuickMagick\Formatters\Patterns;
-use NiklasBr\QuickMagick\Formatters\Plasma;
-use NiklasBr\QuickMagick\Formatters\SolidColor;
+use NiklasBr\QuickMagick\Internal\ImageRenderer;
 use Spatie\Color\Exceptions\InvalidColorValue;
 
 final class QuickMagick extends Base
 {
     /**
-     * Generates and returns image data.
+     * Generate and save an image file, returning its path.
      *
-     * @param null|Type   $type        Any Imagick keyword as available in the Type enum
-     * @param null|string $imagickArgs Any primary argument to the Imagick keyword, e.g. color value, required when using Type::PLASMA
-     * @param Format      $format      Image file format
+     * Matches the Faker image() provider signature.
      *
-     * @return string ImageData or file path if $dir is not null
+     * @param null|string          $dir       Target directory; defaults to system temp dir
+     * @param int                  $width     Output width in pixels
+     * @param int                  $height    Output height in pixels
+     * @param null|Category|string $category  Image type enum, enum name, or enum value
+     * @param bool                 $fullPath  Return full path when true, basename when false
+     * @param bool                 $randomize Use random file name when true
+     * @param null|string          $word      Type-specific argument (for example color or pattern name)
+     * @param bool                 $gray      Convert final image to grayscale
+     * @param string               $format    Output format string (png, jpeg, gif, webp, tiff, bmp)
+     *
+     * @return string File path or basename depending on $fullPath
      *
      * @throws \ImagickException
      * @throws InvalidColorValue
      */
-    public static function image(int $width = 640, int $height = 480, ?Type $type = Type::SOLID_COLOR, ?string $imagickArgs = 'silver', Format $format = Format::PNG): string
-    {
-        $img = self::img(
+    public static function image(
+        ?string $dir = null,
+        int $width = 640,
+        int $height = 480,
+        Category|string|null $category = null,
+        bool $fullPath = true,
+        bool $randomize = true,
+        ?string $word = null,
+        bool $gray = false,
+        string $format = Format::PNG,
+    ): string {
+        $dir = $dir ?? \sys_get_temp_dir();
+        $renderer = new ImageRenderer();
+        $resolvedCategory = $renderer->resolveCategory($category);
+        $fileName = $randomize ? \uniqid('', true) : "image_{$width}x{$height}";
+        $targetPath = \rtrim($dir, \DIRECTORY_SEPARATOR).\DIRECTORY_SEPARATOR.$fileName.".{$format}";
+
+        $writtenPath = self::createImageFile(
+            filePath: $targetPath,
+            width: $width,
+            height: $height,
+            category: $resolvedCategory,
+            word: $word,
+            gray: $gray,
+            format: $format,
+        );
+
+        return $fullPath ? $writtenPath : \basename($writtenPath);
+    }
+
+    /**
+     * Generate and return raw image blob data.
+     *
+     * @param int                  $width    Output width in pixels
+     * @param int                  $height   Output height in pixels
+     * @param null|Category|string $category Image type enum, enum name, or enum value
+     * @param null|string          $word     Type-specific argument (for example color or pattern name)
+     * @param bool                 $gray     Convert final image to grayscale
+     * @param string               $format   Output format string (png, jpeg, gif, webp, tiff, bmp)
+     *
+     * @return string Raw image blob data
+     *
+     * @throws \ImagickException
+     * @throws InvalidColorValue
+     */
+    public static function imageData(
+        int $width = 640,
+        int $height = 480,
+        Category|string|null $category = Category::SOLID_COLOR,
+        ?string $word = null,
+        bool $gray = false,
+        string $format = Format::PNG,
+    ): string {
+        $renderer = new ImageRenderer();
+        $resolvedCategory = $renderer->resolveCategory($category);
+
+        $img = $renderer->img(
             $width,
             $height,
             $format,
-            self::imageTypeToPseudoString($type, $imagickArgs),
+            $renderer->categoryToPseudoString($resolvedCategory, $word),
         );
+
+        if ($gray) {
+            $img->transformImageColorspace(\Imagick::COLORSPACE_GRAY);
+        }
 
         return $img->getImageBlob();
     }
 
     /**
-     * Generate and store an image on disk.
+     * Generate a Faker-compatible image URL string.
      *
-     * @param null|Type   $type        Any Imagick keyword as available in the Type enum
-     * @param null|string $imagickArgs Any primary argument to the Imagick keyword, e.g. color value, required when using Type::PLASMA
-     * @param Format      $format      Image file format
+     * Returns a data URL that can be used directly as an image source.
      *
-     * @return string ImageData or file path if $dir is not null
+     * @param int                  $width     Output width in pixels
+     * @param int                  $height    Output height in pixels
+     * @param null|Category|string $category  Image type enum, enum name, or enum value
+     * @param bool                 $randomize Add a unique fragment for cache busting when true
+     * @param null|string          $word      Type-specific argument (for example color or pattern name)
+     * @param bool                 $gray      Convert final image to grayscale
+     * @param string               $format    Output format string (png, jpeg, gif, webp, tiff, bmp)
      *
      * @throws \ImagickException
      * @throws InvalidColorValue
      */
-    public static function createImageFile(string $filePath, int $width = 640, int $height = 480, ?Type $type = Type::SOLID_COLOR, ?string $imagickArgs = 'silver', Format $format = Format::PNG): string
-    {
-        $img = self::img(
+    public static function imageUrl(
+        int $width = 640,
+        int $height = 480,
+        Category|string|null $category = null,
+        bool $randomize = true,
+        ?string $word = null,
+        bool $gray = false,
+        string $format = Format::PNG,
+    ): string {
+        $blob = self::imageData(
+            width: $width,
+            height: $height,
+            category: $category,
+            word: $word,
+            gray: $gray,
+            format: $format,
+        );
+
+        $base64 = \base64_encode($blob);
+        $url = "data:image/{$format};base64,{$base64}";
+
+        if ($randomize) {
+            return $url.'#'.\uniqid('', true);
+        }
+
+        return $url;
+    }
+
+    /**
+     * Generate and store an image at an explicit file path.
+     *
+     * @param string               $filePath Destination file path, or writable directory path
+     * @param int                  $width    Output width in pixels
+     * @param int                  $height   Output height in pixels
+     * @param null|Category|string $category Image type enum, enum name, or enum value
+     * @param null|string          $word     Type-specific argument (for example color or pattern name)
+     * @param bool                 $gray     Convert final image to grayscale
+     * @param string               $format   Output format string (png, jpeg, gif, webp, tiff, bmp)
+     *
+     * @return string Absolute or relative path to the written file
+     *
+     * @throws \ImagickException
+     * @throws InvalidColorValue
+     */
+    public static function createImageFile(
+        string $filePath,
+        int $width = 640,
+        int $height = 480,
+        Category|string|null $category = Category::SOLID_COLOR,
+        ?string $word = null,
+        bool $gray = false,
+        string $format = Format::PNG,
+    ): string {
+        $renderer = new ImageRenderer();
+        $resolvedCategory = $renderer->resolveCategory($category);
+
+        $img = $renderer->img(
             $width,
             $height,
             $format,
-            self::imageTypeToPseudoString($type, $imagickArgs),
+            $renderer->categoryToPseudoString($resolvedCategory, $word),
         );
 
-        // Resolve relative path to absolute
-        $resolvedPath = realpath($filePath) ?: $filePath;
-
-        // If path is a directory, append the filename
-        if (\is_dir($resolvedPath)) {
-            if (!\is_writable($resolvedPath)) {
-                throw new \InvalidArgumentException("Cannot write to directory {$resolvedPath}");
-            }
-            $filePath = $resolvedPath.\DIRECTORY_SEPARATOR.$img->getFilename();
-        } elseif (!\is_dir($dir = \dirname($resolvedPath)) || !\is_writable($dir)) {
-            throw new \InvalidArgumentException("Cannot write image to directory {$dir}");
-        } else {
-            $filePath = $resolvedPath;
+        if ($gray) {
+            $img->transformImageColorspace(\Imagick::COLORSPACE_GRAY);
         }
 
-        \file_put_contents($filePath, $img->getImageBlob());
-
-        return $filePath;
-    }
-
-    /**
-     * Different image types have different extra variables.
-     *
-     * @throws InvalidColorValue
-     */
-    private static function imageTypeToPseudoString(?Type $imageType, ?string $arg): string
-    {
-        return match ($imageType) {
-            Type::PATTERN => Patterns::format($imageType, $arg),
-            Type::SOLID_COLOR => SolidColor::format($imageType, $arg),
-            Type::RADIAL_GRADIENT, Type::LINEAR_GRADIENT => Gradients::format($imageType, $arg),
-            Type::PLASMA => Plasma::format($imageType, $arg),
-            default => throw new \UnexpectedValueException('Missing image type category')
-        };
-    }
-
-    /**
-     * @throws \ImagickException
-     */
-    private static function img(int $width, int $height, Format $format, string $pseudoString): \Imagick
-    {
-        $image = new \Imagick();
-        $image->newPseudoImage($width, $height, $pseudoString);
-        $image->setImageFormat($format->value);
-        $image->setFilename(\uniqid()."_{$width}x{$height}.{$format->value}");
-
-        return $image;
+        return $renderer->writeImageFile($img, $filePath);
     }
 }

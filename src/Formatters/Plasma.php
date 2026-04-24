@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace NiklasBr\QuickMagick\Formatters;
 
-use NiklasBr\QuickMagick\Enums\Type;
+use NiklasBr\QuickMagick\Enums\Category;
 use NiklasBr\QuickMagick\Validators\ColorValidator;
 use Spatie\Color\Exceptions\InvalidColorValue;
 
@@ -27,7 +27,7 @@ final class Plasma implements PseudoImageInterface
      *
      * @throws InvalidColorValue
      */
-    public static function format(Type $imageType, ?string $arg): string
+    public static function format(Category $imageType, ?string $arg): string
     {
         // https://usage.imagemagick.org/canvas/#plasma
         self::validateArgs($arg);
@@ -46,6 +46,11 @@ final class Plasma implements PseudoImageInterface
         }
 
         if (!\str_contains($arg, '-')) {
+            if (\in_array(\strtolower($arg), self::$validPatterns, true)) {
+                // Accept keyword-only forms such as 'fractal'
+                return;
+            }
+
             // Single color after 'plasma:'
             ColorValidator::isValidColor($arg);
 
@@ -55,7 +60,7 @@ final class Plasma implements PseudoImageInterface
         [$color1, $color2] = \explode('-', $arg, 2);
 
         // Will result in 'fractal:plasma', valid
-        if (\in_array($color1, self::$validPatterns, true)) {
+        if (\in_array(\strtolower($color1), self::$validPatterns, true)) {
             ColorValidator::isValidColor($color2);
 
             return;

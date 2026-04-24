@@ -10,7 +10,7 @@ declare(strict_types=1);
 namespace NiklasBr\QuickMagick\Enums;
 
 // https://www.imagemagick.org/script/formats.php
-enum Type: string
+enum Category: string
 {
     case LINEAR_GRADIENT = 'gradient';
     case RADIAL_GRADIENT = 'radial-gradient';

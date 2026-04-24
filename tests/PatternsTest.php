@@ -9,14 +9,14 @@ declare(strict_types=1);
 
 namespace NiklasBr\QuickMagick\Tests;
 
-use NiklasBr\QuickMagick\Enums\Type;
+use NiklasBr\QuickMagick\Enums\Category;
 use NiklasBr\QuickMagick\Formatters\Patterns;
 use NiklasBr\QuickMagick\QuickMagick;
 
 dataset('valid patterns', Patterns::$validPatterns);
 
 it('creates pattern image for {format}', function (string $format): void {
-    $result = QuickMagick::image(type: Type::PATTERN, imagickArgs: $format);
+    $result = QuickMagick::imageData(category: Category::PATTERN, word: $format);
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
     $imgData = getimagesizefromstring($result);
@@ -29,7 +29,7 @@ it('creates pattern image for {format}', function (string $format): void {
 })->with('valid patterns');
 
 it('writes a pattern image file to disk', function (): void {
-    $imageData = QuickMagick::image(type: Type::PATTERN, imagickArgs: 'SMALLFISHSCALES');
+    $imageData = QuickMagick::imageData(category: Category::PATTERN, word: 'SMALLFISHSCALES');
 
     $putResult = file_put_contents(__DIR__.'/out/pattern.png', $imageData);
 
@@ -42,6 +42,6 @@ it('writes a pattern image file to disk', function (): void {
 
 it('throws an exception when there is no proper pattern-pattern', function (): void {
     expect(function (): void {
-        QuickMagick::image(type: Type::PATTERN, imagickArgs: 'BAD PATTERN');
+        QuickMagick::imageData(category: Category::PATTERN, word: 'BAD PATTERN');
     })->toThrow(\InvalidArgumentException::class);
 });

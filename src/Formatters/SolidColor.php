@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace NiklasBr\QuickMagick\Formatters;
 
-use NiklasBr\QuickMagick\Enums\Type;
+use NiklasBr\QuickMagick\Enums\Category;
 use NiklasBr\QuickMagick\Validators\ColorValidator;
 use Spatie\Color\Exceptions\InvalidColorValue;
 
@@ -18,10 +18,11 @@ final readonly class SolidColor implements PseudoImageInterface
     /**
      * @throws InvalidColorValue
      */
-    public static function format(Type $imageType, ?string $arg): string
+    public static function format(Category $imageType, ?string $arg): string
     {
-        ColorValidator::isValidColor((string) $arg);
+        $color = $arg ?? 'silver';
+        ColorValidator::isValidColor($color);
 
-        return "{$imageType->value}:{$arg}";
+        return "{$imageType->value}:{$color}";
     }
 }

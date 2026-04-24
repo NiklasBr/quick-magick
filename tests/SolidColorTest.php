@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace NiklasBr\QuickMagick\Tests;
 
-use NiklasBr\QuickMagick\Enums\Type;
+use NiklasBr\QuickMagick\Enums\Category;
 use NiklasBr\QuickMagick\QuickMagick;
 use Spatie\Color\Exceptions\InvalidColorValue;
 
@@ -25,7 +25,7 @@ dataset('colors', [
 ]);
 
 it('creates a solid color for {color}', function (string $format): void {
-    $result = QuickMagick::image(imagickArgs: $format);
+    $result = QuickMagick::imageData(word: $format);
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
     $imgData = getimagesizefromstring($result);
@@ -38,7 +38,7 @@ it('creates a solid color for {color}', function (string $format): void {
 })->with('colors');
 
 it('writes a solid image file to disk', function (): void {
-    $imageData = QuickMagick::image(type: Type::SOLID_COLOR);
+    $imageData = QuickMagick::imageData(category: Category::SOLID_COLOR);
 
     $putResult = file_put_contents(__DIR__.'/out/pattern.png', $imageData);
 
@@ -51,6 +51,6 @@ it('writes a solid image file to disk', function (): void {
 
 it('throws an exception when there is no proper color', function (): void {
     expect(function (): void {
-        QuickMagick::image(type: Type::SOLID_COLOR, imagickArgs: 'towels');
+        QuickMagick::imageData(category: Category::SOLID_COLOR, word: 'towels');
     })->toThrow(InvalidColorValue::class);
 });

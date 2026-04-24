@@ -9,12 +9,12 @@ declare(strict_types=1);
 
 namespace NiklasBr\QuickMagick\Formatters;
 
-use NiklasBr\QuickMagick\Enums\Type;
+use NiklasBr\QuickMagick\Enums\Category;
 
 interface PseudoImageInterface
 {
     /**
      * @throws \InvalidArgumentException If missing or unable to use any required argument
      */
-    public static function format(Type $imageType, ?string $arg): string;
+    public static function format(Category $imageType, ?string $arg): string;
 }
