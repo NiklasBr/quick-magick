@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1777056579">
-  <project timestamp="1777056579" name="Clover Coverage">
+<coverage generated="1777056832">
+  <project timestamp="1777056832" name="Clover Coverage">
     <package name="NiklasBr\QuickMagick\Enums">
       <file name="/home/runner/work/quick-magick/quick-magick/src/Enums/Category.php">
         <class name="NiklasBr\QuickMagick\Enums\Category" namespace="NiklasBr\QuickMagick\Enums">
@@ -147,7 +147,7 @@
     <package name="NiklasBr\QuickMagick">
       <file name="/home/runner/work/quick-magick/quick-magick/src/QuickMagick.php">
         <class name="NiklasBr\QuickMagick\QuickMagick" namespace="NiklasBr\QuickMagick">
-          <metrics complexity="9" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="50" coveredstatements="49" elements="54" coveredelements="52"/>
+          <metrics complexity="9" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="50" coveredstatements="50" elements="54" coveredelements="54"/>
         </class>
         <line num="40" type="method" name="image" visibility="public" complexity="3" crap="3" count="2"/>
         <line num="51" type="stmt" count="2"/>
@@ -191,7 +191,7 @@
         <line num="147" type="stmt" count="4"/>
         <line num="148" type="stmt" count="2"/>
         <line num="151" type="stmt" count="2"/>
-        <line num="170" type="method" name="createImageFile" visibility="public" complexity="2" crap="2.00" count="8"/>
+        <line num="170" type="method" name="createImageFile" visibility="public" complexity="2" crap="2" count="8"/>
         <line num="179" type="stmt" count="8"/>
         <line num="180" type="stmt" count="8"/>
         <line num="182" type="stmt" count="8"/>
@@ -201,9 +201,9 @@
         <line num="186" type="stmt" count="8"/>
         <line num="187" type="stmt" count="8"/>
         <line num="189" type="stmt" count="8"/>
-        <line num="190" type="stmt" count="0"/>
+        <line num="190" type="stmt" count="1"/>
         <line num="193" type="stmt" count="8"/>
-        <metrics loc="196" ncloc="125" classes="1" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="50" coveredstatements="49" elements="54" coveredelements="52"/>
+        <metrics loc="196" ncloc="125" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="50" coveredstatements="50" elements="54" coveredelements="54"/>
       </file>
     </package>
     <package name="NiklasBr\QuickMagick\Validators">
@@ -219,6 +219,6 @@
         <metrics loc="31" ncloc="24" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
       </file>
     </package>
-    <metrics files="11" loc="715" ncloc="539" classes="8" methods="17" coveredmethods="16" conditionals="0" coveredconditionals="0" statements="128" coveredstatements="127" elements="145" coveredelements="143"/>
+    <metrics files="11" loc="715" ncloc="539" classes="8" methods="17" coveredmethods="17" conditionals="0" coveredconditionals="0" statements="128" coveredstatements="128" elements="145" coveredelements="145"/>
   </project>
 </coverage>
