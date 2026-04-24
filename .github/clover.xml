@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1777056832">
-  <project timestamp="1777056832" name="Clover Coverage">
+<coverage generated="1777058812">
+  <project timestamp="1777058812" name="Clover Coverage">
     <package name="NiklasBr\QuickMagick\Enums">
       <file name="/home/runner/work/quick-magick/quick-magick/src/Enums/Category.php">
         <class name="NiklasBr\QuickMagick\Enums\Category" namespace="NiklasBr\QuickMagick\Enums">
@@ -129,18 +129,18 @@
         <line num="90" type="stmt" count="115"/>
         <line num="91" type="stmt" count="115"/>
         <line num="93" type="stmt" count="115"/>
-        <line num="99" type="method" name="writeImageFile" visibility="public" complexity="7" crap="7" count="8"/>
-        <line num="102" type="stmt" count="8"/>
-        <line num="105" type="stmt" count="8"/>
+        <line num="99" type="method" name="writeImageFile" visibility="public" complexity="7" crap="7" count="13"/>
+        <line num="102" type="stmt" count="13"/>
+        <line num="105" type="stmt" count="13"/>
         <line num="106" type="stmt" count="2"/>
         <line num="107" type="stmt" count="1"/>
         <line num="109" type="stmt" count="1"/>
-        <line num="110" type="stmt" count="6"/>
+        <line num="110" type="stmt" count="11"/>
         <line num="111" type="stmt" count="2"/>
-        <line num="113" type="stmt" count="4"/>
-        <line num="116" type="stmt" count="5"/>
+        <line num="113" type="stmt" count="9"/>
+        <line num="116" type="stmt" count="10"/>
         <line num="117" type="stmt" count="1"/>
-        <line num="120" type="stmt" count="4"/>
+        <line num="120" type="stmt" count="9"/>
         <metrics loc="123" ncloc="100" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="40" coveredstatements="40" elements="44" coveredelements="44"/>
       </file>
     </package>
@@ -165,18 +165,18 @@
         <line num="64" type="stmt" count="2"/>
         <line num="65" type="stmt" count="2"/>
         <line num="67" type="stmt" count="2"/>
-        <line num="85" type="method" name="imageData" visibility="public" complexity="2" crap="2" count="119"/>
-        <line num="93" type="stmt" count="119"/>
-        <line num="94" type="stmt" count="119"/>
-        <line num="96" type="stmt" count="118"/>
-        <line num="97" type="stmt" count="118"/>
-        <line num="98" type="stmt" count="118"/>
-        <line num="99" type="stmt" count="118"/>
-        <line num="100" type="stmt" count="118"/>
-        <line num="101" type="stmt" count="118"/>
-        <line num="103" type="stmt" count="107"/>
+        <line num="85" type="method" name="imageData" visibility="public" complexity="2" crap="2" count="114"/>
+        <line num="93" type="stmt" count="114"/>
+        <line num="94" type="stmt" count="114"/>
+        <line num="96" type="stmt" count="113"/>
+        <line num="97" type="stmt" count="113"/>
+        <line num="98" type="stmt" count="113"/>
+        <line num="99" type="stmt" count="113"/>
+        <line num="100" type="stmt" count="113"/>
+        <line num="101" type="stmt" count="113"/>
+        <line num="103" type="stmt" count="102"/>
         <line num="104" type="stmt" count="1"/>
-        <line num="107" type="stmt" count="107"/>
+        <line num="107" type="stmt" count="102"/>
         <line num="126" type="method" name="imageUrl" visibility="public" complexity="2" crap="2" count="4"/>
         <line num="135" type="stmt" count="4"/>
         <line num="136" type="stmt" count="4"/>
@@ -191,18 +191,18 @@
         <line num="147" type="stmt" count="4"/>
         <line num="148" type="stmt" count="2"/>
         <line num="151" type="stmt" count="2"/>
-        <line num="170" type="method" name="createImageFile" visibility="public" complexity="2" crap="2" count="8"/>
-        <line num="179" type="stmt" count="8"/>
-        <line num="180" type="stmt" count="8"/>
-        <line num="182" type="stmt" count="8"/>
-        <line num="183" type="stmt" count="8"/>
-        <line num="184" type="stmt" count="8"/>
-        <line num="185" type="stmt" count="8"/>
-        <line num="186" type="stmt" count="8"/>
-        <line num="187" type="stmt" count="8"/>
-        <line num="189" type="stmt" count="8"/>
+        <line num="170" type="method" name="createImageFile" visibility="public" complexity="2" crap="2" count="13"/>
+        <line num="179" type="stmt" count="13"/>
+        <line num="180" type="stmt" count="13"/>
+        <line num="182" type="stmt" count="13"/>
+        <line num="183" type="stmt" count="13"/>
+        <line num="184" type="stmt" count="13"/>
+        <line num="185" type="stmt" count="13"/>
+        <line num="186" type="stmt" count="13"/>
+        <line num="187" type="stmt" count="13"/>
+        <line num="189" type="stmt" count="13"/>
         <line num="190" type="stmt" count="1"/>
-        <line num="193" type="stmt" count="8"/>
+        <line num="193" type="stmt" count="13"/>
         <metrics loc="196" ncloc="125" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="50" coveredstatements="50" elements="54" coveredelements="54"/>
       </file>
     </package>
