@@ -29,14 +29,15 @@ it('creates pattern image for {format}', function (string $format): void {
 })->with('valid patterns');
 
 it('writes a pattern image file to disk', function (): void {
-    $imageData = QuickMagick::imageData(category: Category::PATTERN, word: 'SMALLFISHSCALES');
+    $result = QuickMagick::createImageFile(
+        filePath: __DIR__.'/out/pattern.png',
+        category: Category::PATTERN,
+        word: 'SMALLFISHSCALES',
+    );
 
-    $putResult = file_put_contents(__DIR__.'/out/pattern.png', $imageData);
-
-    expect($putResult)
-        ->not()->toBeFalse()
-        ->toEqual(\strlen($imageData))
-        ->and(__DIR__.'/out/pattern.png')->toBeFile()
+    expect($result)
+        ->toBe(__DIR__.'/out/pattern.png')
+        ->and($result)->toBeFile()
     ;
 });
 

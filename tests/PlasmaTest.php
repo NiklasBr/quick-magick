@@ -91,13 +91,14 @@ it('throws an exception when {pattern} is not proper', function (string $pattern
 })->with('invalid plasma args');
 
 it('writes a plasma image file to disk', function (): void {
-    $imageData = QuickMagick::imageData(category: Category::PLASMA, word: 'fractal-maroon');
+    $result = QuickMagick::createImageFile(
+        filePath: __DIR__.'/out/plasma.png',
+        category: Category::PLASMA,
+        word: 'fractal-maroon',
+    );
 
-    $putResult = file_put_contents(__DIR__.'/out/plasma.png', $imageData);
-
-    expect($putResult)
-        ->not()->toBeFalse()
-        ->toEqual(\strlen($imageData))
-        ->and(__DIR__.'/out/plasma.png')->toBeFile()
+    expect($result)
+        ->toBe(__DIR__.'/out/plasma.png')
+        ->and($result)->toBeFile()
     ;
 });

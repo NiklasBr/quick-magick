@@ -38,14 +38,15 @@ it('creates a solid color for {color}', function (string $format): void {
 })->with('colors');
 
 it('writes a solid image file to disk', function (): void {
-    $imageData = QuickMagick::imageData(category: Category::SOLID_COLOR);
+    $result = QuickMagick::createImageFile(
+        filePath: __DIR__.'/out/solid_color.png',
+        category: Category::SOLID_COLOR,
+        word: 'maroon',
+    );
 
-    $putResult = file_put_contents(__DIR__.'/out/pattern.png', $imageData);
-
-    expect($putResult)
-        ->not()->toBeFalse()
-        ->toEqual(\strlen($imageData))
-        ->and(__DIR__.'/out/pattern.png')->toBeFile()
+    expect($result)
+        ->toBe(__DIR__.'/out/solid_color.png')
+        ->and($result)->toBeFile()
     ;
 });
 

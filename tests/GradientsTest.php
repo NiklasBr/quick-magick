@@ -44,25 +44,27 @@ it('works with normal radial single or double color string {color}', function (s
 })->with('valid colors');
 
 it('writes a linear gradient image file to disk', function (): void {
-    $imageData = QuickMagick::imageData(category: Category::LINEAR_GRADIENT, word: '#ffC300-magenta');
+    $result = QuickMagick::createImageFile(
+        filePath: __DIR__.'/out/linear_gradient.png',
+        category: Category::LINEAR_GRADIENT,
+        word: '#ffC300-magenta',
+    );
 
-    $putResult = file_put_contents(__DIR__.'/out/linear_gradient.png', $imageData);
-
-    expect($putResult)
-        ->not()->toBeFalse()
-        ->toEqual(\strlen($imageData))
-        ->and(__DIR__.'/out/linear_gradient.png')->toBeFile()
+    expect($result)
+        ->toBe(__DIR__.'/out/linear_gradient.png')
+        ->and($result)->toBeFile()
     ;
 });
 
 it('writes a radial gradient image file to disk', function (): void {
-    $imageData = QuickMagick::imageData(category: Category::RADIAL_GRADIENT, word: 'green-yellow');
+    $result = QuickMagick::createImageFile(
+        filePath: __DIR__.'/out/radial_gradient.png',
+        category: Category::RADIAL_GRADIENT,
+        word: 'green-yellow',
+    );
 
-    $putResult = file_put_contents(__DIR__.'/out/radial_gradient.png', $imageData);
-
-    expect($putResult)
-        ->not()->toBeFalse()
-        ->toEqual(\strlen($imageData))
-        ->and(__DIR__.'/out/radial_gradient.png')->toBeFile()
+    expect($result)
+        ->toBe(__DIR__.'/out/radial_gradient.png')
+        ->and($result)->toBeFile()
     ;
 });
