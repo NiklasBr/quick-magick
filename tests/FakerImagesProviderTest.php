@@ -72,7 +72,7 @@ it('returns a cache-busted image URL when randomize is true', function (): void 
 });
 
 it('returns an image URL honoring output format', function (): void {
-    $result = QuickMagick::imageUrl(format: Format::JPEG, randomize: false);
+    $result = QuickMagick::imageUrl(randomize: false, format: Format::JPEG);
 
     expect($result)->toStartWith('data:image/jpeg;base64,');
 });
@@ -245,7 +245,7 @@ it('creates a file with a filename', function (): void {
 });
 
 it('creates a faker-compatible image file path', function (): void {
-    $result = QuickMagick::image(dir: 'tests/out', randomize: false, fullPath: false, format: Format::JPEG);
+    $result = QuickMagick::image(dir: 'tests/out', fullPath: false, randomize: false, format: Format::JPEG);
 
     expect($result)
         ->toBe('image_640x480.jpeg')
@@ -257,9 +257,9 @@ it('creates image file from category-only faker call', function (): void {
     $result = QuickMagick::image(
         dir: 'tests/out',
         category: Category::PATTERN,
-        word: 'SMALLFISHSCALES',
         fullPath: true,
         randomize: false,
+        word: 'SMALLFISHSCALES',
     );
 
     expect($result)
