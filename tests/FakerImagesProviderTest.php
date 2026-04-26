@@ -13,6 +13,7 @@ use Faker\Factory;
 use Faker\Provider\Base;
 use NiklasBr\QuickMagick\Enums\Category;
 use NiklasBr\QuickMagick\Enums\Format;
+use NiklasBr\QuickMagick\Enums\Patterns;
 use NiklasBr\QuickMagick\QuickMagick;
 use NiklasBr\QuickMagick\Validators\ColorValidator;
 use Spatie\Color\Exceptions\InvalidColorValue;
@@ -106,7 +107,7 @@ it('supports word argument alongside type', function (): void {
 });
 
 it('supports type without explicit args using per-type defaults', function (): void {
-    $result = QuickMagick::imageData(category: Category::PATTERN, word: 'SMALLFISHSCALES');
+    $result = QuickMagick::imageData(category: Category::PATTERN, word: Patterns::SMALLFISHSCALES);
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
     $imgData = getimagesizefromstring($result);
@@ -119,7 +120,7 @@ it('supports type without explicit args using per-type defaults', function (): v
 });
 
 it('accepts category by enum value string', function (): void {
-    $result = QuickMagick::imageData(category: 'pattern', word: 'SMALLFISHSCALES');
+    $result = QuickMagick::imageData(category: Category::PATTERN, word: Patterns::SMALLFISHSCALES);
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
     $imgData = getimagesizefromstring($result);
@@ -132,7 +133,7 @@ it('accepts category by enum value string', function (): void {
 });
 
 it('accepts category by enum name string', function (): void {
-    $result = QuickMagick::imageData(category: 'PATTERN', word: 'SMALLFISHSCALES');
+    $result = QuickMagick::imageData(category: Category::PATTERN, word: Patterns::SMALLFISHSCALES);
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
     $imgData = getimagesizefromstring($result);
@@ -145,7 +146,7 @@ it('accepts category by enum name string', function (): void {
 });
 
 it('supports word with explicit type and format enum', function (): void {
-    $result = QuickMagick::imageData(category: Category::PATTERN, word: 'smallfishscales', format: Format::JPEG);
+    $result = QuickMagick::imageData(category: Category::PATTERN, word: Patterns::SMALLFISHSCALES, format: Format::JPEG);
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
     $imgData = getimagesizefromstring($result);
@@ -259,7 +260,7 @@ it('creates image file from category-only faker call', function (): void {
         category: Category::PATTERN,
         fullPath: true,
         randomize: false,
-        word: 'SMALLFISHSCALES',
+        word: Patterns::SMALLFISHSCALES,
     );
 
     expect($result)

@@ -10,10 +10,8 @@ declare(strict_types=1);
 namespace NiklasBr\QuickMagick\Tests;
 
 use NiklasBr\QuickMagick\Enums\Category;
-use NiklasBr\QuickMagick\Formatters\Patterns;
+use NiklasBr\QuickMagick\Enums\Patterns;
 use NiklasBr\QuickMagick\QuickMagick;
-
-dataset('valid patterns', Patterns::$validPatterns);
 
 it('creates pattern image for {format}', function (string $format): void {
     $result = QuickMagick::imageData(category: Category::PATTERN, word: $format);
@@ -26,13 +24,13 @@ it('creates pattern image for {format}', function (string $format): void {
         ->toBeArray()
         ->and($imgData['mime'])->toMatch('/image\/png/')
     ;
-})->with('valid patterns');
+})->with(Patterns::all());
 
 it('writes a pattern image file to disk', function (): void {
     $result = QuickMagick::createImageFile(
         filePath: __DIR__.'/out/pattern.png',
         category: Category::PATTERN,
-        word: 'VERTICALSAW',
+        word: Patterns::VERTICALSAW,
     );
 
     expect($result)
