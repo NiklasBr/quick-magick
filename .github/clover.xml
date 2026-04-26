@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1777111642">
-  <project timestamp="1777111642" name="Clover Coverage">
+<coverage generated="1777192853">
+  <project timestamp="1777192853" name="Clover Coverage">
     <package name="NiklasBr\QuickMagick\Enums">
       <file name="/home/runner/work/quick-magick/quick-magick/src/Enums/Category.php">
         <class name="NiklasBr\QuickMagick\Enums\Category" namespace="NiklasBr\QuickMagick\Enums">
