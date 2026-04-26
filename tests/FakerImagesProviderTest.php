@@ -244,11 +244,11 @@ it('creates a file with a filename', function (): void {
     ;
 });
 
-it('creates a faker-compatible image file path', function (): void {
-    $result = QuickMagick::image(dir: 'tests/out', fullPath: false, randomize: false, format: Format::JPEG);
+it('creates a faker-compatible small image file path', function (): void {
+    $result = QuickMagick::image(dir: 'tests/out', width: 50, height: 50, fullPath: false, randomize: false, format: Format::JPEG);
 
     expect($result)
-        ->toBe('image_640x480.jpeg')
+        ->toBe('image_50x50.jpeg')
         ->and('tests/out/'.$result)->toBeFile()
     ;
 });

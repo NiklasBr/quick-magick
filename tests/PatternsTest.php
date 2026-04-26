@@ -32,7 +32,7 @@ it('writes a pattern image file to disk', function (): void {
     $result = QuickMagick::createImageFile(
         filePath: __DIR__.'/out/pattern.png',
         category: Category::PATTERN,
-        word: 'SMALLFISHSCALES',
+        word: 'VERTICALSAW',
     );
 
     expect($result)
