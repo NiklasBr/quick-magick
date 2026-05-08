@@ -4,6 +4,7 @@ on:
     schedule:
         # Early every monday morning
         - cron: '0 2 * * 1'
+    workflow_dispatch:
 
 jobs:
     sbom:
