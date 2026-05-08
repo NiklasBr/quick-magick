@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:4fa8fb4d-2b8a-46cc-a2db-ed57527eb7a0">
+<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:772ad891-30f7-403d-98c0-286ca60a3989">
   <metadata>
-    <timestamp><![CDATA[2026-05-04T03:02:11Z]]></timestamp>
+    <timestamp><![CDATA[2026-05-08T16:08:56Z]]></timestamp>
     <tools>
       <tool>
         <name><![CDATA[composer]]></name>
@@ -50,8 +50,8 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[9a7a64bc4492d5f066dedf1482a814500a7c04e5]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[9a7a64bc4492d5f066dedf1482a814500a7c04e5]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[840075911c6b1c7bdfe04e781a4f590864c33704]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[840075911c6b1c7bdfe04e781a4f590864c33704]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
       </properties>
     </component>
@@ -298,26 +298,26 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="ergebnis/agent-detector-1.1.1.0">
+    <component type="library" bom-ref="ergebnis/agent-detector-1.2.0.0">
       <author><![CDATA[Andreas Möller]]></author>
       <group><![CDATA[ergebnis]]></group>
       <name><![CDATA[agent-detector]]></name>
-      <version><![CDATA[1.1.1]]></version>
+      <version><![CDATA[1.2.0]]></version>
       <description><![CDATA[Provides a detector for detecting the presence of an agent.]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/ergebnis/agent-detector@1.1.1]]></purl>
+      <purl><![CDATA[pkg:composer/ergebnis/agent-detector@1.2.0]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/ergebnis/agent-detector/zipball/5b654a9f1ff8a5d2ce6a57568df5ae8801c87f64]]></url>
-          <comment><![CDATA[dist reference: 5b654a9f1ff8a5d2ce6a57568df5ae8801c87f64]]></comment>
+          <url><![CDATA[https://api.github.com/repos/ergebnis/agent-detector/zipball/e211f17928c8b95a51e06040792d57f5462fb271]]></url>
+          <comment><![CDATA[dist reference: e211f17928c8b95a51e06040792d57f5462fb271]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/ergebnis/agent-detector.git]]></url>
-          <comment><![CDATA[source reference: 5b654a9f1ff8a5d2ce6a57568df5ae8801c87f64]]></comment>
+          <comment><![CDATA[source reference: e211f17928c8b95a51e06040792d57f5462fb271]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://github.com/ergebnis/agent-detector]]></url>
@@ -337,8 +337,8 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[5b654a9f1ff8a5d2ce6a57568df5ae8801c87f64]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[5b654a9f1ff8a5d2ce6a57568df5ae8801c87f64]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[e211f17928c8b95a51e06040792d57f5462fb271]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[e211f17928c8b95a51e06040792d57f5462fb271]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -2523,39 +2523,39 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="symfony/deprecation-contracts-3.6.0.0">
+    <component type="library" bom-ref="symfony/deprecation-contracts-3.7.0.0">
       <author><![CDATA[Nicolas Grekas, Symfony Community]]></author>
       <group><![CDATA[symfony]]></group>
       <name><![CDATA[deprecation-contracts]]></name>
-      <version><![CDATA[v3.6.0]]></version>
+      <version><![CDATA[v3.7.0]]></version>
       <description><![CDATA[A generic function and convention to trigger deprecation notices]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/symfony/deprecation-contracts@v3.6.0]]></purl>
+      <purl><![CDATA[pkg:composer/symfony/deprecation-contracts@v3.7.0]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/symfony/deprecation-contracts/zipball/63afe740e99a13ba87ec199bb07bbdee937a5b62]]></url>
-          <comment><![CDATA[dist reference: 63afe740e99a13ba87ec199bb07bbdee937a5b62]]></comment>
+          <url><![CDATA[https://api.github.com/repos/symfony/deprecation-contracts/zipball/50f59d1f3ca46d41ac911f97a78626b6756af35b]]></url>
+          <comment><![CDATA[dist reference: 50f59d1f3ca46d41ac911f97a78626b6756af35b]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/symfony/deprecation-contracts.git]]></url>
-          <comment><![CDATA[source reference: 63afe740e99a13ba87ec199bb07bbdee937a5b62]]></comment>
+          <comment><![CDATA[source reference: 50f59d1f3ca46d41ac911f97a78626b6756af35b]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://symfony.com]]></url>
           <comment><![CDATA[as detected from Composer manifest 'homepage']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/symfony/deprecation-contracts/tree/v3.6.0]]></url>
+          <url><![CDATA[https://github.com/symfony/deprecation-contracts/tree/v3.7.0]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[63afe740e99a13ba87ec199bb07bbdee937a5b62]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[63afe740e99a13ba87ec199bb07bbdee937a5b62]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[50f59d1f3ca46d41ac911f97a78626b6756af35b]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[50f59d1f3ca46d41ac911f97a78626b6756af35b]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
       </properties>
     </component>
@@ -2596,39 +2596,39 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="symfony/event-dispatcher-contracts-3.6.0.0">
+    <component type="library" bom-ref="symfony/event-dispatcher-contracts-3.7.0.0">
       <author><![CDATA[Nicolas Grekas, Symfony Community]]></author>
       <group><![CDATA[symfony]]></group>
       <name><![CDATA[event-dispatcher-contracts]]></name>
-      <version><![CDATA[v3.6.0]]></version>
+      <version><![CDATA[v3.7.0]]></version>
       <description><![CDATA[Generic abstractions related to dispatching event]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/symfony/event-dispatcher-contracts@v3.6.0]]></purl>
+      <purl><![CDATA[pkg:composer/symfony/event-dispatcher-contracts@v3.7.0]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/59eb412e93815df44f05f342958efa9f46b1e586]]></url>
-          <comment><![CDATA[dist reference: 59eb412e93815df44f05f342958efa9f46b1e586]]></comment>
+          <url><![CDATA[https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/ccba7060602b7fed0b03c85bf025257f76d9ef32]]></url>
+          <comment><![CDATA[dist reference: ccba7060602b7fed0b03c85bf025257f76d9ef32]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/symfony/event-dispatcher-contracts.git]]></url>
-          <comment><![CDATA[source reference: 59eb412e93815df44f05f342958efa9f46b1e586]]></comment>
+          <comment><![CDATA[source reference: ccba7060602b7fed0b03c85bf025257f76d9ef32]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://symfony.com]]></url>
           <comment><![CDATA[as detected from Composer manifest 'homepage']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/symfony/event-dispatcher-contracts/tree/v3.6.0]]></url>
+          <url><![CDATA[https://github.com/symfony/event-dispatcher-contracts/tree/v3.7.0]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[59eb412e93815df44f05f342958efa9f46b1e586]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[59eb412e93815df44f05f342958efa9f46b1e586]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[ccba7060602b7fed0b03c85bf025257f76d9ef32]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[ccba7060602b7fed0b03c85bf025257f76d9ef32]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -3040,39 +3040,39 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="symfony/service-contracts-3.6.1.0">
+    <component type="library" bom-ref="symfony/service-contracts-3.7.0.0">
       <author><![CDATA[Nicolas Grekas, Symfony Community]]></author>
       <group><![CDATA[symfony]]></group>
       <name><![CDATA[service-contracts]]></name>
-      <version><![CDATA[v3.6.1]]></version>
+      <version><![CDATA[v3.7.0]]></version>
       <description><![CDATA[Generic abstractions related to writing services]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/symfony/service-contracts@v3.6.1]]></purl>
+      <purl><![CDATA[pkg:composer/symfony/service-contracts@v3.7.0]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/symfony/service-contracts/zipball/45112560a3ba2d715666a509a0bc9521d10b6c43]]></url>
-          <comment><![CDATA[dist reference: 45112560a3ba2d715666a509a0bc9521d10b6c43]]></comment>
+          <url><![CDATA[https://api.github.com/repos/symfony/service-contracts/zipball/d25d82433a80eba6aa0e6c24b61d7370d99e444a]]></url>
+          <comment><![CDATA[dist reference: d25d82433a80eba6aa0e6c24b61d7370d99e444a]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/symfony/service-contracts.git]]></url>
-          <comment><![CDATA[source reference: 45112560a3ba2d715666a509a0bc9521d10b6c43]]></comment>
+          <comment><![CDATA[source reference: d25d82433a80eba6aa0e6c24b61d7370d99e444a]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://symfony.com]]></url>
           <comment><![CDATA[as detected from Composer manifest 'homepage']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/symfony/service-contracts/tree/v3.6.1]]></url>
+          <url><![CDATA[https://github.com/symfony/service-contracts/tree/v3.7.0]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[45112560a3ba2d715666a509a0bc9521d10b6c43]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[45112560a3ba2d715666a509a0bc9521d10b6c43]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[d25d82433a80eba6aa0e6c24b61d7370d99e444a]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[d25d82433a80eba6aa0e6c24b61d7370d99e444a]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -3285,11 +3285,11 @@
       <dependency ref="psr/log-3.0.2.0"/>
     </dependency>
     <dependency ref="doctrine/deprecations-1.1.6.0"/>
-    <dependency ref="ergebnis/agent-detector-1.1.1.0"/>
+    <dependency ref="ergebnis/agent-detector-1.2.0.0"/>
     <dependency ref="evenement/evenement-3.0.2.0"/>
     <dependency ref="fakerphp/faker-1.24.1.0">
       <dependency ref="psr/container-2.0.2.0"/>
-      <dependency ref="symfony/deprecation-contracts-3.6.0.0"/>
+      <dependency ref="symfony/deprecation-contracts-3.7.0.0"/>
     </dependency>
     <dependency ref="fidry/cpu-core-counter-1.3.0.0"/>
     <dependency ref="filp/whoops-2.18.4.0">
@@ -3299,7 +3299,7 @@
       <dependency ref="clue/ndjson-react-1.3.0.0"/>
       <dependency ref="composer/semver-3.4.4.0"/>
       <dependency ref="composer/xdebug-handler-3.0.5.0"/>
-      <dependency ref="ergebnis/agent-detector-1.1.1.0"/>
+      <dependency ref="ergebnis/agent-detector-1.2.0.0"/>
       <dependency ref="fidry/cpu-core-counter-1.3.0.0"/>
       <dependency ref="react/child-process-0.6.7.0"/>
       <dependency ref="react/event-loop-1.6.0.0"/>
@@ -3468,16 +3468,16 @@
     <dependency ref="spatie/color-2.1.0.0"/>
     <dependency ref="staabm/side-effects-detector-1.0.5.0"/>
     <dependency ref="symfony/console-7.4.9.0">
-      <dependency ref="symfony/deprecation-contracts-3.6.0.0"/>
+      <dependency ref="symfony/deprecation-contracts-3.7.0.0"/>
       <dependency ref="symfony/polyfill-mbstring-1.37.0.0"/>
-      <dependency ref="symfony/service-contracts-3.6.1.0"/>
+      <dependency ref="symfony/service-contracts-3.7.0.0"/>
       <dependency ref="symfony/string-7.4.8.0"/>
     </dependency>
-    <dependency ref="symfony/deprecation-contracts-3.6.0.0"/>
+    <dependency ref="symfony/deprecation-contracts-3.7.0.0"/>
     <dependency ref="symfony/event-dispatcher-7.4.9.0">
-      <dependency ref="symfony/event-dispatcher-contracts-3.6.0.0"/>
+      <dependency ref="symfony/event-dispatcher-contracts-3.7.0.0"/>
     </dependency>
-    <dependency ref="symfony/event-dispatcher-contracts-3.6.0.0">
+    <dependency ref="symfony/event-dispatcher-contracts-3.7.0.0">
       <dependency ref="psr/event-dispatcher-1.0.0.0"/>
     </dependency>
     <dependency ref="symfony/filesystem-7.4.9.0">
@@ -3486,7 +3486,7 @@
     </dependency>
     <dependency ref="symfony/finder-7.4.8.0"/>
     <dependency ref="symfony/options-resolver-7.4.8.0">
-      <dependency ref="symfony/deprecation-contracts-3.6.0.0"/>
+      <dependency ref="symfony/deprecation-contracts-3.7.0.0"/>
     </dependency>
     <dependency ref="symfony/polyfill-ctype-1.37.0.0"/>
     <dependency ref="symfony/polyfill-intl-grapheme-1.37.0.0"/>
@@ -3496,15 +3496,15 @@
     <dependency ref="symfony/polyfill-php81-1.37.0.0"/>
     <dependency ref="symfony/polyfill-php84-1.37.0.0"/>
     <dependency ref="symfony/process-7.4.8.0"/>
-    <dependency ref="symfony/service-contracts-3.6.1.0">
+    <dependency ref="symfony/service-contracts-3.7.0.0">
       <dependency ref="psr/container-2.0.2.0"/>
-      <dependency ref="symfony/deprecation-contracts-3.6.0.0"/>
+      <dependency ref="symfony/deprecation-contracts-3.7.0.0"/>
     </dependency>
     <dependency ref="symfony/stopwatch-7.4.8.0">
-      <dependency ref="symfony/service-contracts-3.6.1.0"/>
+      <dependency ref="symfony/service-contracts-3.7.0.0"/>
     </dependency>
     <dependency ref="symfony/string-7.4.8.0">
-      <dependency ref="symfony/deprecation-contracts-3.6.0.0"/>
+      <dependency ref="symfony/deprecation-contracts-3.7.0.0"/>
       <dependency ref="symfony/polyfill-ctype-1.37.0.0"/>
       <dependency ref="symfony/polyfill-intl-grapheme-1.37.0.0"/>
       <dependency ref="symfony/polyfill-intl-normalizer-1.37.0.0"/>
