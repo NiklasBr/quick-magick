@@ -44,3 +44,32 @@ it('throws an exception when there is no proper pattern-pattern', function (): v
         QuickMagick::imageData(category: Category::PATTERN, word: 'BAD PATTERN');
     })->toThrow(\InvalidArgumentException::class);
 });
+
+it('returns all supported patterns', function (): void {
+    expect(Patterns::all())
+        ->toBeArray()
+        // Test some known patterns to ensure they are included in the list
+        ->toContain(Patterns::BRICKS)
+        ->toContain(Patterns::GRAY75)
+        ->toContain(Patterns::HEXAGONS)
+        ->toContain(Patterns::VERTICALSAW)
+    ;
+});
+
+it('accepts category as string name', function (): void {
+    $result = QuickMagick::imageData(category: 'PATTERN', word: Patterns::BRICKS);
+
+    expect($result)->not->toBeEmpty();
+});
+
+it('throws exception for invalid category string', function (): void {
+    expect(function (): void {
+        QuickMagick::imageData(category: 'INVALID_CATEGORY');
+    })->toThrow(\InvalidArgumentException::class);
+});
+
+it('defaults to solid color when category is null', function (): void {
+    $result = QuickMagick::imageData(category: null);
+
+    expect($result)->not->toBeEmpty();
+});
