@@ -1,0 +1,27 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/php
+{
+  "name": "PHP",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "image": "mcr.microsoft.com/devcontainers/php:dev-8.4-trixie",
+
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+
+  // Configure tool-specific properties.
+  // "customizations": {},
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [
+    8080
+  ],
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // This installs Imagick via PECL and then runs composer install.
+    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y libmagickwand-dev imagemagick && printf \"\\n\" | sudo pecl install imagick && echo 'extension=imagick.so' | sudo tee /usr/local/etc/php/conf.d/imagick.ini && composer install"
+
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
+}

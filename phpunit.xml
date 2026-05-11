@@ -15,6 +15,7 @@
         </include>
         <exclude>
             <file>src/Bootstrap.php</file>
+            <file>src/Utils/ExampleImageGenerator.php</file>
         </exclude>
     </source>
 </phpunit>

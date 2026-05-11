@@ -59,6 +59,7 @@
         "cs:fix": "vendor/bin/php-cs-fixer fix",
         "pest:test": "vendor/bin/pest --parallel",
         "pest:coverage": "vendor/bin/pest --coverage",
-        "phpstan:analyse": "vendor/bin/phpstan analyse"
+        "phpstan:analyse": "vendor/bin/phpstan analyse",
+        "docs:generate": "php ./src/Utils/ExampleImageGenerator.php"
     }
 }
