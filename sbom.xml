@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:6d233c8e-3b24-492d-96d5-21cb387bafbd">
+<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:e399436f-ffc6-4f2a-81ec-3141cefb9082">
   <metadata>
-    <timestamp><![CDATA[2026-05-18T03:03:04Z]]></timestamp>
+    <timestamp><![CDATA[2026-05-25T03:03:31Z]]></timestamp>
     <tools>
       <tool>
         <name><![CDATA[composer]]></name>
@@ -50,8 +50,8 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[b7cfa72609fa37ac9af013f662478a01cac3a42e]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[b7cfa72609fa37ac9af013f662478a01cac3a42e]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[f8c771d6bf4e6924432082b8c48dd74cf692107d]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[f8c771d6bf4e6924432082b8c48dd74cf692107d]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
       </properties>
     </component>
@@ -1106,21 +1106,21 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="phpstan/phpstan-2.1.54.0">
+    <component type="library" bom-ref="phpstan/phpstan-2.1.55.0">
       <group><![CDATA[phpstan]]></group>
       <name><![CDATA[phpstan]]></name>
-      <version><![CDATA[2.1.54]]></version>
+      <version><![CDATA[2.1.55]]></version>
       <description><![CDATA[PHPStan - PHP Static Analysis Tool]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/phpstan/phpstan@2.1.54]]></purl>
+      <purl><![CDATA[pkg:composer/phpstan/phpstan@2.1.55]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/phpstan/phpstan/zipball/8be50c3992107dc837b17da4d140fbbdf9a5c5bd]]></url>
-          <comment><![CDATA[dist reference: 8be50c3992107dc837b17da4d140fbbdf9a5c5bd]]></comment>
+          <url><![CDATA[https://api.github.com/repos/phpstan/phpstan/zipball/9eaac3826ed5e9b8427350a43cac825eeca3f566]]></url>
+          <comment><![CDATA[dist reference: 9eaac3826ed5e9b8427350a43cac825eeca3f566]]></comment>
         </reference>
         <reference type="documentation">
           <url><![CDATA[https://phpstan.org/user-guide/getting-started]]></url>
@@ -1144,7 +1144,7 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[8be50c3992107dc837b17da4d140fbbdf9a5c5bd]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[9eaac3826ed5e9b8427350a43cac825eeca3f566]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -1870,26 +1870,26 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="sebastian/comparator-7.1.6.0">
+    <component type="library" bom-ref="sebastian/comparator-7.1.8.0">
       <author><![CDATA[Sebastian Bergmann, Jeff Welch, Volker Dusch, Bernhard Schussek]]></author>
       <group><![CDATA[sebastian]]></group>
       <name><![CDATA[comparator]]></name>
-      <version><![CDATA[7.1.6]]></version>
+      <version><![CDATA[7.1.8]]></version>
       <description><![CDATA[Provides the functionality to compare PHP values for equality]]></description>
       <licenses>
         <license>
           <id><![CDATA[BSD-3-Clause]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/sebastian/comparator@7.1.6]]></purl>
+      <purl><![CDATA[pkg:composer/sebastian/comparator@7.1.8]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/sebastianbergmann/comparator/zipball/c769009dee98f494e0edc3fd4f4087501688f11e]]></url>
-          <comment><![CDATA[dist reference: c769009dee98f494e0edc3fd4f4087501688f11e]]></comment>
+          <url><![CDATA[https://api.github.com/repos/sebastianbergmann/comparator/zipball/7c65c1e79836812819705b473a90c12399542485]]></url>
+          <comment><![CDATA[dist reference: 7c65c1e79836812819705b473a90c12399542485]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/sebastianbergmann/comparator.git]]></url>
-          <comment><![CDATA[source reference: c769009dee98f494e0edc3fd4f4087501688f11e]]></comment>
+          <comment><![CDATA[source reference: 7c65c1e79836812819705b473a90c12399542485]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://github.com/sebastianbergmann/comparator]]></url>
@@ -1904,13 +1904,13 @@
           <comment><![CDATA[as detected from Composer manifest 'support.security']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/sebastianbergmann/comparator/tree/7.1.6]]></url>
+          <url><![CDATA[https://github.com/sebastianbergmann/comparator/tree/7.1.8]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[c769009dee98f494e0edc3fd4f4087501688f11e]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[c769009dee98f494e0edc3fd4f4087501688f11e]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[7c65c1e79836812819705b473a90c12399542485]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[7c65c1e79836812819705b473a90c12399542485]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -2005,26 +2005,26 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="sebastian/environment-8.1.0.0">
+    <component type="library" bom-ref="sebastian/environment-8.1.1.0">
       <author><![CDATA[Sebastian Bergmann]]></author>
       <group><![CDATA[sebastian]]></group>
       <name><![CDATA[environment]]></name>
-      <version><![CDATA[8.1.0]]></version>
+      <version><![CDATA[8.1.1]]></version>
       <description><![CDATA[Provides functionality to handle HHVM/PHP environments]]></description>
       <licenses>
         <license>
           <id><![CDATA[BSD-3-Clause]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/sebastian/environment@8.1.0]]></purl>
+      <purl><![CDATA[pkg:composer/sebastian/environment@8.1.1]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/sebastianbergmann/environment/zipball/b121608b28a13f721e76ffbbd386d08eff58f3f6]]></url>
-          <comment><![CDATA[dist reference: b121608b28a13f721e76ffbbd386d08eff58f3f6]]></comment>
+          <url><![CDATA[https://api.github.com/repos/sebastianbergmann/environment/zipball/334bc42a97ec6fc44c59001dc3467e0d739a20e9]]></url>
+          <comment><![CDATA[dist reference: 334bc42a97ec6fc44c59001dc3467e0d739a20e9]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/sebastianbergmann/environment.git]]></url>
-          <comment><![CDATA[source reference: b121608b28a13f721e76ffbbd386d08eff58f3f6]]></comment>
+          <comment><![CDATA[source reference: 334bc42a97ec6fc44c59001dc3467e0d739a20e9]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://github.com/sebastianbergmann/environment]]></url>
@@ -2039,37 +2039,37 @@
           <comment><![CDATA[as detected from Composer manifest 'support.security']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/sebastianbergmann/environment/tree/8.1.0]]></url>
+          <url><![CDATA[https://github.com/sebastianbergmann/environment/tree/8.1.1]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[b121608b28a13f721e76ffbbd386d08eff58f3f6]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[b121608b28a13f721e76ffbbd386d08eff58f3f6]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[334bc42a97ec6fc44c59001dc3467e0d739a20e9]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[334bc42a97ec6fc44c59001dc3467e0d739a20e9]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="sebastian/exporter-7.0.2.0">
+    <component type="library" bom-ref="sebastian/exporter-7.0.3.0">
       <author><![CDATA[Sebastian Bergmann, Jeff Welch, Volker Dusch, Adam Harvey, Bernhard Schussek]]></author>
       <group><![CDATA[sebastian]]></group>
       <name><![CDATA[exporter]]></name>
-      <version><![CDATA[7.0.2]]></version>
+      <version><![CDATA[7.0.3]]></version>
       <description><![CDATA[Provides the functionality to export PHP variables for visualization]]></description>
       <licenses>
         <license>
           <id><![CDATA[BSD-3-Clause]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/sebastian/exporter@7.0.2]]></purl>
+      <purl><![CDATA[pkg:composer/sebastian/exporter@7.0.3]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/sebastianbergmann/exporter/zipball/016951ae10980765e4e7aee491eb288c64e505b7]]></url>
-          <comment><![CDATA[dist reference: 016951ae10980765e4e7aee491eb288c64e505b7]]></comment>
+          <url><![CDATA[https://api.github.com/repos/sebastianbergmann/exporter/zipball/c5e21b5de653ce0a769fb36f5cdfcb5e7a32cf23]]></url>
+          <comment><![CDATA[dist reference: c5e21b5de653ce0a769fb36f5cdfcb5e7a32cf23]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/sebastianbergmann/exporter.git]]></url>
-          <comment><![CDATA[source reference: 016951ae10980765e4e7aee491eb288c64e505b7]]></comment>
+          <comment><![CDATA[source reference: c5e21b5de653ce0a769fb36f5cdfcb5e7a32cf23]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://www.github.com/sebastianbergmann/exporter]]></url>
@@ -2084,13 +2084,13 @@
           <comment><![CDATA[as detected from Composer manifest 'support.security']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/sebastianbergmann/exporter/tree/7.0.2]]></url>
+          <url><![CDATA[https://github.com/sebastianbergmann/exporter/tree/7.0.3]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[016951ae10980765e4e7aee491eb288c64e505b7]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[016951ae10980765e4e7aee491eb288c64e505b7]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[c5e21b5de653ce0a769fb36f5cdfcb5e7a32cf23]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[c5e21b5de653ce0a769fb36f5cdfcb5e7a32cf23]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -2140,26 +2140,26 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="sebastian/lines-of-code-4.0.0.0">
+    <component type="library" bom-ref="sebastian/lines-of-code-4.0.1.0">
       <author><![CDATA[Sebastian Bergmann]]></author>
       <group><![CDATA[sebastian]]></group>
       <name><![CDATA[lines-of-code]]></name>
-      <version><![CDATA[4.0.0]]></version>
+      <version><![CDATA[4.0.1]]></version>
       <description><![CDATA[Library for counting the lines of code in PHP source code]]></description>
       <licenses>
         <license>
           <id><![CDATA[BSD-3-Clause]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/sebastian/lines-of-code@4.0.0]]></purl>
+      <purl><![CDATA[pkg:composer/sebastian/lines-of-code@4.0.1]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/sebastianbergmann/lines-of-code/zipball/97ffee3bcfb5805568d6af7f0f893678fc076d2f]]></url>
-          <comment><![CDATA[dist reference: 97ffee3bcfb5805568d6af7f0f893678fc076d2f]]></comment>
+          <url><![CDATA[https://api.github.com/repos/sebastianbergmann/lines-of-code/zipball/d543b8ef219dcd8da262cbb958639a96bedba10e]]></url>
+          <comment><![CDATA[dist reference: d543b8ef219dcd8da262cbb958639a96bedba10e]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/sebastianbergmann/lines-of-code.git]]></url>
-          <comment><![CDATA[source reference: 97ffee3bcfb5805568d6af7f0f893678fc076d2f]]></comment>
+          <comment><![CDATA[source reference: d543b8ef219dcd8da262cbb958639a96bedba10e]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://github.com/sebastianbergmann/lines-of-code]]></url>
@@ -2174,13 +2174,13 @@
           <comment><![CDATA[as detected from Composer manifest 'support.security']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/sebastianbergmann/lines-of-code/tree/4.0.0]]></url>
+          <url><![CDATA[https://github.com/sebastianbergmann/lines-of-code/tree/4.0.1]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[97ffee3bcfb5805568d6af7f0f893678fc076d2f]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[97ffee3bcfb5805568d6af7f0f893678fc076d2f]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[d543b8ef219dcd8da262cbb958639a96bedba10e]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[d543b8ef219dcd8da262cbb958639a96bedba10e]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -2320,26 +2320,26 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="sebastian/type-6.0.3.0">
+    <component type="library" bom-ref="sebastian/type-6.0.4.0">
       <author><![CDATA[Sebastian Bergmann]]></author>
       <group><![CDATA[sebastian]]></group>
       <name><![CDATA[type]]></name>
-      <version><![CDATA[6.0.3]]></version>
+      <version><![CDATA[6.0.4]]></version>
       <description><![CDATA[Collection of value objects that represent the types of the PHP type system]]></description>
       <licenses>
         <license>
           <id><![CDATA[BSD-3-Clause]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/sebastian/type@6.0.3]]></purl>
+      <purl><![CDATA[pkg:composer/sebastian/type@6.0.4]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/sebastianbergmann/type/zipball/e549163b9760b8f71f191651d22acf32d56d6d4d]]></url>
-          <comment><![CDATA[dist reference: e549163b9760b8f71f191651d22acf32d56d6d4d]]></comment>
+          <url><![CDATA[https://api.github.com/repos/sebastianbergmann/type/zipball/82ff822c2edc46724be9f7411d3163021f602773]]></url>
+          <comment><![CDATA[dist reference: 82ff822c2edc46724be9f7411d3163021f602773]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/sebastianbergmann/type.git]]></url>
-          <comment><![CDATA[source reference: e549163b9760b8f71f191651d22acf32d56d6d4d]]></comment>
+          <comment><![CDATA[source reference: 82ff822c2edc46724be9f7411d3163021f602773]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://github.com/sebastianbergmann/type]]></url>
@@ -2354,13 +2354,13 @@
           <comment><![CDATA[as detected from Composer manifest 'support.security']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/sebastianbergmann/type/tree/6.0.3]]></url>
+          <url><![CDATA[https://github.com/sebastianbergmann/type/tree/6.0.4]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[e549163b9760b8f71f191651d22acf32d56d6d4d]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[e549163b9760b8f71f191651d22acf32d56d6d4d]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[82ff822c2edc46724be9f7411d3163021f602773]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[82ff822c2edc46724be9f7411d3163021f602773]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -3225,39 +3225,39 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="webmozart/assert-2.3.0.0">
+    <component type="library" bom-ref="webmozart/assert-2.4.0.0">
       <author><![CDATA[Bernhard Schussek, Woody Gilk]]></author>
       <group><![CDATA[webmozart]]></group>
       <name><![CDATA[assert]]></name>
-      <version><![CDATA[2.3.0]]></version>
+      <version><![CDATA[2.4.0]]></version>
       <description><![CDATA[Assertions to validate method input/output with nice error messages.]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/webmozart/assert@2.3.0]]></purl>
+      <purl><![CDATA[pkg:composer/webmozart/assert@2.4.0]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/webmozarts/assert/zipball/eb0d790f735ba6cff25c683a85a1da0eadeff9e4]]></url>
-          <comment><![CDATA[dist reference: eb0d790f735ba6cff25c683a85a1da0eadeff9e4]]></comment>
+          <url><![CDATA[https://api.github.com/repos/webmozarts/assert/zipball/9007ea6f45ecf352a9422b36644e4bfc039b9155]]></url>
+          <comment><![CDATA[dist reference: 9007ea6f45ecf352a9422b36644e4bfc039b9155]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/webmozarts/assert.git]]></url>
-          <comment><![CDATA[source reference: eb0d790f735ba6cff25c683a85a1da0eadeff9e4]]></comment>
+          <comment><![CDATA[source reference: 9007ea6f45ecf352a9422b36644e4bfc039b9155]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/webmozarts/assert/issues]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.issues']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/webmozarts/assert/tree/2.3.0]]></url>
+          <url><![CDATA[https://github.com/webmozarts/assert/tree/2.4.0]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[eb0d790f735ba6cff25c683a85a1da0eadeff9e4]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[eb0d790f735ba6cff25c683a85a1da0eadeff9e4]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[9007ea6f45ecf352a9422b36644e4bfc039b9155]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[9007ea6f45ecf352a9422b36644e4bfc039b9155]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -3271,7 +3271,7 @@
       <dependency ref="phpunit/php-file-iterator-6.0.1.0"/>
       <dependency ref="phpunit/php-timer-8.0.0.0"/>
       <dependency ref="phpunit/phpunit-12.5.24.0"/>
-      <dependency ref="sebastian/environment-8.1.0.0"/>
+      <dependency ref="sebastian/environment-8.1.1.0"/>
       <dependency ref="symfony/console-7.4.11.0"/>
       <dependency ref="symfony/process-7.4.11.0"/>
     </dependency>
@@ -3364,7 +3364,7 @@
       <dependency ref="phpdocumentor/reflection-common-2.2.0.0"/>
       <dependency ref="phpdocumentor/type-resolver-2.0.0.0"/>
       <dependency ref="phpstan/phpdoc-parser-2.3.2.0"/>
-      <dependency ref="webmozart/assert-2.3.0.0"/>
+      <dependency ref="webmozart/assert-2.4.0.0"/>
     </dependency>
     <dependency ref="phpdocumentor/type-resolver-2.0.0.0">
       <dependency ref="doctrine/deprecations-1.1.6.0"/>
@@ -3372,13 +3372,13 @@
       <dependency ref="phpstan/phpdoc-parser-2.3.2.0"/>
     </dependency>
     <dependency ref="phpstan/phpdoc-parser-2.3.2.0"/>
-    <dependency ref="phpstan/phpstan-2.1.54.0"/>
+    <dependency ref="phpstan/phpstan-2.1.55.0"/>
     <dependency ref="phpunit/php-code-coverage-12.5.6.0">
       <dependency ref="nikic/php-parser-5.7.0.0"/>
       <dependency ref="phpunit/php-text-template-5.0.0.0"/>
       <dependency ref="sebastian/complexity-5.0.0.0"/>
-      <dependency ref="sebastian/environment-8.1.0.0"/>
-      <dependency ref="sebastian/lines-of-code-4.0.0.0"/>
+      <dependency ref="sebastian/environment-8.1.1.0"/>
+      <dependency ref="sebastian/lines-of-code-4.0.1.0"/>
       <dependency ref="sebastian/version-6.0.0.0"/>
       <dependency ref="theseer/tokenizer-2.0.1.0"/>
     </dependency>
@@ -3396,14 +3396,14 @@
       <dependency ref="phpunit/php-text-template-5.0.0.0"/>
       <dependency ref="phpunit/php-timer-8.0.0.0"/>
       <dependency ref="sebastian/cli-parser-4.2.1.0"/>
-      <dependency ref="sebastian/comparator-7.1.6.0"/>
+      <dependency ref="sebastian/comparator-7.1.8.0"/>
       <dependency ref="sebastian/diff-7.0.0.0"/>
-      <dependency ref="sebastian/environment-8.1.0.0"/>
-      <dependency ref="sebastian/exporter-7.0.2.0"/>
+      <dependency ref="sebastian/environment-8.1.1.0"/>
+      <dependency ref="sebastian/exporter-7.0.3.0"/>
       <dependency ref="sebastian/global-state-8.0.2.0"/>
       <dependency ref="sebastian/object-enumerator-7.0.0.0"/>
       <dependency ref="sebastian/recursion-context-7.0.1.0"/>
-      <dependency ref="sebastian/type-6.0.3.0"/>
+      <dependency ref="sebastian/type-6.0.4.0"/>
       <dependency ref="sebastian/version-6.0.0.0"/>
       <dependency ref="staabm/side-effects-detector-1.0.5.0"/>
     </dependency>
@@ -3438,23 +3438,23 @@
       <dependency ref="react/event-loop-1.6.0.0"/>
     </dependency>
     <dependency ref="sebastian/cli-parser-4.2.1.0"/>
-    <dependency ref="sebastian/comparator-7.1.6.0">
+    <dependency ref="sebastian/comparator-7.1.8.0">
       <dependency ref="sebastian/diff-7.0.0.0"/>
-      <dependency ref="sebastian/exporter-7.0.2.0"/>
+      <dependency ref="sebastian/exporter-7.0.3.0"/>
     </dependency>
     <dependency ref="sebastian/complexity-5.0.0.0">
       <dependency ref="nikic/php-parser-5.7.0.0"/>
     </dependency>
     <dependency ref="sebastian/diff-7.0.0.0"/>
-    <dependency ref="sebastian/environment-8.1.0.0"/>
-    <dependency ref="sebastian/exporter-7.0.2.0">
+    <dependency ref="sebastian/environment-8.1.1.0"/>
+    <dependency ref="sebastian/exporter-7.0.3.0">
       <dependency ref="sebastian/recursion-context-7.0.1.0"/>
     </dependency>
     <dependency ref="sebastian/global-state-8.0.2.0">
       <dependency ref="sebastian/object-reflector-5.0.0.0"/>
       <dependency ref="sebastian/recursion-context-7.0.1.0"/>
     </dependency>
-    <dependency ref="sebastian/lines-of-code-4.0.0.0">
+    <dependency ref="sebastian/lines-of-code-4.0.1.0">
       <dependency ref="nikic/php-parser-5.7.0.0"/>
     </dependency>
     <dependency ref="sebastian/object-enumerator-7.0.0.0">
@@ -3463,7 +3463,7 @@
     </dependency>
     <dependency ref="sebastian/object-reflector-5.0.0.0"/>
     <dependency ref="sebastian/recursion-context-7.0.1.0"/>
-    <dependency ref="sebastian/type-6.0.3.0"/>
+    <dependency ref="sebastian/type-6.0.4.0"/>
     <dependency ref="sebastian/version-6.0.0.0"/>
     <dependency ref="spatie/color-2.1.0.0"/>
     <dependency ref="staabm/side-effects-detector-1.0.5.0"/>
@@ -3517,13 +3517,13 @@
       <dependency ref="symfony/finder-7.4.8.0"/>
     </dependency>
     <dependency ref="theseer/tokenizer-2.0.1.0"/>
-    <dependency ref="webmozart/assert-2.3.0.0"/>
+    <dependency ref="webmozart/assert-2.4.0.0"/>
     <dependency ref="niklasbr/quick-magick-dev-main">
       <dependency ref="fakerphp/faker-1.24.1.0"/>
       <dependency ref="spatie/color-2.1.0.0"/>
       <dependency ref="pestphp/pest-4.7.0.0"/>
       <dependency ref="friendsofphp/php-cs-fixer-3.95.2.0"/>
-      <dependency ref="phpstan/phpstan-2.1.54.0"/>
+      <dependency ref="phpstan/phpstan-2.1.55.0"/>
     </dependency>
   </dependencies>
 </bom>
