@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1778256415">
-  <project timestamp="1778256415" name="Clover Coverage">
+<coverage generated="1779825322">
+  <project timestamp="1779825322" name="Clover Coverage">
     <package name="NiklasBr\QuickMagick\Enums">
       <file name="/home/runner/work/quick-magick/quick-magick/src/Enums/Category.php">
         <class name="NiklasBr\QuickMagick\Enums\Category" namespace="NiklasBr\QuickMagick\Enums">
@@ -22,10 +22,10 @@
         <class name="NiklasBr\QuickMagick\Enums\Patterns" namespace="NiklasBr\QuickMagick\Enums">
           <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
         </class>
-        <line num="127" type="method" name="all" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="129" type="stmt" count="1"/>
-        <line num="132" type="method" name="isValid" visibility="public" complexity="1" crap="1" count="62"/>
-        <line num="134" type="stmt" count="62"/>
+        <line num="127" type="method" name="all" visibility="public" complexity="1" crap="1" count="8"/>
+        <line num="129" type="stmt" count="8"/>
+        <line num="132" type="method" name="isValid" visibility="public" complexity="1" crap="1" count="69"/>
+        <line num="134" type="stmt" count="69"/>
         <metrics loc="137" ncloc="132" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
       </file>
     </package>
@@ -34,41 +34,41 @@
         <class name="NiklasBr\QuickMagick\Formatters\Gradients" namespace="NiklasBr\QuickMagick\Formatters">
           <metrics complexity="4" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="12" coveredelements="12"/>
         </class>
-        <line num="23" type="method" name="format" visibility="public" complexity="1" crap="1" count="11"/>
-        <line num="25" type="stmt" count="11"/>
-        <line num="27" type="stmt" count="11"/>
-        <line num="38" type="method" name="validateArgs" visibility="private" complexity="3" crap="3" count="11"/>
-        <line num="40" type="stmt" count="11"/>
+        <line num="23" type="method" name="format" visibility="public" complexity="1" crap="1" count="18"/>
+        <line num="25" type="stmt" count="18"/>
+        <line num="27" type="stmt" count="18"/>
+        <line num="38" type="method" name="validateArgs" visibility="private" complexity="3" crap="3" count="18"/>
+        <line num="40" type="stmt" count="18"/>
         <line num="42" type="stmt" count="2"/>
-        <line num="45" type="stmt" count="9"/>
+        <line num="45" type="stmt" count="16"/>
         <line num="47" type="stmt" count="2"/>
         <line num="49" type="stmt" count="2"/>
-        <line num="52" type="stmt" count="7"/>
-        <line num="54" type="stmt" count="7"/>
-        <line num="55" type="stmt" count="7"/>
+        <line num="52" type="stmt" count="14"/>
+        <line num="54" type="stmt" count="14"/>
+        <line num="55" type="stmt" count="14"/>
         <metrics loc="58" ncloc="39" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="12" coveredelements="12"/>
       </file>
       <file name="/home/runner/work/quick-magick/quick-magick/src/Formatters/Patterns.php">
         <class name="NiklasBr\QuickMagick\Formatters\Patterns" namespace="NiklasBr\QuickMagick\Formatters">
           <metrics complexity="2" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
         </class>
-        <line num="16" type="method" name="format" visibility="public" complexity="2" crap="2" count="62"/>
-        <line num="18" type="stmt" count="62"/>
-        <line num="20" type="stmt" count="62"/>
+        <line num="16" type="method" name="format" visibility="public" complexity="2" crap="2" count="69"/>
+        <line num="18" type="stmt" count="69"/>
+        <line num="20" type="stmt" count="69"/>
         <line num="21" type="stmt" count="1"/>
-        <line num="24" type="stmt" count="61"/>
+        <line num="24" type="stmt" count="68"/>
         <metrics loc="27" ncloc="23" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
       </file>
       <file name="/home/runner/work/quick-magick/quick-magick/src/Formatters/Plasma.php">
         <class name="NiklasBr\QuickMagick\Formatters\Plasma" namespace="NiklasBr\QuickMagick\Formatters">
           <metrics complexity="6" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="17" coveredelements="17"/>
         </class>
-        <line num="30" type="method" name="format" visibility="public" complexity="1" crap="1" count="17"/>
-        <line num="33" type="stmt" count="17"/>
-        <line num="35" type="stmt" count="11"/>
-        <line num="41" type="method" name="validateArgs" visibility="private" complexity="5" crap="5" count="17"/>
-        <line num="43" type="stmt" count="17"/>
-        <line num="45" type="stmt" count="2"/>
+        <line num="30" type="method" name="format" visibility="public" complexity="1" crap="1" count="23"/>
+        <line num="33" type="stmt" count="23"/>
+        <line num="35" type="stmt" count="17"/>
+        <line num="41" type="method" name="validateArgs" visibility="private" complexity="5" crap="5" count="23"/>
+        <line num="43" type="stmt" count="23"/>
+        <line num="45" type="stmt" count="8"/>
         <line num="48" type="stmt" count="15"/>
         <line num="49" type="stmt" count="6"/>
         <line num="51" type="stmt" count="1"/>
@@ -86,10 +86,10 @@
         <class name="NiklasBr\QuickMagick\Formatters\SolidColor" namespace="NiklasBr\QuickMagick\Formatters">
           <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
         </class>
-        <line num="21" type="method" name="format" visibility="public" complexity="1" crap="1" count="34"/>
-        <line num="23" type="stmt" count="34"/>
-        <line num="24" type="stmt" count="34"/>
-        <line num="26" type="stmt" count="33"/>
+        <line num="21" type="method" name="format" visibility="public" complexity="1" crap="1" count="39"/>
+        <line num="23" type="stmt" count="39"/>
+        <line num="24" type="stmt" count="39"/>
+        <line num="26" type="stmt" count="38"/>
         <metrics loc="29" ncloc="22" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
       </file>
     </package>
@@ -101,16 +101,16 @@
         <class name="NiklasBr\QuickMagick\Internal\ImageRenderer" namespace="NiklasBr\QuickMagick\Internal">
           <metrics complexity="25" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="40" coveredstatements="39" elements="44" coveredelements="42"/>
         </class>
-        <line num="29" type="method" name="categoryToPseudoString" visibility="public" complexity="7" crap="7" count="128"/>
-        <line num="32" type="stmt" count="128"/>
-        <line num="33" type="stmt" count="66"/>
-        <line num="34" type="stmt" count="32"/>
-        <line num="35" type="stmt" count="21"/>
+        <line num="29" type="method" name="categoryToPseudoString" visibility="public" complexity="7" crap="7" count="147"/>
+        <line num="32" type="stmt" count="147"/>
+        <line num="33" type="stmt" count="80"/>
+        <line num="34" type="stmt" count="43"/>
+        <line num="35" type="stmt" count="27"/>
         <line num="36" type="stmt" count="4"/>
-        <line num="37" type="stmt" count="120"/>
-        <line num="41" type="method" name="resolveCategory" visibility="public" complexity="6" crap="6.03" count="130"/>
-        <line num="43" type="stmt" count="130"/>
-        <line num="44" type="stmt" count="122"/>
+        <line num="37" type="stmt" count="139"/>
+        <line num="41" type="method" name="resolveCategory" visibility="public" complexity="6" crap="6.03" count="149"/>
+        <line num="43" type="stmt" count="149"/>
+        <line num="44" type="stmt" count="141"/>
         <line num="47" type="stmt" count="9"/>
         <line num="48" type="stmt" count="6"/>
         <line num="51" type="stmt" count="3"/>
@@ -120,46 +120,45 @@
         <line num="57" type="stmt" count="3"/>
         <line num="58" type="stmt" count="1"/>
         <line num="62" type="stmt" count="2"/>
-        <line num="70" type="method" name="img" visibility="public" complexity="5" crap="5" count="119"/>
-        <line num="72" type="stmt" count="119"/>
-        <line num="73" type="stmt" count="119"/>
+        <line num="70" type="method" name="img" visibility="public" complexity="5" crap="5" count="138"/>
+        <line num="72" type="stmt" count="138"/>
+        <line num="73" type="stmt" count="138"/>
         <line num="74" type="stmt" count="1"/>
-        <line num="77" type="stmt" count="118"/>
-        <line num="80" type="stmt" count="118"/>
+        <line num="77" type="stmt" count="137"/>
+        <line num="80" type="stmt" count="137"/>
         <line num="81" type="stmt" count="3"/>
         <line num="83" type="stmt" count="3"/>
         <line num="84" type="stmt" count="1"/>
         <line num="87" type="stmt" count="2"/>
-        <line num="90" type="stmt" count="117"/>
-        <line num="91" type="stmt" count="117"/>
-        <line num="93" type="stmt" count="117"/>
-        <line num="99" type="method" name="writeImageFile" visibility="public" complexity="7" crap="7" count="13"/>
-        <line num="102" type="stmt" count="13"/>
-        <line num="105" type="stmt" count="13"/>
+        <line num="90" type="stmt" count="136"/>
+        <line num="91" type="stmt" count="136"/>
+        <line num="93" type="stmt" count="136"/>
+        <line num="99" type="method" name="writeImageFile" visibility="public" complexity="7" crap="7" count="32"/>
+        <line num="102" type="stmt" count="32"/>
+        <line num="105" type="stmt" count="32"/>
         <line num="106" type="stmt" count="2"/>
         <line num="107" type="stmt" count="1"/>
         <line num="109" type="stmt" count="1"/>
-        <line num="110" type="stmt" count="11"/>
+        <line num="110" type="stmt" count="30"/>
         <line num="111" type="stmt" count="2"/>
-        <line num="113" type="stmt" count="9"/>
-        <line num="116" type="stmt" count="10"/>
+        <line num="113" type="stmt" count="28"/>
+        <line num="116" type="stmt" count="29"/>
         <line num="117" type="stmt" count="1"/>
-        <line num="120" type="stmt" count="9"/>
+        <line num="120" type="stmt" count="28"/>
         <metrics loc="123" ncloc="100" classes="1" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="40" coveredstatements="39" elements="44" coveredelements="42"/>
       </file>
     </package>
     <package name="NiklasBr\QuickMagick">
       <file name="/home/runner/work/quick-magick/quick-magick/src/QuickMagick.php">
         <class name="NiklasBr\QuickMagick\QuickMagick" namespace="NiklasBr\QuickMagick">
-          <metrics complexity="9" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="50" coveredstatements="50" elements="54" coveredelements="54"/>
+          <metrics complexity="21" methods="15" coveredmethods="15" conditionals="0" coveredconditionals="0" statements="115" coveredstatements="115" elements="130" coveredelements="130"/>
         </class>
-        <line num="40" type="method" name="image" visibility="public" complexity="3" crap="3" count="2"/>
-        <line num="51" type="stmt" count="2"/>
+        <line num="41" type="method" name="image" visibility="public" complexity="3" crap="3" count="2"/>
         <line num="52" type="stmt" count="2"/>
         <line num="53" type="stmt" count="2"/>
         <line num="54" type="stmt" count="2"/>
         <line num="55" type="stmt" count="2"/>
-        <line num="57" type="stmt" count="2"/>
+        <line num="56" type="stmt" count="2"/>
         <line num="58" type="stmt" count="2"/>
         <line num="59" type="stmt" count="2"/>
         <line num="60" type="stmt" count="2"/>
@@ -168,21 +167,21 @@
         <line num="63" type="stmt" count="2"/>
         <line num="64" type="stmt" count="2"/>
         <line num="65" type="stmt" count="2"/>
-        <line num="67" type="stmt" count="2"/>
-        <line num="85" type="method" name="imageData" visibility="public" complexity="2" crap="2" count="117"/>
-        <line num="93" type="stmt" count="117"/>
+        <line num="66" type="stmt" count="2"/>
+        <line num="68" type="stmt" count="2"/>
+        <line num="86" type="method" name="imageData" visibility="public" complexity="2" crap="2" count="117"/>
         <line num="94" type="stmt" count="117"/>
-        <line num="96" type="stmt" count="115"/>
+        <line num="95" type="stmt" count="117"/>
         <line num="97" type="stmt" count="115"/>
         <line num="98" type="stmt" count="115"/>
         <line num="99" type="stmt" count="115"/>
         <line num="100" type="stmt" count="115"/>
         <line num="101" type="stmt" count="115"/>
-        <line num="103" type="stmt" count="104"/>
-        <line num="104" type="stmt" count="1"/>
-        <line num="107" type="stmt" count="104"/>
-        <line num="126" type="method" name="imageUrl" visibility="public" complexity="2" crap="2" count="4"/>
-        <line num="135" type="stmt" count="4"/>
+        <line num="102" type="stmt" count="115"/>
+        <line num="104" type="stmt" count="104"/>
+        <line num="105" type="stmt" count="1"/>
+        <line num="108" type="stmt" count="104"/>
+        <line num="127" type="method" name="imageUrl" visibility="public" complexity="2" crap="2" count="4"/>
         <line num="136" type="stmt" count="4"/>
         <line num="137" type="stmt" count="4"/>
         <line num="138" type="stmt" count="4"/>
@@ -190,24 +189,101 @@
         <line num="140" type="stmt" count="4"/>
         <line num="141" type="stmt" count="4"/>
         <line num="142" type="stmt" count="4"/>
-        <line num="144" type="stmt" count="4"/>
+        <line num="143" type="stmt" count="4"/>
         <line num="145" type="stmt" count="4"/>
-        <line num="147" type="stmt" count="4"/>
-        <line num="148" type="stmt" count="2"/>
-        <line num="151" type="stmt" count="2"/>
-        <line num="170" type="method" name="createImageFile" visibility="public" complexity="2" crap="2" count="13"/>
-        <line num="179" type="stmt" count="13"/>
-        <line num="180" type="stmt" count="13"/>
-        <line num="182" type="stmt" count="13"/>
-        <line num="183" type="stmt" count="13"/>
-        <line num="184" type="stmt" count="13"/>
-        <line num="185" type="stmt" count="13"/>
-        <line num="186" type="stmt" count="13"/>
-        <line num="187" type="stmt" count="13"/>
-        <line num="189" type="stmt" count="13"/>
-        <line num="190" type="stmt" count="1"/>
-        <line num="193" type="stmt" count="13"/>
-        <metrics loc="196" ncloc="125" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="50" coveredstatements="50" elements="54" coveredelements="54"/>
+        <line num="146" type="stmt" count="4"/>
+        <line num="148" type="stmt" count="4"/>
+        <line num="149" type="stmt" count="2"/>
+        <line num="152" type="stmt" count="2"/>
+        <line num="171" type="method" name="createImageFile" visibility="public" complexity="2" crap="2" count="32"/>
+        <line num="180" type="stmt" count="32"/>
+        <line num="181" type="stmt" count="32"/>
+        <line num="183" type="stmt" count="32"/>
+        <line num="184" type="stmt" count="32"/>
+        <line num="185" type="stmt" count="32"/>
+        <line num="186" type="stmt" count="32"/>
+        <line num="187" type="stmt" count="32"/>
+        <line num="188" type="stmt" count="32"/>
+        <line num="190" type="stmt" count="32"/>
+        <line num="191" type="stmt" count="1"/>
+        <line num="194" type="stmt" count="32"/>
+        <line num="204" type="method" name="generateRandomColor" visibility="private" complexity="1" crap="1" count="10"/>
+        <line num="207" type="stmt" count="10"/>
+        <line num="208" type="stmt" count="10"/>
+        <line num="211" type="stmt" count="10"/>
+        <line num="214" type="stmt" count="10"/>
+        <line num="216" type="stmt" count="10"/>
+        <line num="218" type="stmt" count="10"/>
+        <line num="226" type="method" name="getNonGrayPatterns" visibility="private" complexity="1" crap="1" count="7"/>
+        <line num="228" type="stmt" count="7"/>
+        <line num="231" type="stmt" count="7"/>
+        <line num="232" type="stmt" count="7"/>
+        <line num="233" type="stmt" count="7"/>
+        <line num="234" type="stmt" count="7"/>
+        <line num="242" type="method" name="getRandomPattern" visibility="private" complexity="1" crap="1" count="7"/>
+        <line num="244" type="stmt" count="7"/>
+        <line num="246" type="stmt" count="7"/>
+        <line num="254" type="method" name="getRandomGradientType" visibility="private" complexity="2" crap="2" count="7"/>
+        <line num="256" type="stmt" count="7"/>
+        <line num="257" type="stmt" count="4"/>
+        <line num="258" type="stmt" count="7"/>
+        <line num="268" type="method" name="getRandomColorPair" visibility="private" complexity="1" crap="1" count="7"/>
+        <line num="270" type="stmt" count="7"/>
+        <line num="271" type="stmt" count="7"/>
+        <line num="273" type="stmt" count="7"/>
+        <line num="286" type="method" name="generateFilePath" visibility="private" complexity="1" crap="1" count="19"/>
+        <line num="288" type="stmt" count="19"/>
+        <line num="289" type="stmt" count="19"/>
+        <line num="291" type="stmt" count="19"/>
+        <line num="307" type="method" name="randomSolidColor" visibility="public" complexity="1" crap="1" count="5"/>
+        <line num="313" type="stmt" count="5"/>
+        <line num="315" type="stmt" count="5"/>
+        <line num="316" type="stmt" count="5"/>
+        <line num="317" type="stmt" count="5"/>
+        <line num="318" type="stmt" count="5"/>
+        <line num="319" type="stmt" count="5"/>
+        <line num="320" type="stmt" count="5"/>
+        <line num="321" type="stmt" count="5"/>
+        <line num="322" type="stmt" count="5"/>
+        <line num="340" type="method" name="randomGradient" visibility="public" complexity="1" crap="1" count="7"/>
+        <line num="346" type="stmt" count="7"/>
+        <line num="347" type="stmt" count="7"/>
+        <line num="349" type="stmt" count="7"/>
+        <line num="350" type="stmt" count="7"/>
+        <line num="351" type="stmt" count="7"/>
+        <line num="352" type="stmt" count="7"/>
+        <line num="353" type="stmt" count="7"/>
+        <line num="354" type="stmt" count="7"/>
+        <line num="355" type="stmt" count="7"/>
+        <line num="356" type="stmt" count="7"/>
+        <line num="374" type="method" name="randomPattern" visibility="public" complexity="1" crap="1" count="7"/>
+        <line num="380" type="stmt" count="7"/>
+        <line num="382" type="stmt" count="7"/>
+        <line num="383" type="stmt" count="7"/>
+        <line num="384" type="stmt" count="7"/>
+        <line num="385" type="stmt" count="7"/>
+        <line num="386" type="stmt" count="7"/>
+        <line num="387" type="stmt" count="7"/>
+        <line num="388" type="stmt" count="7"/>
+        <line num="389" type="stmt" count="7"/>
+        <line num="405" type="method" name="randomPlasma" visibility="public" complexity="1" crap="1" count="6"/>
+        <line num="411" type="stmt" count="6"/>
+        <line num="412" type="stmt" count="6"/>
+        <line num="413" type="stmt" count="6"/>
+        <line num="414" type="stmt" count="6"/>
+        <line num="415" type="stmt" count="6"/>
+        <line num="416" type="stmt" count="6"/>
+        <line num="417" type="stmt" count="6"/>
+        <line num="436" type="method" name="randomImage" visibility="public" complexity="1" crap="1" count="7"/>
+        <line num="442" type="stmt" count="7"/>
+        <line num="443" type="stmt" count="7"/>
+        <line num="444" type="stmt" count="7"/>
+        <line num="445" type="stmt" count="7"/>
+        <line num="446" type="stmt" count="7"/>
+        <line num="447" type="stmt" count="7"/>
+        <line num="449" type="stmt" count="7"/>
+        <line num="451" type="stmt" count="7"/>
+        <metrics loc="454" ncloc="268" classes="1" methods="15" coveredmethods="15" conditionals="0" coveredconditionals="0" statements="115" coveredstatements="115" elements="130" coveredelements="130"/>
       </file>
     </package>
     <package name="NiklasBr\QuickMagick\Validators">
@@ -215,14 +291,14 @@
         <class name="NiklasBr\QuickMagick\Validators\ColorValidator" namespace="NiklasBr\QuickMagick\Validators">
           <metrics complexity="3" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
         </class>
-        <line num="20" type="method" name="isValidColor" visibility="public" complexity="3" crap="3" count="67"/>
-        <line num="22" type="stmt" count="67"/>
+        <line num="20" type="method" name="isValidColor" visibility="public" complexity="3" crap="3" count="77"/>
+        <line num="22" type="stmt" count="77"/>
         <line num="23" type="stmt" count="2"/>
         <line num="24" type="stmt" count="2"/>
-        <line num="27" type="stmt" count="65"/>
+        <line num="27" type="stmt" count="75"/>
         <metrics loc="31" ncloc="24" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
       </file>
     </package>
-    <metrics files="11" loc="764" ncloc="591" classes="9" methods="19" coveredmethods="18" conditionals="0" coveredconditionals="0" statements="130" coveredstatements="129" elements="149" coveredelements="147"/>
+    <metrics files="11" loc="1022" ncloc="734" classes="9" methods="30" coveredmethods="29" conditionals="0" coveredconditionals="0" statements="195" coveredstatements="194" elements="225" coveredelements="223"/>
   </project>
 </coverage>
