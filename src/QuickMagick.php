@@ -13,8 +13,8 @@ use Faker\Provider\Base;
 use NiklasBr\QuickMagick\Enums\Category;
 use NiklasBr\QuickMagick\Enums\Format;
 use NiklasBr\QuickMagick\Internal\ImageRenderer;
+use NiklasBr\QuickMagick\Internal\RandomImage;
 use Spatie\Color\Exceptions\InvalidColorValue;
-use Spatie\Color\Hsl;
 
 final class QuickMagick extends Base
 {
@@ -195,103 +195,6 @@ final class QuickMagick extends Base
     }
 
     /**
-     * Generate a random aesthetically pleasing color using HSL color theory.
-     *
-     * @return string Hex color string (e.g., '#ff5733')
-     *
-     * @throws InvalidColorValue
-     */
-    private static function generateRandomColor(): string
-    {
-        // Base hues representing color wheel positions (primary/secondary colors)
-        $baseHues = [0, 30, 60, 120, 210, 270, 330];
-        $randomHue = $baseHues[\array_rand($baseHues)];
-
-        // Saturation: 60-100% for vibrant but not garish colors
-        $saturation = \random_int(60, 100);
-
-        // Lightness: 40-70% for good visibility and contrast
-        $lightness = \random_int(40, 70);
-
-        $hsl = new Hsl($randomHue, $saturation, $lightness);
-
-        return (string) $hsl->toHex();
-    }
-
-    /**
-     * Get all non-grayscale patterns for better visual variety.
-     *
-     * @return string[]
-     */
-    private static function getNonGrayPatterns(): array
-    {
-        $allPatterns = \NiklasBr\QuickMagick\Enums\Patterns::all();
-
-        // Filter out GRAY* patterns
-        return \array_filter(
-            $allPatterns,
-            static fn (string $pattern): bool => !\str_starts_with($pattern, 'GRAY')
-        );
-    }
-
-    /**
-     * Pick a random non-grayscale pattern.
-     *
-     * @return string Pattern name
-     */
-    private static function getRandomPattern(): string
-    {
-        $patterns = self::getNonGrayPatterns();
-
-        return $patterns[\array_rand($patterns)];
-    }
-
-    /**
-     * Pick a random gradient type (linear or radial).
-     *
-     * @return Category Either Category::LINEAR_GRADIENT or Category::RADIAL_GRADIENT
-     */
-    private static function getRandomGradientType(): Category
-    {
-        return \random_int(0, 1) === 0
-            ? Category::LINEAR_GRADIENT
-            : Category::RADIAL_GRADIENT;
-    }
-
-    /**
-     * Generate a random color pair for gradients.
-     *
-     * @return string Color pair formatted as "color1-color2"
-     *
-     * @throws InvalidColorValue
-     */
-    private static function getRandomColorPair(): string
-    {
-        $color1 = self::generateRandomColor();
-        $color2 = self::generateRandomColor();
-
-        return "{$color1}-{$color2}";
-    }
-
-    /**
-     * Generate a unique file path for an image.
-     *
-     * @param null|string $dir    Target directory
-     * @param int         $width  Output width in pixels
-     * @param int         $height Output height in pixels
-     * @param string      $format Output format string
-     *
-     * @return string Full path for the image file
-     */
-    private static function generateFilePath(?string $dir, int $width, int $height, string $format): string
-    {
-        $dir = $dir ?? \sys_get_temp_dir();
-        $fileName = \uniqid('', true);
-
-        return \rtrim($dir, \DIRECTORY_SEPARATOR).\DIRECTORY_SEPARATOR.$fileName.".{$format}";
-    }
-
-    /**
      * Generate a random solid color image file.
      *
      * @param null|string $dir    Target directory; defaults to system temp dir
@@ -310,7 +213,7 @@ final class QuickMagick extends Base
         int $height = 480,
         string $format = Format::PNG,
     ): string {
-        $color = self::generateRandomColor();
+        $color = RandomImage::generateRandomColor();
 
         return self::createImageFile(
             filePath: self::generateFilePath($dir, $width, $height, $format),
@@ -343,8 +246,8 @@ final class QuickMagick extends Base
         int $height = 480,
         string $format = Format::PNG,
     ): string {
-        $gradientType = self::getRandomGradientType();
-        $colorPair = self::getRandomColorPair();
+        $gradientType = RandomImage::getRandomGradientType();
+        $colorPair = RandomImage::getRandomColorPair();
 
         return self::createImageFile(
             filePath: self::generateFilePath($dir, $width, $height, $format),
@@ -377,7 +280,7 @@ final class QuickMagick extends Base
         int $height = 480,
         string $format = Format::PNG,
     ): string {
-        $pattern = self::getRandomPattern();
+        $pattern = RandomImage::getRandomPattern();
 
         return self::createImageFile(
             filePath: self::generateFilePath($dir, $width, $height, $format),
@@ -449,5 +352,23 @@ final class QuickMagick extends Base
         $generator = $imageGenerators[\array_rand($imageGenerators)];
 
         return $generator($dir, $width, $height, $format);
+    }
+
+    /**
+     * Generate a unique file path for an image.
+     *
+     * @param null|string $dir    Target directory
+     * @param int         $width  Output width in pixels
+     * @param int         $height Output height in pixels
+     * @param string      $format Output format string
+     *
+     * @return string Full path for the image file
+     */
+    public static function generateFilePath(?string $dir, int $width, int $height, string $format): string
+    {
+        $dir = $dir ?? \sys_get_temp_dir();
+        $fileName = \uniqid('', true);
+
+        return \rtrim($dir, \DIRECTORY_SEPARATOR).\DIRECTORY_SEPARATOR.$fileName.".{$format}";
     }
 }

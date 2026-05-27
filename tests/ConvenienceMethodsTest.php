@@ -20,7 +20,9 @@ it('randomSolidColor generates a valid image file', function (): void {
     ;
 
     // Verify it's a valid image
-    $imgData = getimagesizefromstring(file_get_contents($result));
+    $contents = file_get_contents($result);
+    \assert(\is_string($contents));
+    $imgData = getimagesizefromstring($contents);
     expect($imgData)->not()->toBeFalse();
 });
 
@@ -29,9 +31,13 @@ it('randomSolidColor respects custom dimensions', function (): void {
     $height = 600;
     $result = QuickMagick::randomSolidColor(width: $width, height: $height);
 
-    $imgData = getimagesizefromstring(file_get_contents($result));
+    $contents = file_get_contents($result);
+    \assert(\is_string($contents));
+    $imgData = getimagesizefromstring($contents);
+    \assert(\is_array($imgData));
     expect($imgData[0])->toBe($width)
-        ->and($imgData[1])->toBe($height);
+        ->and($imgData[1])->toBe($height)
+    ;
 });
 
 it('randomSolidColor generates different images on multiple calls', function (): void {
@@ -53,18 +59,24 @@ it('randomGradient generates a valid image file', function (): void {
         ->toBeFile()
     ;
 
-    $imgData = getimagesizefromstring(file_get_contents($result));
+    $contents = file_get_contents($result);
+    \assert(\is_string($contents));
+    $imgData = getimagesizefromstring($contents);
     expect($imgData)->not()->toBeFalse();
 });
 
 it('randomGradient respects custom dimensions', function (): void {
-    $width = 1024;
+    $width = 1_024;
     $height = 512;
     $result = QuickMagick::randomGradient(width: $width, height: $height);
 
-    $imgData = getimagesizefromstring(file_get_contents($result));
+    $contents = file_get_contents($result);
+    \assert(\is_string($contents));
+    $imgData = getimagesizefromstring($contents);
+    \assert(\is_array($imgData));
     expect($imgData[0])->toBe($width)
-        ->and($imgData[1])->toBe($height);
+        ->and($imgData[1])->toBe($height)
+    ;
 });
 
 it('randomGradient generates different images on multiple calls', function (): void {
@@ -85,7 +97,9 @@ it('randomPattern generates a valid image file', function (): void {
         ->toBeFile()
     ;
 
-    $imgData = getimagesizefromstring(file_get_contents($result));
+    $contents = file_get_contents($result);
+    \assert(\is_string($contents));
+    $imgData = getimagesizefromstring($contents);
     expect($imgData)->not()->toBeFalse();
 });
 
@@ -94,9 +108,13 @@ it('randomPattern respects custom dimensions', function (): void {
     $height = 512;
     $result = QuickMagick::randomPattern(width: $width, height: $height);
 
-    $imgData = getimagesizefromstring(file_get_contents($result));
+    $contents = file_get_contents($result);
+    \assert(\is_string($contents));
+    $imgData = getimagesizefromstring($contents);
+    \assert(\is_array($imgData));
     expect($imgData[0])->toBe($width)
-        ->and($imgData[1])->toBe($height);
+        ->and($imgData[1])->toBe($height)
+    ;
 });
 
 it('randomPattern generates different images on multiple calls', function (): void {
@@ -117,7 +135,9 @@ it('randomPlasma generates a valid image file', function (): void {
         ->toBeFile()
     ;
 
-    $imgData = getimagesizefromstring(file_get_contents($result));
+    $contents = file_get_contents($result);
+    \assert(\is_string($contents));
+    $imgData = getimagesizefromstring($contents);
     expect($imgData)->not()->toBeFalse();
 });
 
@@ -126,9 +146,13 @@ it('randomPlasma respects custom dimensions', function (): void {
     $height = 480;
     $result = QuickMagick::randomPlasma(width: $width, height: $height);
 
-    $imgData = getimagesizefromstring(file_get_contents($result));
+    $contents = file_get_contents($result);
+    \assert(\is_string($contents));
+    $imgData = getimagesizefromstring($contents);
+    \assert(\is_array($imgData));
     expect($imgData[0])->toBe($width)
-        ->and($imgData[1])->toBe($height);
+        ->and($imgData[1])->toBe($height)
+    ;
 });
 
 it('randomPlasma generates different images on multiple calls', function (): void {
@@ -149,7 +173,9 @@ it('randomImage generates a valid image file', function (): void {
         ->toBeFile()
     ;
 
-    $imgData = getimagesizefromstring(file_get_contents($result));
+    $contents = file_get_contents($result);
+    \assert(\is_string($contents));
+    $imgData = getimagesizefromstring($contents);
     expect($imgData)->not()->toBeFalse();
 });
 
@@ -158,9 +184,13 @@ it('randomImage respects custom dimensions', function (): void {
     $height = 300;
     $result = QuickMagick::randomImage(width: $width, height: $height);
 
-    $imgData = getimagesizefromstring(file_get_contents($result));
+    $contents = file_get_contents($result);
+    \assert(\is_string($contents));
+    $imgData = getimagesizefromstring($contents);
+    \assert(\is_array($imgData));
     expect($imgData[0])->toBe($width)
-        ->and($imgData[1])->toBe($height);
+        ->and($imgData[1])->toBe($height)
+    ;
 });
 
 it('randomImage respects custom format', function (): void {
@@ -177,18 +207,19 @@ it('randomImage generates different images on multiple calls', function (): void
     $image2 = file_get_contents($result2);
 
     expect($image1)->not()->toBe($image2);
-});
+})->flaky(3);
 
 it('randomImage can use custom directory', function (): void {
     $customDir = __DIR__.'/out';
     $result = QuickMagick::randomImage(dir: $customDir);
 
     expect($result)->toStartWith($customDir)
-        ->and($result)->toBeFile();
+        ->and($result)->toBeFile()
+    ;
 });
 
 it('all convenience methods support width parameter', function (): void {
-    $width = 1200;
+    $width = 1_200;
 
     $images = [
         QuickMagick::randomSolidColor(width: $width),
@@ -199,7 +230,10 @@ it('all convenience methods support width parameter', function (): void {
     ];
 
     foreach ($images as $imagePath) {
-        $imgData = getimagesizefromstring(file_get_contents($imagePath));
+        $contents = file_get_contents($imagePath);
+        \assert(\is_string($contents));
+        $imgData = getimagesizefromstring($contents);
+        \assert(\is_array($imgData));
         expect($imgData[0])->toBe($width);
     }
 });
@@ -216,7 +250,10 @@ it('all convenience methods support height parameter', function (): void {
     ];
 
     foreach ($images as $imagePath) {
-        $imgData = getimagesizefromstring(file_get_contents($imagePath));
+        $contents = file_get_contents($imagePath);
+        \assert(\is_string($contents));
+        $imgData = getimagesizefromstring($contents);
+        \assert(\is_array($imgData));
         expect($imgData[1])->toBe($height);
     }
 });

@@ -17,6 +17,9 @@ composer require niklasbr/quick-magick
 
 ## Example usage
 
+> [!TIP]
+> Many examples available in the [docs/example-images.md](docs/example-images.md)
+
 ```php
 use Faker\Factory;
 use NiklasBr\QuickMagick\QuickMagick;
@@ -35,25 +38,6 @@ $imageData = $faker->image();
 $imageData = $faker->image(category: Category::LINEAR_GRADIENT, word: '#1100ff-magenta');
 ```
 ![linear_gradient.png](docs/img/linear_gradient.png "orange-magenta vertical gradient")
-
-```php
-// A radial gradient
-$imageData = $faker->image(category: Category::RADIAL_GRADIENT, word: 'green-yellow');
-```
-![linear_gradient.png](docs/img/radial_gradient.png "green-yellow circular gradient")
-
-```php
-// A plasma with fractal colour
-$imageData = $faker->image(category: Category::PLASMA, word: 'fractal-magenta');
-```
-![linear_gradient.png](docs/img/plasma.png "cloudy magenta fractal")
-
-```php
-// A black and white pattern
-$imageData = $faker->image(category: Category::PATTERN, imagickArgs: 'SMALLFISHSCALES');
-```
-![linear_gradient.png](docs/img/pattern.png "1-bit repeating fish scale pattern")
-
 
 ## License
 
