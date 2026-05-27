@@ -1,3 +1,4 @@
+/.devcontainer export-ignore
 /.editorconfig export-ignore
 /.github export-ignore
 /.gitignore export-ignore
@@ -6,3 +7,4 @@
 /phpunit.xml export-ignore
 /tests export-ignore
 /docs export-ignore
+/src/Utils/ExampleImageGenerator.php export-ignore
