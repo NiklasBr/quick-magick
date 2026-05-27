@@ -11,10 +11,12 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
+            # https://github.com/actions/checkout
             - name: Checkout code
-              uses: actions/checkout@v5
+              uses: actions/checkout@v6
 
-            - name: Set up PHP
+            # https://github.com/shivammathur/setup-php
+            - name: Setup PHP
               uses: shivammathur/setup-php@v2
               with:
                   php-version: 8.3
@@ -33,6 +35,7 @@ jobs:
             - name: Generate SBOM (CycloneDX XML)
               run: composer CycloneDX:make-sbom --output-format=XML --output-file=sbom.xml
 
+            # https://github.com/actions/upload-artifact
             - name: Upload SBOM artifact
               uses: actions/upload-artifact@v7
               with:

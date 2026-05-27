@@ -11,9 +11,11 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
+            # https://github.com/actions/checkout
             - name: Checkout code
-              uses: actions/checkout@v4
+              uses: actions/checkout@v6
 
+            # https://github.com/shivammathur/setup-php
             - name: Setup PHP
               uses: shivammathur/setup-php@v2
               with:
@@ -24,11 +26,13 @@ jobs:
                   XDEBUG_MODE: coverage
 
             # Install (and cache) Composer dependencies
-            - uses: ramsey/composer-install@v3
+            # https://github.com/ramsey/composer-install
+            - uses: ramsey/composer-install@v4
 
             - name: Run Pest tests
               run: composer pest:test -- --ci --coverage-clover=.github/clover.xml
 
+            # https://github.com/timkrase/phpunit-coverage-badge
             - name: Generate code coverage badge
               uses: timkrase/phpunit-coverage-badge@v1.2.1
               if: github.ref == 'refs/heads/main'
