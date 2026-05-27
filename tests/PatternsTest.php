@@ -62,6 +62,12 @@ it('accepts category as string name', function (): void {
     expect($result)->not->toBeEmpty();
 });
 
+it('accepts category as string value', function (): void {
+    $result = QuickMagick::imageData(category: 'pattern', word: Patterns::BRICKS);
+
+    expect($result)->not->toBeEmpty();
+});
+
 it('throws exception for invalid category string', function (): void {
     expect(function (): void {
         QuickMagick::imageData(category: 'INVALID_CATEGORY');

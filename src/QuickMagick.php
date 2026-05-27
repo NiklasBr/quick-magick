@@ -213,14 +213,12 @@ final class QuickMagick extends Base
         int $height = 480,
         string $format = Format::PNG,
     ): string {
-        $color = RandomImage::generateRandomColor();
-
         return self::createImageFile(
             filePath: self::generateFilePath($dir, $width, $height, $format),
             width: $width,
             height: $height,
             category: Category::SOLID_COLOR,
-            word: $color,
+            word: RandomImage::generateRandomColor(),
             format: $format,
         );
     }
@@ -246,15 +244,12 @@ final class QuickMagick extends Base
         int $height = 480,
         string $format = Format::PNG,
     ): string {
-        $gradientType = RandomImage::getRandomGradientType();
-        $colorPair = RandomImage::getRandomColorPair();
-
         return self::createImageFile(
             filePath: self::generateFilePath($dir, $width, $height, $format),
             width: $width,
             height: $height,
-            category: $gradientType,
-            word: $colorPair,
+            category: RandomImage::getRandomGradientType(),
+            word: RandomImage::getRandomColorPair(),
             format: $format,
         );
     }
@@ -280,14 +275,12 @@ final class QuickMagick extends Base
         int $height = 480,
         string $format = Format::PNG,
     ): string {
-        $pattern = RandomImage::getRandomPattern();
-
         return self::createImageFile(
             filePath: self::generateFilePath($dir, $width, $height, $format),
             width: $width,
             height: $height,
             category: Category::PATTERN,
-            word: $pattern,
+            word: RandomImage::getRandomPattern(),
             format: $format,
         );
     }

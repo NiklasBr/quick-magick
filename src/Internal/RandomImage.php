@@ -50,11 +50,9 @@ final readonly class RandomImage
      */
     public static function getRandomPattern(): string
     {
-        $allPatterns = Patterns::all();
-
         // Get all non-grayscale patterns for better visual variety
         $patterns = \array_filter(
-            $allPatterns,
+            Patterns::all(),
             static fn (string $pattern): bool => !\str_starts_with($pattern, 'GRAY')
         );
 
