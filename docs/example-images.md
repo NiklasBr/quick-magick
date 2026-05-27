@@ -73,3 +73,21 @@ Caption - Auto-wrapped multi-line text
 
 <table><tr><td style="width: 400px;">Preview</td><td>Generation</td></tr>
 <tr><td style="width: 400px;"><img src="img/caption_text.png" alt="Caption - Auto-wrapped multi-line text" /></td><td style="width: 420px;"><pre><code class="language-php">QuickMagick::createImageFile(&#10;    filePath: __DIR__ . '/img/caption_text.png',&#10;    width: 320,&#10;    height: 200,&#10;    category: Category::CAPTION,&#10;    word: 'A powerful image generation library for PHP with zero external dependencies.',&#10;    format: Format::PNG&#10;);</code></pre></td></tr></table>
+
+## random_pattern.png
+Random pattern - Procedurally generated texture pattern
+
+<table><tr><td style="width: 400px;">Preview</td><td>Generation</td></tr>
+<tr><td style="width: 400px;"><img src="img/random_pattern.png" alt="Random pattern - Procedurally generated texture pattern" /></td><td style="width: 420px;"><pre><code class="language-php">QuickMagick::randomPattern(&#10;    dir: __DIR__ . '/img',&#10;    width: 320,&#10;    height: 180,&#10;    format: Format::PNG&#10;);</code></pre></td></tr></table>
+
+## random_gradient.png
+Random gradient - Procedurally generated color gradient
+
+<table><tr><td style="width: 400px;">Preview</td><td>Generation</td></tr>
+<tr><td style="width: 400px;"><img src="img/random_gradient.png" alt="Random gradient - Procedurally generated color gradient" /></td><td style="width: 420px;"><pre><code class="language-php">QuickMagick::randomGradient(&#10;    dir: __DIR__ . '/img',&#10;    width: 320,&#10;    height: 180,&#10;    format: Format::PNG&#10;);</code></pre></td></tr></table>
+
+## random_plasma.png
+Random plasma - Procedurally generated fractal pattern
+
+<table><tr><td style="width: 400px;">Preview</td><td>Generation</td></tr>
+<tr><td style="width: 400px;"><img src="img/random_plasma.png" alt="Random plasma - Procedurally generated fractal pattern" /></td><td style="width: 420px;"><pre><code class="language-php">QuickMagick::randomPlasma(&#10;    dir: __DIR__ . '/img',&#10;    width: 320,&#10;    height: 180,&#10;    format: Format::PNG&#10;);</code></pre></td></tr></table>
