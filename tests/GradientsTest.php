@@ -9,6 +9,7 @@ declare(strict_types=1);
 
 namespace NiklasBr\QuickMagick\Tests;
 
+use Faker\Factory;
 use NiklasBr\QuickMagick\Enums\Category;
 use NiklasBr\QuickMagick\QuickMagick;
 
@@ -20,7 +21,7 @@ dataset('valid colors', [
 ]);
 
 it('works with normal linear single or double color string {color}', function (string $color): void {
-    $result = QuickMagick::imageData(category: Category::LINEAR_GRADIENT, word: $color);
+    $result = faker()->imageData(category: Category::LINEAR_GRADIENT, word: $color);
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
     $imgData = getimagesizefromstring($result);
@@ -32,7 +33,7 @@ it('works with normal linear single or double color string {color}', function (s
 })->with('valid colors');
 
 it('works with normal radial single or double color string {color}', function (string $color): void {
-    $result = QuickMagick::imageData(category: Category::RADIAL_GRADIENT, word: $color);
+    $result = faker()->imageData(category: Category::RADIAL_GRADIENT, word: $color);
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
     $imgData = getimagesizefromstring($result);
@@ -44,7 +45,7 @@ it('works with normal radial single or double color string {color}', function (s
 })->with('valid colors');
 
 it('writes a linear gradient image file to disk', function (): void {
-    $result = QuickMagick::createImageFile(
+    $result = faker()->createImageFile(
         filePath: __DIR__.'/out/linear_gradient.png',
         category: Category::LINEAR_GRADIENT,
         word: '#ffC300-magenta',
@@ -57,7 +58,7 @@ it('writes a linear gradient image file to disk', function (): void {
 });
 
 it('writes a radial gradient image file to disk', function (): void {
-    $result = QuickMagick::createImageFile(
+    $result = faker()->createImageFile(
         filePath: __DIR__.'/out/radial_gradient.png',
         category: Category::RADIAL_GRADIENT,
         word: 'green-yellow',

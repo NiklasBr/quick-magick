@@ -9,10 +9,11 @@ declare(strict_types=1);
 
 namespace NiklasBr\QuickMagick\Tests;
 
+use Faker\Factory;
 use NiklasBr\QuickMagick\QuickMagick;
 
 it('randomSolidColor generates a valid image file', function (): void {
-    $result = QuickMagick::randomSolidColor();
+    $result = faker()->randomSolidColor();
 
     expect($result)
         ->toBeString()
@@ -29,7 +30,7 @@ it('randomSolidColor generates a valid image file', function (): void {
 it('randomSolidColor respects custom dimensions', function (): void {
     $width = 800;
     $height = 600;
-    $result = QuickMagick::randomSolidColor(width: $width, height: $height);
+    $result = faker()->randomSolidColor(width: $width, height: $height);
 
     $contents = file_get_contents($result);
     \assert(\is_string($contents));
@@ -41,8 +42,8 @@ it('randomSolidColor respects custom dimensions', function (): void {
 });
 
 it('randomSolidColor generates different images on multiple calls', function (): void {
-    $result1 = QuickMagick::randomSolidColor();
-    $result2 = QuickMagick::randomSolidColor();
+    $result1 = faker()->randomSolidColor();
+    $result2 = faker()->randomSolidColor();
 
     $image1 = file_get_contents($result1);
     $image2 = file_get_contents($result2);
@@ -52,7 +53,7 @@ it('randomSolidColor generates different images on multiple calls', function ():
 });
 
 it('randomGradient generates a valid image file', function (): void {
-    $result = QuickMagick::randomGradient();
+    $result = faker()->randomGradient();
 
     expect($result)
         ->toBeString()
@@ -68,7 +69,7 @@ it('randomGradient generates a valid image file', function (): void {
 it('randomGradient respects custom dimensions', function (): void {
     $width = 1_024;
     $height = 512;
-    $result = QuickMagick::randomGradient(width: $width, height: $height);
+    $result = faker()->randomGradient(width: $width, height: $height);
 
     $contents = file_get_contents($result);
     \assert(\is_string($contents));
@@ -80,8 +81,8 @@ it('randomGradient respects custom dimensions', function (): void {
 });
 
 it('randomGradient generates different images on multiple calls', function (): void {
-    $result1 = QuickMagick::randomGradient();
-    $result2 = QuickMagick::randomGradient();
+    $result1 = faker()->randomGradient();
+    $result2 = faker()->randomGradient();
 
     $image1 = file_get_contents($result1);
     $image2 = file_get_contents($result2);
@@ -90,7 +91,7 @@ it('randomGradient generates different images on multiple calls', function (): v
 });
 
 it('randomPattern generates a valid image file', function (): void {
-    $result = QuickMagick::randomPattern();
+    $result = faker()->randomPattern();
 
     expect($result)
         ->toBeString()
@@ -106,7 +107,7 @@ it('randomPattern generates a valid image file', function (): void {
 it('randomPattern respects custom dimensions', function (): void {
     $width = 512;
     $height = 512;
-    $result = QuickMagick::randomPattern(width: $width, height: $height);
+    $result = faker()->randomPattern(width: $width, height: $height);
 
     $contents = file_get_contents($result);
     \assert(\is_string($contents));
@@ -118,8 +119,8 @@ it('randomPattern respects custom dimensions', function (): void {
 });
 
 it('randomPattern generates different images on multiple calls', function (): void {
-    $result1 = QuickMagick::randomPattern();
-    $result2 = QuickMagick::randomPattern();
+    $result1 = faker()->randomPattern();
+    $result2 = faker()->randomPattern();
 
     $image1 = file_get_contents($result1);
     $image2 = file_get_contents($result2);
@@ -128,7 +129,7 @@ it('randomPattern generates different images on multiple calls', function (): vo
 });
 
 it('randomPlasma generates a valid image file', function (): void {
-    $result = QuickMagick::randomPlasma();
+    $result = faker()->randomPlasma();
 
     expect($result)
         ->toBeString()
@@ -144,7 +145,7 @@ it('randomPlasma generates a valid image file', function (): void {
 it('randomPlasma respects custom dimensions', function (): void {
     $width = 640;
     $height = 480;
-    $result = QuickMagick::randomPlasma(width: $width, height: $height);
+    $result = faker()->randomPlasma(width: $width, height: $height);
 
     $contents = file_get_contents($result);
     \assert(\is_string($contents));
@@ -156,8 +157,8 @@ it('randomPlasma respects custom dimensions', function (): void {
 });
 
 it('randomPlasma generates different images on multiple calls', function (): void {
-    $result1 = QuickMagick::randomPlasma();
-    $result2 = QuickMagick::randomPlasma();
+    $result1 = faker()->randomPlasma();
+    $result2 = faker()->randomPlasma();
 
     $image1 = file_get_contents($result1);
     $image2 = file_get_contents($result2);
@@ -166,7 +167,7 @@ it('randomPlasma generates different images on multiple calls', function (): voi
 });
 
 it('randomImage generates a valid image file', function (): void {
-    $result = QuickMagick::randomImage();
+    $result = faker()->randomImage();
 
     expect($result)
         ->toBeString()
@@ -182,7 +183,7 @@ it('randomImage generates a valid image file', function (): void {
 it('randomImage respects custom dimensions', function (): void {
     $width = 300;
     $height = 300;
-    $result = QuickMagick::randomImage(width: $width, height: $height);
+    $result = faker()->randomImage(width: $width, height: $height);
 
     $contents = file_get_contents($result);
     \assert(\is_string($contents));
@@ -194,14 +195,14 @@ it('randomImage respects custom dimensions', function (): void {
 });
 
 it('randomImage respects custom format', function (): void {
-    $result = QuickMagick::randomImage(format: 'jpeg');
+    $result = faker()->randomImage(format: 'jpeg');
 
     expect($result)->toEndWith('.jpeg');
 });
 
 it('randomImage generates different images on multiple calls', function (): void {
-    $result1 = QuickMagick::randomImage();
-    $result2 = QuickMagick::randomImage();
+    $result1 = faker()->randomImage();
+    $result2 = faker()->randomImage();
 
     $image1 = file_get_contents($result1);
     $image2 = file_get_contents($result2);
@@ -211,7 +212,7 @@ it('randomImage generates different images on multiple calls', function (): void
 
 it('randomImage can use custom directory', function (): void {
     $customDir = __DIR__.'/out';
-    $result = QuickMagick::randomImage(dir: $customDir);
+    $result = faker()->randomImage(dir: $customDir);
 
     expect($result)->toStartWith($customDir)
         ->and($result)->toBeFile()
@@ -222,11 +223,11 @@ it('all convenience methods support width parameter', function (): void {
     $width = 1_200;
 
     $images = [
-        QuickMagick::randomSolidColor(width: $width),
-        QuickMagick::randomGradient(width: $width),
-        QuickMagick::randomPattern(width: $width),
-        QuickMagick::randomPlasma(width: $width),
-        QuickMagick::randomImage(width: $width),
+        faker()->randomSolidColor(width: $width),
+        faker()->randomGradient(width: $width),
+        faker()->randomPattern(width: $width),
+        faker()->randomPlasma(width: $width),
+        faker()->randomImage(width: $width),
     ];
 
     foreach ($images as $imagePath) {
@@ -242,11 +243,11 @@ it('all convenience methods support height parameter', function (): void {
     $height = 900;
 
     $images = [
-        QuickMagick::randomSolidColor(height: $height),
-        QuickMagick::randomGradient(height: $height),
-        QuickMagick::randomPattern(height: $height),
-        QuickMagick::randomPlasma(height: $height),
-        QuickMagick::randomImage(height: $height),
+        faker()->randomSolidColor(height: $height),
+        faker()->randomGradient(height: $height),
+        faker()->randomPattern(height: $height),
+        faker()->randomPlasma(height: $height),
+        faker()->randomImage(height: $height),
     ];
 
     foreach ($images as $imagePath) {

@@ -9,6 +9,7 @@ declare(strict_types=1);
 
 namespace NiklasBr\QuickMagick\Tests;
 
+use Faker\Factory;
 use NiklasBr\QuickMagick\Enums\Format;
 use NiklasBr\QuickMagick\QuickMagick;
 
@@ -30,7 +31,7 @@ it('validates supported and unsupported format strings', function (): void {
 });
 
 it('generates image data for every supported format', function (string $format): void {
-    $result = QuickMagick::imageData(format: $format);
+    $result = faker()->imageData(format: $format);
 
     expect($result)->not->toBeEmpty();
 

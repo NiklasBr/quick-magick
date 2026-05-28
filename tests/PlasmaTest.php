@@ -37,7 +37,7 @@ dataset('valid plasma color forms', [
 ]);
 
 it('Accepts plasma argument', function (): void {
-    $result = QuickMagick::imageData(category: Category::PLASMA);
+    $result = faker()->imageData(category: Category::PLASMA);
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
     $imgData = getimagesizefromstring($result);
@@ -49,7 +49,7 @@ it('Accepts plasma argument', function (): void {
 });
 
 it('works with normal color string {color}', function (string $color): void {
-    $result = QuickMagick::imageData(category: Category::PLASMA, word: $color);
+    $result = faker()->imageData(category: Category::PLASMA, word: $color);
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
     $imgData = getimagesizefromstring($result);
@@ -61,7 +61,7 @@ it('works with normal color string {color}', function (string $color): void {
 })->with('valid colors');
 
 it('accepts additional plasma color syntaxes from ImageMagick color grammar {color}', function (string $color): void {
-    $result = QuickMagick::imageData(category: Category::PLASMA, word: $color);
+    $result = faker()->imageData(category: Category::PLASMA, word: $color);
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
     $imgData = getimagesizefromstring($result);
@@ -73,7 +73,7 @@ it('accepts additional plasma color syntaxes from ImageMagick color grammar {col
 })->with('valid plasma color forms');
 
 it('supports fractal token without explicit color', function (): void {
-    $result = QuickMagick::imageData(category: Category::PLASMA, word: 'fractal');
+    $result = faker()->imageData(category: Category::PLASMA, word: 'fractal');
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
     $imgData = getimagesizefromstring($result);
@@ -86,12 +86,12 @@ it('supports fractal token without explicit color', function (): void {
 
 it('throws an exception when {pattern} is not proper', function (string $pattern): void {
     expect(function () use ($pattern): void {
-        QuickMagick::imageData(category: Category::PLASMA, word: $pattern);
+        faker()->imageData(category: Category::PLASMA, word: $pattern);
     })->toThrow(InvalidColorValue::class);
 })->with('invalid plasma args');
 
 it('writes a plasma image file to disk', function (): void {
-    $result = QuickMagick::createImageFile(
+    $result = faker()->createImageFile(
         filePath: __DIR__.'/out/plasma.png',
         category: Category::PLASMA,
         word: 'fractal-maroon',

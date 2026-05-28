@@ -25,7 +25,7 @@ dataset('colors', [
 ]);
 
 it('creates a solid color for {color}', function (string $format): void {
-    $result = QuickMagick::imageData(word: $format);
+    $result = faker()->imageData(word: $format);
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
     $imgData = getimagesizefromstring($result);
@@ -38,7 +38,7 @@ it('creates a solid color for {color}', function (string $format): void {
 })->with('colors');
 
 it('writes a solid image file to disk', function (): void {
-    $result = QuickMagick::createImageFile(
+    $result = faker()->createImageFile(
         filePath: __DIR__.'/out/solid_color.png',
         category: Category::SOLID_COLOR,
         word: 'maroon',
@@ -52,6 +52,6 @@ it('writes a solid image file to disk', function (): void {
 
 it('throws an exception when there is no proper color', function (): void {
     expect(function (): void {
-        QuickMagick::imageData(category: Category::SOLID_COLOR, word: 'towels');
+        faker()->imageData(category: Category::SOLID_COLOR, word: 'towels');
     })->toThrow(InvalidColorValue::class);
 });

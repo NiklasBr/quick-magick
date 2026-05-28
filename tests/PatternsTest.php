@@ -14,7 +14,7 @@ use NiklasBr\QuickMagick\Enums\Patterns;
 use NiklasBr\QuickMagick\QuickMagick;
 
 it('creates pattern image for {format}', function (string $format): void {
-    $result = QuickMagick::imageData(category: Category::PATTERN, word: $format);
+    $result = faker()->imageData(category: Category::PATTERN, word: $format);
 
     /** @var array{0: int<0, max>, 1: int<0, max>, 2: int, 3: string, mime: string, channels?: int, bits?: int} $imgData */
     $imgData = getimagesizefromstring($result);
@@ -27,7 +27,7 @@ it('creates pattern image for {format}', function (string $format): void {
 })->with(Patterns::all());
 
 it('writes a pattern image file to disk', function (): void {
-    $result = QuickMagick::createImageFile(
+    $result = faker()->createImageFile(
         filePath: __DIR__.'/out/pattern.png',
         category: Category::PATTERN,
         word: Patterns::VERTICALSAW,
@@ -41,7 +41,7 @@ it('writes a pattern image file to disk', function (): void {
 
 it('throws an exception when there is no proper pattern-pattern', function (): void {
     expect(function (): void {
-        QuickMagick::imageData(category: Category::PATTERN, word: 'BAD PATTERN');
+        faker()->imageData(category: Category::PATTERN, word: 'BAD PATTERN');
     })->toThrow(\InvalidArgumentException::class);
 });
 
@@ -57,25 +57,25 @@ it('returns all supported patterns', function (): void {
 });
 
 it('accepts category as string name', function (): void {
-    $result = QuickMagick::imageData(category: 'PATTERN', word: Patterns::BRICKS);
+    $result = faker()->imageData(category: 'PATTERN', word: Patterns::BRICKS);
 
     expect($result)->not->toBeEmpty();
 });
 
 it('accepts category as string value', function (): void {
-    $result = QuickMagick::imageData(category: 'pattern', word: Patterns::BRICKS);
+    $result = faker()->imageData(category: 'pattern', word: Patterns::BRICKS);
 
     expect($result)->not->toBeEmpty();
 });
 
 it('throws exception for invalid category string', function (): void {
     expect(function (): void {
-        QuickMagick::imageData(category: 'INVALID_CATEGORY');
+        faker()->imageData(category: 'INVALID_CATEGORY');
     })->toThrow(\InvalidArgumentException::class);
 });
 
 it('defaults to solid color when category is null', function (): void {
-    $result = QuickMagick::imageData(category: null);
+    $result = faker()->imageData(category: null);
 
     expect($result)->not->toBeEmpty();
 });
