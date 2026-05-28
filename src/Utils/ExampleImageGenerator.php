@@ -219,7 +219,7 @@ final class ExampleImageGenerator
         echo "All example images are ready in docs/img/\n\n";
 
         // Generate a markdown file with the arguments used for each example image
-        $mdFile = $docsPath.\DIRECTORY_SEPARATOR.'example-images.md';
+        $mdFile = $docsPath.\DIRECTORY_SEPARATOR.'documentation.md';
         $mdLines = [];
         $mdLines[] = '# Example images and generation arguments';
         $mdLines[] = '';
@@ -238,27 +238,16 @@ final class ExampleImageGenerator
             $mdLines[] = '<table><tr><td style="width: 400px;">Preview</td><td>Generation</td></tr>';
 
             // Generate code example based on whether it's a random image or preset
-            if ($image->isRandom && $image->randomMethod !== null) {
-                $method = $image->randomMethod;
-                $code = "QuickMagick::{$method}(\n"
-                    ."    dir: __DIR__ . '/img',\n"
-                    ."    width: {$image->width},\n"
-                    ."    height: {$image->height},\n"
-                    ."    format: Format::PNG\n"
-                    .');';
-            } else {
-                $categoryConst = 'Category::'.$image->category->name;
-                $wordValue = null === $image->word ? 'null' : var_export($image->word, true);
+            $categoryConst = 'Category::'.$image->category->name;
+            $wordValue = null === $image->word ? 'null' : var_export($image->word, true);
+            $method = $image->isRandom && $image->randomMethod !== null ? $image->randomMethod : 'image';
+            $targetArgs = $image->isRandom && $image->randomMethod !== null
+                ? "dir: __DIR__ . '/img',\n    width: {$image->width},\n    height: {$image->height},\n    format: Format::PNG"
+                : "dir: __DIR__ . '/img',\n    width: {$image->width},\n    height: {$image->height},\n    category: {$categoryConst},\n    word: {$wordValue},\n    format: Format::PNG";
 
-                $code = "QuickMagick::createImageFile(\n"
-                    ."    filePath: __DIR__ . '/img/{$image->filename}',\n"
-                    ."    width: {$image->width},\n"
-                    ."    height: {$image->height},\n"
-                    ."    category: {$categoryConst},\n"
-                    ."    word: {$wordValue},\n"
-                    ."    format: Format::PNG\n"
-                    .');';
-            }
+            $code = "\$faker->{$method}(\n"
+                ."    {$targetArgs}\n"
+                .");";
 
             $imageCell = "<img src=\"{$relativeImagePath}\" alt=\"{$altText}\" />";
             $codeForMd = str_replace("\n", '&#10;', $code);
@@ -267,7 +256,24 @@ final class ExampleImageGenerator
             $mdLines[] = '';
         }
 
-        $mdContent = implode("\n", $mdLines);
+        $templateFile = $docsPath.\DIRECTORY_SEPARATOR.'documentation.template.md';
+        $content = implode("\n", $mdLines);
+
+        if (\is_file($templateFile) && \is_readable($templateFile)) {
+            $templateContent = @file_get_contents($templateFile);
+
+            if (false === $templateContent) {
+                throw new \RuntimeException('Failed to read template file: '.$templateFile);
+            }
+
+            if (!\str_contains($templateContent, '{{content_placeholder}}')) {
+                throw new \RuntimeException('Template file missing {{content_placeholder}} placeholder: '.$templateFile);
+            }
+
+            $mdContent = \str_replace('{{content_placeholder}}', $content, $templateContent);
+        } else {
+            $mdContent = $content;
+        }
 
         if (false === @file_put_contents($mdFile, $mdContent)) {
             throw new \RuntimeException('Failed to write example markdown file: '.$mdFile);
