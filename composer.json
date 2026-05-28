@@ -23,8 +23,7 @@
         "docs": "https://github.com/niklasbr/quick-magick#readme"
     },
     "license": [
-        "AGPL-3.0-only",
-        "BSD-3-Clause as donationware"
+        "AGPL-3.0-only"
     ],
     "minimum-stability": "dev",
     "prefer-stable": true,
