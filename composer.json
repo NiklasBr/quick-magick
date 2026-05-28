@@ -4,12 +4,15 @@
     "type": "library",
     "keywords": [
         "faker",
+        "fixtures",
         "image",
         "placeholder",
         "imagick",
+        "imagemagick",
         "testing",
         "php",
-        "development"
+        "development",
+        "data"
     ],
     "authors": [
         {
