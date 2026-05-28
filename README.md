@@ -73,4 +73,4 @@ Example images and their generation arguments are available in [docs/documentati
 This package is available under two licenses:
 
 - [Affero GPL Version 3, 19 November 2007](LICENSE-AGPL-3.0.md), this is the default license.
-- [BSD-3-Clause via commercial agreement](LICENSE-Commercial.md), available via donation to charity and including a limited warranty and fitness-for-purpose promise.
+- [BSD-3-Clause via commercial agreement](LICENSE-Commercial.md), available via donation to charity. Grants a limited warranty and fitness-for-purpose promise.
