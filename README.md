@@ -1,6 +1,6 @@
 # QuickMagick
 
-A fast Faker-compatible image placeholder library for PHP. Generate gradients, plasma effects, repeating patterns, solid color canvases, labels, captions and random image variants without any network requests.
+A very fast Faker-compatible image placeholder library for PHP. Generate gradients, plasma effects, repeating patterns, solid color canvases, labels, captions, and random image variants without any network requests.
 
 ![Coverage](.github/badge-coverage.svg "Badge: Code coverage percentage")
 ![PHPStan](https://img.shields.io/badge/PHPStan-level%2010-brightgreen "Badge: PHP Stan level")
@@ -9,7 +9,7 @@ A fast Faker-compatible image placeholder library for PHP. Generate gradients, p
 
 ## Installation
 
-Install this Faker [provider](https://fakerphp.org/#faker-internals-understanding-providers) with [Composer](https://getcomposer.org/):
+Install this [Faker provider](https://fakerphp.org/#faker-internals-understanding-providers) with [Composer](https://getcomposer.org/):
 ```shell
 composer require niklasbr/quick-magick
 ```
@@ -41,12 +41,12 @@ $imageData = $faker->image(category: 'LINEAR_GRADIENT', word: '#1100ff-magenta')
 
 ## Faker provider features
 
-QuickMagick adds a Faker-compatible image provider that supports the same API shape as the built-in Faker image provider, with additional image generation options:
+QuickMagick adds a Faker-compatible image provider that uses the same API shape as the built-in Faker image provider, with additional image generation options:
 
 - Generate image files directly with `image()`
 - Return raw image blob bytes with `imageData()`
-- Build data URLs with `imageUrl()`
-- Create explicit image files with `createImageFile()`
+- Build data URL:s with `imageUrl()`
+- Create and store image files with `createImageFile()`
 - Generate random images of a certain style/category with `randomSolidColor()`, `randomGradient()`, `randomPattern()`, `randomPlasma()` and `randomImage()`
 - Supports formats `png`, `jpeg`, `gif`, `webp`, `tiff`, `bmp`
 
