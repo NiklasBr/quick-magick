@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:d23aeb56-e89f-4c0e-909d-ba3029992ecd">
+<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:2adf5f59-4887-4b5a-a268-bad4d26325f2">
   <metadata>
-    <timestamp><![CDATA[2026-06-01T03:04:20Z]]></timestamp>
+    <timestamp><![CDATA[2026-06-08T03:04:15Z]]></timestamp>
     <tools>
       <tool>
         <name><![CDATA[composer]]></name>
-        <version><![CDATA[2.10.0]]></version>
+        <version><![CDATA[2.10.1]]></version>
       </tool>
       <tool>
         <vendor><![CDATA[cyclonedx]]></vendor>
@@ -47,8 +47,8 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[2fc14dd1106b85b0c9465982b9d4d592008c1578]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[2fc14dd1106b85b0c9465982b9d4d592008c1578]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[7b469804e4bc2cfdf7d7f4f5e2a7370b6d861468]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[7b469804e4bc2cfdf7d7f4f5e2a7370b6d861468]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
       </properties>
     </component>
@@ -491,39 +491,39 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="friendsofphp/php-cs-fixer-3.95.3.0">
+    <component type="library" bom-ref="friendsofphp/php-cs-fixer-3.95.4.0">
       <author><![CDATA[Fabien Potencier, Dariusz Rumiński]]></author>
       <group><![CDATA[friendsofphp]]></group>
       <name><![CDATA[php-cs-fixer]]></name>
-      <version><![CDATA[v3.95.3]]></version>
+      <version><![CDATA[v3.95.4]]></version>
       <description><![CDATA[A tool to automatically fix PHP code style]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/friendsofphp/php-cs-fixer@v3.95.3]]></purl>
+      <purl><![CDATA[pkg:composer/friendsofphp/php-cs-fixer@v3.95.4]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/3d681493acc0e93283481b1c63c263737df78687]]></url>
-          <comment><![CDATA[dist reference: 3d681493acc0e93283481b1c63c263737df78687]]></comment>
+          <url><![CDATA[https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/3f8f68856837a77e1f1d870354eca3c8747f2f72]]></url>
+          <comment><![CDATA[dist reference: 3f8f68856837a77e1f1d870354eca3c8747f2f72]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git]]></url>
-          <comment><![CDATA[source reference: 3d681493acc0e93283481b1c63c263737df78687]]></comment>
+          <comment><![CDATA[source reference: 3f8f68856837a77e1f1d870354eca3c8747f2f72]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.issues']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.95.3]]></url>
+          <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.95.4]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[3d681493acc0e93283481b1c63c263737df78687]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[3d681493acc0e93283481b1c63c263737df78687]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[3f8f68856837a77e1f1d870354eca3c8747f2f72]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[3f8f68856837a77e1f1d870354eca3c8747f2f72]]></property>
         <property name="cdx:composer:package:type"><![CDATA[application]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -712,39 +712,39 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="pestphp/pest-4.7.0.0">
+    <component type="library" bom-ref="pestphp/pest-4.7.2.0">
       <author><![CDATA[Nuno Maduro]]></author>
       <group><![CDATA[pestphp]]></group>
       <name><![CDATA[pest]]></name>
-      <version><![CDATA[v4.7.0]]></version>
+      <version><![CDATA[v4.7.2]]></version>
       <description><![CDATA[The elegant PHP Testing Framework.]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/pestphp/pest@v4.7.0]]></purl>
+      <purl><![CDATA[pkg:composer/pestphp/pest@v4.7.2]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/pestphp/pest/zipball/2fc75cfcf03c041c804778fa894282234adc3c66]]></url>
-          <comment><![CDATA[dist reference: 2fc75cfcf03c041c804778fa894282234adc3c66]]></comment>
+          <url><![CDATA[https://api.github.com/repos/pestphp/pest/zipball/40b88b62ef8a7c6fcae5fc28f1fa747f601c131b]]></url>
+          <comment><![CDATA[dist reference: 40b88b62ef8a7c6fcae5fc28f1fa747f601c131b]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/pestphp/pest.git]]></url>
-          <comment><![CDATA[source reference: 2fc75cfcf03c041c804778fa894282234adc3c66]]></comment>
+          <comment><![CDATA[source reference: 40b88b62ef8a7c6fcae5fc28f1fa747f601c131b]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/pestphp/pest/issues]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.issues']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/pestphp/pest/tree/v4.7.0]]></url>
+          <url><![CDATA[https://github.com/pestphp/pest/tree/v4.7.2]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[2fc75cfcf03c041c804778fa894282234adc3c66]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[2fc75cfcf03c041c804778fa894282234adc3c66]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[40b88b62ef8a7c6fcae5fc28f1fa747f601c131b]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[40b88b62ef8a7c6fcae5fc28f1fa747f601c131b]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -1103,22 +1103,22 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="phpstan/phpstan-2.2.1.0">
+    <component type="library" bom-ref="phpstan/phpstan-2.2.2.0">
       <author><![CDATA[Ondřej Mirtes, Markus Staab, Vincent Langlet]]></author>
       <group><![CDATA[phpstan]]></group>
       <name><![CDATA[phpstan]]></name>
-      <version><![CDATA[2.2.1]]></version>
+      <version><![CDATA[2.2.2]]></version>
       <description><![CDATA[PHPStan - PHP Static Analysis Tool]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/phpstan/phpstan@2.2.1]]></purl>
+      <purl><![CDATA[pkg:composer/phpstan/phpstan@2.2.2]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/phpstan/phpstan/zipball/dea9c8f2d25cc849391042b71e429c1a4bf82660]]></url>
-          <comment><![CDATA[dist reference: dea9c8f2d25cc849391042b71e429c1a4bf82660]]></comment>
+          <url><![CDATA[https://api.github.com/repos/phpstan/phpstan/zipball/e5cc34d491a90e79c216d824f60fe21fd4d93bd6]]></url>
+          <comment><![CDATA[dist reference: e5cc34d491a90e79c216d824f60fe21fd4d93bd6]]></comment>
         </reference>
         <reference type="documentation">
           <url><![CDATA[https://phpstan.org/user-guide/getting-started]]></url>
@@ -1142,31 +1142,31 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[dea9c8f2d25cc849391042b71e429c1a4bf82660]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[e5cc34d491a90e79c216d824f60fe21fd4d93bd6]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="phpunit/php-code-coverage-12.5.6.0">
+    <component type="library" bom-ref="phpunit/php-code-coverage-12.5.7.0">
       <author><![CDATA[Sebastian Bergmann]]></author>
       <group><![CDATA[phpunit]]></group>
       <name><![CDATA[php-code-coverage]]></name>
-      <version><![CDATA[12.5.6]]></version>
+      <version><![CDATA[12.5.7]]></version>
       <description><![CDATA[Library that provides collection, processing, and rendering functionality for PHP code coverage information.]]></description>
       <licenses>
         <license>
           <id><![CDATA[BSD-3-Clause]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/phpunit/php-code-coverage@12.5.6]]></purl>
+      <purl><![CDATA[pkg:composer/phpunit/php-code-coverage@12.5.7]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/876099a072646c7745f673d7aeab5382c4439691]]></url>
-          <comment><![CDATA[dist reference: 876099a072646c7745f673d7aeab5382c4439691]]></comment>
+          <url><![CDATA[https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/186dab580576598076de6818596d12b61801880e]]></url>
+          <comment><![CDATA[dist reference: 186dab580576598076de6818596d12b61801880e]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/sebastianbergmann/php-code-coverage.git]]></url>
-          <comment><![CDATA[source reference: 876099a072646c7745f673d7aeab5382c4439691]]></comment>
+          <comment><![CDATA[source reference: 186dab580576598076de6818596d12b61801880e]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://github.com/sebastianbergmann/php-code-coverage]]></url>
@@ -1181,13 +1181,13 @@
           <comment><![CDATA[as detected from Composer manifest 'support.security']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/sebastianbergmann/php-code-coverage/tree/12.5.6]]></url>
+          <url><![CDATA[https://github.com/sebastianbergmann/php-code-coverage/tree/12.5.7]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[876099a072646c7745f673d7aeab5382c4439691]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[876099a072646c7745f673d7aeab5382c4439691]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[186dab580576598076de6818596d12b61801880e]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[186dab580576598076de6818596d12b61801880e]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -1372,26 +1372,26 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="phpunit/phpunit-12.5.24.0">
+    <component type="library" bom-ref="phpunit/phpunit-12.5.28.0">
       <author><![CDATA[Sebastian Bergmann]]></author>
       <group><![CDATA[phpunit]]></group>
       <name><![CDATA[phpunit]]></name>
-      <version><![CDATA[12.5.24]]></version>
+      <version><![CDATA[12.5.28]]></version>
       <description><![CDATA[The PHP Unit Testing framework.]]></description>
       <licenses>
         <license>
           <id><![CDATA[BSD-3-Clause]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/phpunit/phpunit@12.5.24]]></purl>
+      <purl><![CDATA[pkg:composer/phpunit/phpunit@12.5.28]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d75dd30597caa80e72fad2ef7904601a30ef1046]]></url>
-          <comment><![CDATA[dist reference: d75dd30597caa80e72fad2ef7904601a30ef1046]]></comment>
+          <url><![CDATA[https://api.github.com/repos/sebastianbergmann/phpunit/zipball/5895d05f5bf421ed230fbd76e1277e4b8955def4]]></url>
+          <comment><![CDATA[dist reference: 5895d05f5bf421ed230fbd76e1277e4b8955def4]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/sebastianbergmann/phpunit.git]]></url>
-          <comment><![CDATA[source reference: d75dd30597caa80e72fad2ef7904601a30ef1046]]></comment>
+          <comment><![CDATA[source reference: 5895d05f5bf421ed230fbd76e1277e4b8955def4]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://phpunit.de/]]></url>
@@ -1406,13 +1406,13 @@
           <comment><![CDATA[as detected from Composer manifest 'support.security']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/sebastianbergmann/phpunit/tree/12.5.24]]></url>
+          <url><![CDATA[https://github.com/sebastianbergmann/phpunit/tree/12.5.28]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[d75dd30597caa80e72fad2ef7904601a30ef1046]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[d75dd30597caa80e72fad2ef7904601a30ef1046]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[5895d05f5bf421ed230fbd76e1277e4b8955def4]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[5895d05f5bf421ed230fbd76e1277e4b8955def4]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -2093,26 +2093,26 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="sebastian/global-state-8.0.2.0">
+    <component type="library" bom-ref="sebastian/global-state-8.0.3.0">
       <author><![CDATA[Sebastian Bergmann]]></author>
       <group><![CDATA[sebastian]]></group>
       <name><![CDATA[global-state]]></name>
-      <version><![CDATA[8.0.2]]></version>
+      <version><![CDATA[8.0.3]]></version>
       <description><![CDATA[Snapshotting of global state]]></description>
       <licenses>
         <license>
           <id><![CDATA[BSD-3-Clause]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/sebastian/global-state@8.0.2]]></purl>
+      <purl><![CDATA[pkg:composer/sebastian/global-state@8.0.3]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/sebastianbergmann/global-state/zipball/ef1377171613d09edd25b7816f05be8313f9115d]]></url>
-          <comment><![CDATA[dist reference: ef1377171613d09edd25b7816f05be8313f9115d]]></comment>
+          <url><![CDATA[https://api.github.com/repos/sebastianbergmann/global-state/zipball/b164d3274d6537ab462591c5755f76a8f5b1aae9]]></url>
+          <comment><![CDATA[dist reference: b164d3274d6537ab462591c5755f76a8f5b1aae9]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/sebastianbergmann/global-state.git]]></url>
-          <comment><![CDATA[source reference: ef1377171613d09edd25b7816f05be8313f9115d]]></comment>
+          <comment><![CDATA[source reference: b164d3274d6537ab462591c5755f76a8f5b1aae9]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://www.github.com/sebastianbergmann/global-state]]></url>
@@ -2127,13 +2127,13 @@
           <comment><![CDATA[as detected from Composer manifest 'support.security']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/sebastianbergmann/global-state/tree/8.0.2]]></url>
+          <url><![CDATA[https://github.com/sebastianbergmann/global-state/tree/8.0.3]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[ef1377171613d09edd25b7816f05be8313f9115d]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[ef1377171613d09edd25b7816f05be8313f9115d]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[b164d3274d6537ab462591c5755f76a8f5b1aae9]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[b164d3274d6537ab462591c5755f76a8f5b1aae9]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -3265,10 +3265,10 @@
     <dependency ref="brianium/paratest-7.20.0.0">
       <dependency ref="fidry/cpu-core-counter-1.3.0.0"/>
       <dependency ref="jean85/pretty-package-versions-2.1.1.0"/>
-      <dependency ref="phpunit/php-code-coverage-12.5.6.0"/>
+      <dependency ref="phpunit/php-code-coverage-12.5.7.0"/>
       <dependency ref="phpunit/php-file-iterator-6.0.1.0"/>
       <dependency ref="phpunit/php-timer-8.0.0.0"/>
-      <dependency ref="phpunit/phpunit-12.5.24.0"/>
+      <dependency ref="phpunit/phpunit-12.5.28.0"/>
       <dependency ref="sebastian/environment-8.1.2.0"/>
       <dependency ref="symfony/console-7.4.13.0"/>
       <dependency ref="symfony/process-7.4.13.0"/>
@@ -3293,7 +3293,7 @@
     <dependency ref="filp/whoops-2.18.4.0">
       <dependency ref="psr/log-3.0.2.0"/>
     </dependency>
-    <dependency ref="friendsofphp/php-cs-fixer-3.95.3.0">
+    <dependency ref="friendsofphp/php-cs-fixer-3.95.4.0">
       <dependency ref="clue/ndjson-react-1.3.0.0"/>
       <dependency ref="composer/semver-3.4.4.0"/>
       <dependency ref="composer/xdebug-handler-3.0.5.0"/>
@@ -3327,7 +3327,7 @@
     <dependency ref="nunomaduro/termwind-2.4.0.0">
       <dependency ref="symfony/console-7.4.13.0"/>
     </dependency>
-    <dependency ref="pestphp/pest-4.7.0.0">
+    <dependency ref="pestphp/pest-4.7.2.0">
       <dependency ref="brianium/paratest-7.20.0.0"/>
       <dependency ref="composer/xdebug-handler-3.0.5.0"/>
       <dependency ref="nunomaduro/collision-8.9.4.0"/>
@@ -3336,7 +3336,7 @@
       <dependency ref="pestphp/pest-plugin-arch-4.0.2.0"/>
       <dependency ref="pestphp/pest-plugin-mutate-4.0.1.0"/>
       <dependency ref="pestphp/pest-plugin-profanity-4.2.1.0"/>
-      <dependency ref="phpunit/phpunit-12.5.24.0"/>
+      <dependency ref="phpunit/phpunit-12.5.28.0"/>
       <dependency ref="symfony/process-7.4.13.0"/>
     </dependency>
     <dependency ref="pestphp/pest-plugin-4.0.0.0"/>
@@ -3370,8 +3370,8 @@
       <dependency ref="phpstan/phpdoc-parser-2.3.2.0"/>
     </dependency>
     <dependency ref="phpstan/phpdoc-parser-2.3.2.0"/>
-    <dependency ref="phpstan/phpstan-2.2.1.0"/>
-    <dependency ref="phpunit/php-code-coverage-12.5.6.0">
+    <dependency ref="phpstan/phpstan-2.2.2.0"/>
+    <dependency ref="phpunit/php-code-coverage-12.5.7.0">
       <dependency ref="nikic/php-parser-5.7.0.0"/>
       <dependency ref="phpunit/php-text-template-5.0.0.0"/>
       <dependency ref="sebastian/complexity-5.0.0.0"/>
@@ -3384,11 +3384,11 @@
     <dependency ref="phpunit/php-invoker-6.0.0.0"/>
     <dependency ref="phpunit/php-text-template-5.0.0.0"/>
     <dependency ref="phpunit/php-timer-8.0.0.0"/>
-    <dependency ref="phpunit/phpunit-12.5.24.0">
+    <dependency ref="phpunit/phpunit-12.5.28.0">
       <dependency ref="myclabs/deep-copy-1.13.4.0"/>
       <dependency ref="phar-io/manifest-2.0.4.0"/>
       <dependency ref="phar-io/version-3.2.1.0"/>
-      <dependency ref="phpunit/php-code-coverage-12.5.6.0"/>
+      <dependency ref="phpunit/php-code-coverage-12.5.7.0"/>
       <dependency ref="phpunit/php-file-iterator-6.0.1.0"/>
       <dependency ref="phpunit/php-invoker-6.0.0.0"/>
       <dependency ref="phpunit/php-text-template-5.0.0.0"/>
@@ -3398,7 +3398,7 @@
       <dependency ref="sebastian/diff-7.0.0.0"/>
       <dependency ref="sebastian/environment-8.1.2.0"/>
       <dependency ref="sebastian/exporter-7.0.3.0"/>
-      <dependency ref="sebastian/global-state-8.0.2.0"/>
+      <dependency ref="sebastian/global-state-8.0.3.0"/>
       <dependency ref="sebastian/object-enumerator-7.0.0.0"/>
       <dependency ref="sebastian/recursion-context-7.0.1.0"/>
       <dependency ref="sebastian/type-6.0.4.0"/>
@@ -3448,7 +3448,7 @@
     <dependency ref="sebastian/exporter-7.0.3.0">
       <dependency ref="sebastian/recursion-context-7.0.1.0"/>
     </dependency>
-    <dependency ref="sebastian/global-state-8.0.2.0">
+    <dependency ref="sebastian/global-state-8.0.3.0">
       <dependency ref="sebastian/object-reflector-5.0.0.0"/>
       <dependency ref="sebastian/recursion-context-7.0.1.0"/>
     </dependency>
@@ -3511,7 +3511,7 @@
     <dependency ref="ta-tikoma/phpunit-architecture-test-0.8.7.0">
       <dependency ref="nikic/php-parser-5.7.0.0"/>
       <dependency ref="phpdocumentor/reflection-docblock-6.0.3.0"/>
-      <dependency ref="phpunit/phpunit-12.5.24.0"/>
+      <dependency ref="phpunit/phpunit-12.5.28.0"/>
       <dependency ref="symfony/finder-7.4.8.0"/>
     </dependency>
     <dependency ref="theseer/tokenizer-2.0.1.0"/>
@@ -3519,9 +3519,9 @@
     <dependency ref="niklasbr/quick-magick-dev-main">
       <dependency ref="fakerphp/faker-1.24.1.0"/>
       <dependency ref="spatie/color-2.1.0.0"/>
-      <dependency ref="pestphp/pest-4.7.0.0"/>
-      <dependency ref="friendsofphp/php-cs-fixer-3.95.3.0"/>
-      <dependency ref="phpstan/phpstan-2.2.1.0"/>
+      <dependency ref="pestphp/pest-4.7.2.0"/>
+      <dependency ref="friendsofphp/php-cs-fixer-3.95.4.0"/>
+      <dependency ref="phpstan/phpstan-2.2.2.0"/>
     </dependency>
   </dependencies>
 </bom>
