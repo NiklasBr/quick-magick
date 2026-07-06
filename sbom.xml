@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:26729c88-d4a7-4b94-89ee-e3c0128d4412">
+<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:e128777c-3966-44cf-86c4-3885139240b6">
   <metadata>
-    <timestamp><![CDATA[2026-06-29T03:03:39Z]]></timestamp>
+    <timestamp><![CDATA[2026-07-06T03:02:18Z]]></timestamp>
     <tools>
       <tool>
         <name><![CDATA[composer]]></name>
-        <version><![CDATA[2.10.1]]></version>
+        <version><![CDATA[2.10.2]]></version>
       </tool>
       <tool>
         <vendor><![CDATA[cyclonedx]]></vendor>
@@ -47,8 +47,8 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[772c1dc1ff5bf839da8cfaf23c440f804f52607c]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[772c1dc1ff5bf839da8cfaf23c440f804f52607c]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[60a643596bacb39c581e52c88d8fd779e36d45ee]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[60a643596bacb39c581e52c88d8fd779e36d45ee]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
       </properties>
     </component>
@@ -601,39 +601,39 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="nikic/php-parser-5.7.0.0">
+    <component type="library" bom-ref="nikic/php-parser-5.8.0.0">
       <author><![CDATA[Nikita Popov]]></author>
       <group><![CDATA[nikic]]></group>
       <name><![CDATA[php-parser]]></name>
-      <version><![CDATA[v5.7.0]]></version>
+      <version><![CDATA[v5.8.0]]></version>
       <description><![CDATA[A PHP parser written in PHP]]></description>
       <licenses>
         <license>
           <id><![CDATA[BSD-3-Clause]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/nikic/php-parser@v5.7.0]]></purl>
+      <purl><![CDATA[pkg:composer/nikic/php-parser@v5.8.0]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/nikic/PHP-Parser/zipball/dca41cd15c2ac9d055ad70dbfd011130757d1f82]]></url>
-          <comment><![CDATA[dist reference: dca41cd15c2ac9d055ad70dbfd011130757d1f82]]></comment>
+          <url><![CDATA[https://api.github.com/repos/nikic/PHP-Parser/zipball/044a6a392ff8ad0d61f14370a5fbbd0a0107152f]]></url>
+          <comment><![CDATA[dist reference: 044a6a392ff8ad0d61f14370a5fbbd0a0107152f]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/nikic/PHP-Parser.git]]></url>
-          <comment><![CDATA[source reference: dca41cd15c2ac9d055ad70dbfd011130757d1f82]]></comment>
+          <comment><![CDATA[source reference: 044a6a392ff8ad0d61f14370a5fbbd0a0107152f]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/nikic/PHP-Parser/issues]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.issues']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/nikic/PHP-Parser/tree/v5.7.0]]></url>
+          <url><![CDATA[https://github.com/nikic/PHP-Parser/tree/v5.8.0]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[dca41cd15c2ac9d055ad70dbfd011130757d1f82]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[dca41cd15c2ac9d055ad70dbfd011130757d1f82]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[044a6a392ff8ad0d61f14370a5fbbd0a0107152f]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[044a6a392ff8ad0d61f14370a5fbbd0a0107152f]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -1103,22 +1103,22 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="phpstan/phpstan-2.2.2.0">
+    <component type="library" bom-ref="phpstan/phpstan-2.2.5.0">
       <author><![CDATA[Ondřej Mirtes, Markus Staab, Vincent Langlet]]></author>
       <group><![CDATA[phpstan]]></group>
       <name><![CDATA[phpstan]]></name>
-      <version><![CDATA[2.2.2]]></version>
+      <version><![CDATA[2.2.5]]></version>
       <description><![CDATA[PHPStan - PHP Static Analysis Tool]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/phpstan/phpstan@2.2.2]]></purl>
+      <purl><![CDATA[pkg:composer/phpstan/phpstan@2.2.5]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/phpstan/phpstan/zipball/e5cc34d491a90e79c216d824f60fe21fd4d93bd6]]></url>
-          <comment><![CDATA[dist reference: e5cc34d491a90e79c216d824f60fe21fd4d93bd6]]></comment>
+          <url><![CDATA[https://api.github.com/repos/phpstan/phpstan/zipball/909c1e5fef7989ac0d0c1c5c42e32a5c4f6198a0]]></url>
+          <comment><![CDATA[dist reference: 909c1e5fef7989ac0d0c1c5c42e32a5c4f6198a0]]></comment>
         </reference>
         <reference type="documentation">
           <url><![CDATA[https://phpstan.org/user-guide/getting-started]]></url>
@@ -1142,7 +1142,7 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[e5cc34d491a90e79c216d824f60fe21fd4d93bd6]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[909c1e5fef7989ac0d0c1c5c42e32a5c4f6198a0]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -3318,7 +3318,7 @@
     </dependency>
     <dependency ref="jean85/pretty-package-versions-2.1.1.0"/>
     <dependency ref="myclabs/deep-copy-1.13.4.0"/>
-    <dependency ref="nikic/php-parser-5.7.0.0"/>
+    <dependency ref="nikic/php-parser-5.8.0.0"/>
     <dependency ref="nunomaduro/collision-8.9.4.0">
       <dependency ref="filp/whoops-2.18.4.0"/>
       <dependency ref="nunomaduro/termwind-2.4.0.0"/>
@@ -3345,7 +3345,7 @@
       <dependency ref="ta-tikoma/phpunit-architecture-test-0.8.7.0"/>
     </dependency>
     <dependency ref="pestphp/pest-plugin-mutate-4.0.1.0">
-      <dependency ref="nikic/php-parser-5.7.0.0"/>
+      <dependency ref="nikic/php-parser-5.8.0.0"/>
       <dependency ref="pestphp/pest-plugin-4.0.0.0"/>
       <dependency ref="psr/simple-cache-3.0.0.0"/>
     </dependency>
@@ -3370,9 +3370,9 @@
       <dependency ref="phpstan/phpdoc-parser-2.3.2.0"/>
     </dependency>
     <dependency ref="phpstan/phpdoc-parser-2.3.2.0"/>
-    <dependency ref="phpstan/phpstan-2.2.2.0"/>
+    <dependency ref="phpstan/phpstan-2.2.5.0"/>
     <dependency ref="phpunit/php-code-coverage-12.5.7.0">
-      <dependency ref="nikic/php-parser-5.7.0.0"/>
+      <dependency ref="nikic/php-parser-5.8.0.0"/>
       <dependency ref="phpunit/php-text-template-5.0.0.0"/>
       <dependency ref="sebastian/complexity-5.0.0.0"/>
       <dependency ref="sebastian/environment-8.1.2.0"/>
@@ -3441,7 +3441,7 @@
       <dependency ref="sebastian/exporter-7.0.3.0"/>
     </dependency>
     <dependency ref="sebastian/complexity-5.0.0.0">
-      <dependency ref="nikic/php-parser-5.7.0.0"/>
+      <dependency ref="nikic/php-parser-5.8.0.0"/>
     </dependency>
     <dependency ref="sebastian/diff-7.0.0.0"/>
     <dependency ref="sebastian/environment-8.1.2.0"/>
@@ -3453,7 +3453,7 @@
       <dependency ref="sebastian/recursion-context-7.0.1.0"/>
     </dependency>
     <dependency ref="sebastian/lines-of-code-4.0.1.0">
-      <dependency ref="nikic/php-parser-5.7.0.0"/>
+      <dependency ref="nikic/php-parser-5.8.0.0"/>
     </dependency>
     <dependency ref="sebastian/object-enumerator-7.0.0.0">
       <dependency ref="sebastian/object-reflector-5.0.0.0"/>
@@ -3509,7 +3509,7 @@
       <dependency ref="symfony/polyfill-mbstring-1.38.2.0"/>
     </dependency>
     <dependency ref="ta-tikoma/phpunit-architecture-test-0.8.7.0">
-      <dependency ref="nikic/php-parser-5.7.0.0"/>
+      <dependency ref="nikic/php-parser-5.8.0.0"/>
       <dependency ref="phpdocumentor/reflection-docblock-6.0.3.0"/>
       <dependency ref="phpunit/phpunit-12.5.30.0"/>
       <dependency ref="symfony/finder-7.4.14.0"/>
@@ -3521,7 +3521,7 @@
       <dependency ref="spatie/color-2.1.0.0"/>
       <dependency ref="pestphp/pest-4.7.4.0"/>
       <dependency ref="friendsofphp/php-cs-fixer-3.95.11.0"/>
-      <dependency ref="phpstan/phpstan-2.2.2.0"/>
+      <dependency ref="phpstan/phpstan-2.2.5.0"/>
     </dependency>
   </dependencies>
 </bom>
