@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:050e77cc-65b1-44ff-ac26-c853dd8d518b">
+<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:2242474f-d41d-4c35-aaff-59d306e91d79">
   <metadata>
-    <timestamp><![CDATA[2026-07-13T05:27:34Z]]></timestamp>
+    <timestamp><![CDATA[2026-07-20T05:32:41Z]]></timestamp>
     <tools>
       <tool>
         <name><![CDATA[composer]]></name>
@@ -47,8 +47,8 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[878b10cb39b0d6bb6229c0859a8b67ce7d47b657]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[878b10cb39b0d6bb6229c0859a8b67ce7d47b657]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[89ffcfcfbe739499d5bb6267e5ed863cba9b2ec7]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[89ffcfcfbe739499d5bb6267e5ed863cba9b2ec7]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
       </properties>
     </component>
@@ -491,39 +491,39 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="friendsofphp/php-cs-fixer-3.95.13.0">
+    <component type="library" bom-ref="friendsofphp/php-cs-fixer-3.95.15.0">
       <author><![CDATA[Fabien Potencier, Dariusz Rumiński]]></author>
       <group><![CDATA[friendsofphp]]></group>
       <name><![CDATA[php-cs-fixer]]></name>
-      <version><![CDATA[v3.95.13]]></version>
+      <version><![CDATA[v3.95.15]]></version>
       <description><![CDATA[A tool to automatically fix PHP code style]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/friendsofphp/php-cs-fixer@v3.95.13]]></purl>
+      <purl><![CDATA[pkg:composer/friendsofphp/php-cs-fixer@v3.95.15]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/ea941114a002eb5e5876f190223deec1066c482c]]></url>
-          <comment><![CDATA[dist reference: ea941114a002eb5e5876f190223deec1066c482c]]></comment>
+          <url><![CDATA[https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/3e47e5d50046f87e3244acde2fe655d1a3b72555]]></url>
+          <comment><![CDATA[dist reference: 3e47e5d50046f87e3244acde2fe655d1a3b72555]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git]]></url>
-          <comment><![CDATA[source reference: ea941114a002eb5e5876f190223deec1066c482c]]></comment>
+          <comment><![CDATA[source reference: 3e47e5d50046f87e3244acde2fe655d1a3b72555]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.issues']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.95.13]]></url>
+          <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.95.15]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[ea941114a002eb5e5876f190223deec1066c482c]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[ea941114a002eb5e5876f190223deec1066c482c]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[3e47e5d50046f87e3244acde2fe655d1a3b72555]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[3e47e5d50046f87e3244acde2fe655d1a3b72555]]></property>
         <property name="cdx:composer:package:type"><![CDATA[application]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -638,26 +638,26 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="nunomaduro/collision-8.9.4.0">
+    <component type="library" bom-ref="nunomaduro/collision-8.9.5.0">
       <author><![CDATA[Nuno Maduro]]></author>
       <group><![CDATA[nunomaduro]]></group>
       <name><![CDATA[collision]]></name>
-      <version><![CDATA[v8.9.4]]></version>
+      <version><![CDATA[v8.9.5]]></version>
       <description><![CDATA[Cli error handling for console/command-line PHP applications.]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/nunomaduro/collision@v8.9.4]]></purl>
+      <purl><![CDATA[pkg:composer/nunomaduro/collision@v8.9.5]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/nunomaduro/collision/zipball/716af8f95a470e9094cfca09ed897b023be191a5]]></url>
-          <comment><![CDATA[dist reference: 716af8f95a470e9094cfca09ed897b023be191a5]]></comment>
+          <url><![CDATA[https://api.github.com/repos/nunomaduro/collision/zipball/fb53eacd509a1d303858e2d20cfebf2d630254ec]]></url>
+          <comment><![CDATA[dist reference: fb53eacd509a1d303858e2d20cfebf2d630254ec]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/nunomaduro/collision.git]]></url>
-          <comment><![CDATA[source reference: 716af8f95a470e9094cfca09ed897b023be191a5]]></comment>
+          <comment><![CDATA[source reference: fb53eacd509a1d303858e2d20cfebf2d630254ec]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/nunomaduro/collision/issues]]></url>
@@ -669,8 +669,8 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[716af8f95a470e9094cfca09ed897b023be191a5]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[716af8f95a470e9094cfca09ed897b023be191a5]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[fb53eacd509a1d303858e2d20cfebf2d630254ec]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[fb53eacd509a1d303858e2d20cfebf2d630254ec]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -3293,7 +3293,7 @@
     <dependency ref="filp/whoops-2.18.4.0">
       <dependency ref="psr/log-3.0.2.0"/>
     </dependency>
-    <dependency ref="friendsofphp/php-cs-fixer-3.95.13.0">
+    <dependency ref="friendsofphp/php-cs-fixer-3.95.15.0">
       <dependency ref="clue/ndjson-react-1.3.0.0"/>
       <dependency ref="composer/semver-3.4.4.0"/>
       <dependency ref="composer/xdebug-handler-3.0.5.0"/>
@@ -3319,7 +3319,7 @@
     <dependency ref="jean85/pretty-package-versions-2.1.1.0"/>
     <dependency ref="myclabs/deep-copy-1.13.4.0"/>
     <dependency ref="nikic/php-parser-5.8.0.0"/>
-    <dependency ref="nunomaduro/collision-8.9.4.0">
+    <dependency ref="nunomaduro/collision-8.9.5.0">
       <dependency ref="filp/whoops-2.18.4.0"/>
       <dependency ref="nunomaduro/termwind-2.4.0.0"/>
       <dependency ref="symfony/console-7.4.14.0"/>
@@ -3330,7 +3330,7 @@
     <dependency ref="pestphp/pest-4.7.5.0">
       <dependency ref="brianium/paratest-7.20.0.0"/>
       <dependency ref="composer/xdebug-handler-3.0.5.0"/>
-      <dependency ref="nunomaduro/collision-8.9.4.0"/>
+      <dependency ref="nunomaduro/collision-8.9.5.0"/>
       <dependency ref="nunomaduro/termwind-2.4.0.0"/>
       <dependency ref="pestphp/pest-plugin-4.0.0.0"/>
       <dependency ref="pestphp/pest-plugin-arch-4.0.2.0"/>
@@ -3520,7 +3520,7 @@
       <dependency ref="fakerphp/faker-1.24.1.0"/>
       <dependency ref="spatie/color-2.1.0.0"/>
       <dependency ref="pestphp/pest-4.7.5.0"/>
-      <dependency ref="friendsofphp/php-cs-fixer-3.95.13.0"/>
+      <dependency ref="friendsofphp/php-cs-fixer-3.95.15.0"/>
       <dependency ref="phpstan/phpstan-2.2.5.0"/>
     </dependency>
   </dependencies>
