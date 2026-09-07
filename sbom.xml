@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:8020f29a-6490-4fb3-9624-5c0784293942">
+<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:28d6d54d-2f61-401c-a54a-91477e9028f1">
   <metadata>
-    <timestamp><![CDATA[2026-08-31T07:54:10Z]]></timestamp>
+    <timestamp><![CDATA[2026-09-07T06:48:28Z]]></timestamp>
     <tools>
       <tool>
         <name><![CDATA[composer]]></name>
@@ -47,8 +47,8 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[27313002df0dc956d4b901ccc0bb67400f262444]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[27313002df0dc956d4b901ccc0bb67400f262444]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[e759a26c7927c73d3856b9afd9a6f7b94d52e92c]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[e759a26c7927c73d3856b9afd9a6f7b94d52e92c]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
       </properties>
     </component>
@@ -491,39 +491,39 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="friendsofphp/php-cs-fixer-3.95.23.0">
+    <component type="library" bom-ref="friendsofphp/php-cs-fixer-3.95.24.0">
       <author><![CDATA[Fabien Potencier, Dariusz Rumiński]]></author>
       <group><![CDATA[friendsofphp]]></group>
       <name><![CDATA[php-cs-fixer]]></name>
-      <version><![CDATA[v3.95.23]]></version>
+      <version><![CDATA[v3.95.24]]></version>
       <description><![CDATA[A tool to automatically fix PHP code style]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/friendsofphp/php-cs-fixer@v3.95.23]]></purl>
+      <purl><![CDATA[pkg:composer/friendsofphp/php-cs-fixer@v3.95.24]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/b2932a5af3157a0c28324b1efe5e3b556dee09c4]]></url>
-          <comment><![CDATA[dist reference: b2932a5af3157a0c28324b1efe5e3b556dee09c4]]></comment>
+          <url><![CDATA[https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/9a4b8050f8768646bf3693ee7416978ceeca6206]]></url>
+          <comment><![CDATA[dist reference: 9a4b8050f8768646bf3693ee7416978ceeca6206]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git]]></url>
-          <comment><![CDATA[source reference: b2932a5af3157a0c28324b1efe5e3b556dee09c4]]></comment>
+          <comment><![CDATA[source reference: 9a4b8050f8768646bf3693ee7416978ceeca6206]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.issues']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.95.23]]></url>
+          <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.95.24]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[b2932a5af3157a0c28324b1efe5e3b556dee09c4]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[b2932a5af3157a0c28324b1efe5e3b556dee09c4]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[9a4b8050f8768646bf3693ee7416978ceeca6206]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[9a4b8050f8768646bf3693ee7416978ceeca6206]]></property>
         <property name="cdx:composer:package:type"><![CDATA[application]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -1067,58 +1067,58 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="phpstan/phpdoc-parser-2.3.3.0">
+    <component type="library" bom-ref="phpstan/phpdoc-parser-2.3.5.0">
       <group><![CDATA[phpstan]]></group>
       <name><![CDATA[phpdoc-parser]]></name>
-      <version><![CDATA[2.3.3]]></version>
+      <version><![CDATA[2.3.5]]></version>
       <description><![CDATA[PHPDoc parser with support for nullable, intersection and generic types]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/phpstan/phpdoc-parser@2.3.3]]></purl>
+      <purl><![CDATA[pkg:composer/phpstan/phpdoc-parser@2.3.5]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/phpstan/phpdoc-parser/zipball/fb19eedd2bb67ff8cf7a5502ad329e701d6398a3]]></url>
-          <comment><![CDATA[dist reference: fb19eedd2bb67ff8cf7a5502ad329e701d6398a3]]></comment>
+          <url><![CDATA[https://api.github.com/repos/phpstan/phpdoc-parser/zipball/148cefffaf0233e4c08cc13db8a195a56dd6dfe9]]></url>
+          <comment><![CDATA[dist reference: 148cefffaf0233e4c08cc13db8a195a56dd6dfe9]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/phpstan/phpdoc-parser.git]]></url>
-          <comment><![CDATA[source reference: fb19eedd2bb67ff8cf7a5502ad329e701d6398a3]]></comment>
+          <comment><![CDATA[source reference: 148cefffaf0233e4c08cc13db8a195a56dd6dfe9]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/phpstan/phpdoc-parser/issues]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.issues']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/phpstan/phpdoc-parser/tree/2.3.3]]></url>
+          <url><![CDATA[https://github.com/phpstan/phpdoc-parser/tree/2.3.5]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[fb19eedd2bb67ff8cf7a5502ad329e701d6398a3]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[fb19eedd2bb67ff8cf7a5502ad329e701d6398a3]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[148cefffaf0233e4c08cc13db8a195a56dd6dfe9]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[148cefffaf0233e4c08cc13db8a195a56dd6dfe9]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="phpstan/phpstan-2.2.10.0">
+    <component type="library" bom-ref="phpstan/phpstan-2.2.13.0">
       <author><![CDATA[Ondřej Mirtes, Markus Staab, Vincent Langlet]]></author>
       <group><![CDATA[phpstan]]></group>
       <name><![CDATA[phpstan]]></name>
-      <version><![CDATA[2.2.10]]></version>
+      <version><![CDATA[2.2.13]]></version>
       <description><![CDATA[PHPStan - PHP Static Analysis Tool]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/phpstan/phpstan@2.2.10]]></purl>
+      <purl><![CDATA[pkg:composer/phpstan/phpstan@2.2.13]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/phpstan/phpstan/zipball/36d1509c998b0602811824143526b4a9ee2774e7]]></url>
-          <comment><![CDATA[dist reference: 36d1509c998b0602811824143526b4a9ee2774e7]]></comment>
+          <url><![CDATA[https://api.github.com/repos/phpstan/phpstan/zipball/9ba9ac76ee9c5cf5b56d58eb5deec6315b7a0260]]></url>
+          <comment><![CDATA[dist reference: 9ba9ac76ee9c5cf5b56d58eb5deec6315b7a0260]]></comment>
         </reference>
         <reference type="documentation">
           <url><![CDATA[https://phpstan.org/user-guide/getting-started]]></url>
@@ -1142,7 +1142,7 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[36d1509c998b0602811824143526b4a9ee2774e7]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[9ba9ac76ee9c5cf5b56d58eb5deec6315b7a0260]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -3293,7 +3293,7 @@
     <dependency ref="filp/whoops-2.18.4.0">
       <dependency ref="psr/log-3.0.2.0"/>
     </dependency>
-    <dependency ref="friendsofphp/php-cs-fixer-3.95.23.0">
+    <dependency ref="friendsofphp/php-cs-fixer-3.95.24.0">
       <dependency ref="clue/ndjson-react-1.3.0.0"/>
       <dependency ref="composer/semver-3.4.4.0"/>
       <dependency ref="composer/xdebug-handler-3.0.5.0"/>
@@ -3361,16 +3361,16 @@
       <dependency ref="doctrine/deprecations-1.1.6.0"/>
       <dependency ref="phpdocumentor/reflection-common-2.2.0.0"/>
       <dependency ref="phpdocumentor/type-resolver-2.0.0.0"/>
-      <dependency ref="phpstan/phpdoc-parser-2.3.3.0"/>
+      <dependency ref="phpstan/phpdoc-parser-2.3.5.0"/>
       <dependency ref="webmozart/assert-2.4.1.0"/>
     </dependency>
     <dependency ref="phpdocumentor/type-resolver-2.0.0.0">
       <dependency ref="doctrine/deprecations-1.1.6.0"/>
       <dependency ref="phpdocumentor/reflection-common-2.2.0.0"/>
-      <dependency ref="phpstan/phpdoc-parser-2.3.3.0"/>
+      <dependency ref="phpstan/phpdoc-parser-2.3.5.0"/>
     </dependency>
-    <dependency ref="phpstan/phpdoc-parser-2.3.3.0"/>
-    <dependency ref="phpstan/phpstan-2.2.10.0"/>
+    <dependency ref="phpstan/phpdoc-parser-2.3.5.0"/>
+    <dependency ref="phpstan/phpstan-2.2.13.0"/>
     <dependency ref="phpunit/php-code-coverage-12.5.7.0">
       <dependency ref="nikic/php-parser-5.8.0.0"/>
       <dependency ref="phpunit/php-text-template-5.0.0.0"/>
@@ -3520,8 +3520,8 @@
       <dependency ref="fakerphp/faker-1.24.1.0"/>
       <dependency ref="spatie/color-2.1.0.0"/>
       <dependency ref="pestphp/pest-4.7.8.0"/>
-      <dependency ref="friendsofphp/php-cs-fixer-3.95.23.0"/>
-      <dependency ref="phpstan/phpstan-2.2.10.0"/>
+      <dependency ref="friendsofphp/php-cs-fixer-3.95.24.0"/>
+      <dependency ref="phpstan/phpstan-2.2.13.0"/>
     </dependency>
   </dependencies>
 </bom>
