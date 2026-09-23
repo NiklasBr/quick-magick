@@ -14,6 +14,7 @@ jobs:
             fail-fast: false
             matrix:
                 php: ['8.3', '8.4', '8.5']
+                dependencies: ['lowest', 'highest']
 
         steps:
             # https://github.com/actions/checkout
@@ -33,6 +34,8 @@ jobs:
             # Install (and cache) Composer dependencies
             # https://github.com/ramsey/composer-install
             - uses: ramsey/composer-install@v4
+              with:
+                  dependency-versions: ${{ matrix.dependencies }}
 
             - name: Run Pest tests
               run: composer pest:test -- --ci --coverage-clover=.github/clover.xml
@@ -40,7 +43,7 @@ jobs:
             # https://github.com/timkrase/phpunit-coverage-badge
             - name: Generate code coverage badge
               uses: timkrase/phpunit-coverage-badge@v1.2.1
-              if: github.ref == 'refs/heads/main' && matrix.php == '8.5'
+              if: github.ref == 'refs/heads/main' && matrix.php == '8.5' && matrix.dependencies == 'highest'
               with:
                   report: '.github/clover.xml'
                   coverage_badge_path: '.github/badge-coverage.svg'
