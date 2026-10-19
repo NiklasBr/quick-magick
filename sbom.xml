@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:c7ecf587-06e3-492d-aec5-52b717aabb25">
+<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:525ebef9-6115-4d77-9dce-a21e35d27772">
   <metadata>
-    <timestamp><![CDATA[2026-10-12T08:17:42Z]]></timestamp>
+    <timestamp><![CDATA[2026-10-19T07:06:59Z]]></timestamp>
     <tools>
       <tool>
         <name><![CDATA[composer]]></name>
@@ -47,8 +47,8 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[59f3f4b48abce78d7db2df565cc05be2f126361d]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[59f3f4b48abce78d7db2df565cc05be2f126361d]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[2efd2dbbfe178ace327a559cef4c2b0af845e9e4]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[2efd2dbbfe178ace327a559cef4c2b0af845e9e4]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
       </properties>
     </component>
@@ -295,26 +295,26 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="ergebnis/agent-detector-1.2.0.0">
+    <component type="library" bom-ref="ergebnis/agent-detector-1.3.0.0">
       <author><![CDATA[Andreas Möller]]></author>
       <group><![CDATA[ergebnis]]></group>
       <name><![CDATA[agent-detector]]></name>
-      <version><![CDATA[1.2.0]]></version>
+      <version><![CDATA[1.3.0]]></version>
       <description><![CDATA[Provides a detector for detecting the presence of an agent.]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/ergebnis/agent-detector@1.2.0]]></purl>
+      <purl><![CDATA[pkg:composer/ergebnis/agent-detector@1.3.0]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/ergebnis/agent-detector/zipball/e211f17928c8b95a51e06040792d57f5462fb271]]></url>
-          <comment><![CDATA[dist reference: e211f17928c8b95a51e06040792d57f5462fb271]]></comment>
+          <url><![CDATA[https://api.github.com/repos/ergebnis/agent-detector/zipball/0cd815cec1207873c37624d33f0f2853523152f3]]></url>
+          <comment><![CDATA[dist reference: 0cd815cec1207873c37624d33f0f2853523152f3]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/ergebnis/agent-detector.git]]></url>
-          <comment><![CDATA[source reference: e211f17928c8b95a51e06040792d57f5462fb271]]></comment>
+          <comment><![CDATA[source reference: 0cd815cec1207873c37624d33f0f2853523152f3]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://github.com/ergebnis/agent-detector]]></url>
@@ -334,8 +334,8 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[e211f17928c8b95a51e06040792d57f5462fb271]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[e211f17928c8b95a51e06040792d57f5462fb271]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[0cd815cec1207873c37624d33f0f2853523152f3]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[0cd815cec1207873c37624d33f0f2853523152f3]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -450,26 +450,26 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="filp/whoops-2.18.6.0">
+    <component type="library" bom-ref="filp/whoops-2.18.7.0">
       <author><![CDATA[Filipe Dobreira]]></author>
       <group><![CDATA[filp]]></group>
       <name><![CDATA[whoops]]></name>
-      <version><![CDATA[2.18.6]]></version>
+      <version><![CDATA[2.18.7]]></version>
       <description><![CDATA[php error handling for cool kids]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/filp/whoops@2.18.6]]></purl>
+      <purl><![CDATA[pkg:composer/filp/whoops@2.18.7]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/filp/whoops/zipball/7d0a2cde892089bb09372f4366e9b960eb3001a9]]></url>
-          <comment><![CDATA[dist reference: 7d0a2cde892089bb09372f4366e9b960eb3001a9]]></comment>
+          <url><![CDATA[https://api.github.com/repos/filp/whoops/zipball/50670ba239926c50f2073e868f6672f775cd57ec]]></url>
+          <comment><![CDATA[dist reference: 50670ba239926c50f2073e868f6672f775cd57ec]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/filp/whoops.git]]></url>
-          <comment><![CDATA[source reference: 7d0a2cde892089bb09372f4366e9b960eb3001a9]]></comment>
+          <comment><![CDATA[source reference: 50670ba239926c50f2073e868f6672f775cd57ec]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://filp.github.io/whoops/]]></url>
@@ -480,13 +480,13 @@
           <comment><![CDATA[as detected from Composer manifest 'support.issues']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/filp/whoops/tree/2.18.6]]></url>
+          <url><![CDATA[https://github.com/filp/whoops/tree/2.18.7]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[7d0a2cde892089bb09372f4366e9b960eb3001a9]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[7d0a2cde892089bb09372f4366e9b960eb3001a9]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[50670ba239926c50f2073e868f6672f775cd57ec]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[50670ba239926c50f2073e868f6672f775cd57ec]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -2484,39 +2484,39 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="symfony/console-7.4.20.0">
+    <component type="library" bom-ref="symfony/console-7.4.21.0">
       <author><![CDATA[Fabien Potencier, Symfony Community]]></author>
       <group><![CDATA[symfony]]></group>
       <name><![CDATA[console]]></name>
-      <version><![CDATA[v7.4.20]]></version>
+      <version><![CDATA[v7.4.21]]></version>
       <description><![CDATA[Eases the creation of beautiful and testable command line interfaces]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/symfony/console@v7.4.20]]></purl>
+      <purl><![CDATA[pkg:composer/symfony/console@v7.4.21]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/symfony/console/zipball/d7bca2fe05241dc7732d0c8b6d551b879f5d0a7d]]></url>
-          <comment><![CDATA[dist reference: d7bca2fe05241dc7732d0c8b6d551b879f5d0a7d]]></comment>
+          <url><![CDATA[https://api.github.com/repos/symfony/console/zipball/21f1bc2296f7ff6043241a8dcbc09559b3732820]]></url>
+          <comment><![CDATA[dist reference: 21f1bc2296f7ff6043241a8dcbc09559b3732820]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/symfony/console.git]]></url>
-          <comment><![CDATA[source reference: d7bca2fe05241dc7732d0c8b6d551b879f5d0a7d]]></comment>
+          <comment><![CDATA[source reference: 21f1bc2296f7ff6043241a8dcbc09559b3732820]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://symfony.com]]></url>
           <comment><![CDATA[as detected from Composer manifest 'homepage']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/symfony/console/tree/v7.4.20]]></url>
+          <url><![CDATA[https://github.com/symfony/console/tree/v7.4.21]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[d7bca2fe05241dc7732d0c8b6d551b879f5d0a7d]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[d7bca2fe05241dc7732d0c8b6d551b879f5d0a7d]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[21f1bc2296f7ff6043241a8dcbc09559b3732820]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[21f1bc2296f7ff6043241a8dcbc09559b3732820]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -2631,39 +2631,39 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="symfony/filesystem-7.4.18.0">
+    <component type="library" bom-ref="symfony/filesystem-7.4.21.0">
       <author><![CDATA[Fabien Potencier, Symfony Community]]></author>
       <group><![CDATA[symfony]]></group>
       <name><![CDATA[filesystem]]></name>
-      <version><![CDATA[v7.4.18]]></version>
+      <version><![CDATA[v7.4.21]]></version>
       <description><![CDATA[Provides basic utilities for the filesystem]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/symfony/filesystem@v7.4.18]]></purl>
+      <purl><![CDATA[pkg:composer/symfony/filesystem@v7.4.21]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/symfony/filesystem/zipball/90d412aa5277c6819db39e7605aa46b1019e3232]]></url>
-          <comment><![CDATA[dist reference: 90d412aa5277c6819db39e7605aa46b1019e3232]]></comment>
+          <url><![CDATA[https://api.github.com/repos/symfony/filesystem/zipball/fd0e3462be6d32a0d130e8423e4940a7688162d8]]></url>
+          <comment><![CDATA[dist reference: fd0e3462be6d32a0d130e8423e4940a7688162d8]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/symfony/filesystem.git]]></url>
-          <comment><![CDATA[source reference: 90d412aa5277c6819db39e7605aa46b1019e3232]]></comment>
+          <comment><![CDATA[source reference: fd0e3462be6d32a0d130e8423e4940a7688162d8]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://symfony.com]]></url>
           <comment><![CDATA[as detected from Composer manifest 'homepage']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/symfony/filesystem/tree/v7.4.18]]></url>
+          <url><![CDATA[https://github.com/symfony/filesystem/tree/v7.4.21]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[90d412aa5277c6819db39e7605aa46b1019e3232]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[90d412aa5277c6819db39e7605aa46b1019e3232]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[fd0e3462be6d32a0d130e8423e4940a7688162d8]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[fd0e3462be6d32a0d130e8423e4940a7688162d8]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -3001,39 +3001,39 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="symfony/process-7.4.19.0">
+    <component type="library" bom-ref="symfony/process-7.4.21.0">
       <author><![CDATA[Fabien Potencier, Symfony Community]]></author>
       <group><![CDATA[symfony]]></group>
       <name><![CDATA[process]]></name>
-      <version><![CDATA[v7.4.19]]></version>
+      <version><![CDATA[v7.4.21]]></version>
       <description><![CDATA[Executes commands in sub-processes]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/symfony/process@v7.4.19]]></purl>
+      <purl><![CDATA[pkg:composer/symfony/process@v7.4.21]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/symfony/process/zipball/ed0ae095b86994d370d5791612e55984f15aa30e]]></url>
-          <comment><![CDATA[dist reference: ed0ae095b86994d370d5791612e55984f15aa30e]]></comment>
+          <url><![CDATA[https://api.github.com/repos/symfony/process/zipball/e5247f4a5e0797d232ad8e8e6803aeb341843c83]]></url>
+          <comment><![CDATA[dist reference: e5247f4a5e0797d232ad8e8e6803aeb341843c83]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/symfony/process.git]]></url>
-          <comment><![CDATA[source reference: ed0ae095b86994d370d5791612e55984f15aa30e]]></comment>
+          <comment><![CDATA[source reference: e5247f4a5e0797d232ad8e8e6803aeb341843c83]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://symfony.com]]></url>
           <comment><![CDATA[as detected from Composer manifest 'homepage']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/symfony/process/tree/v7.4.19]]></url>
+          <url><![CDATA[https://github.com/symfony/process/tree/v7.4.21]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[ed0ae095b86994d370d5791612e55984f15aa30e]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[ed0ae095b86994d370d5791612e55984f15aa30e]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[e5247f4a5e0797d232ad8e8e6803aeb341843c83]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[e5247f4a5e0797d232ad8e8e6803aeb341843c83]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -3112,39 +3112,39 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="symfony/string-7.4.19.0">
+    <component type="library" bom-ref="symfony/string-7.4.21.0">
       <author><![CDATA[Nicolas Grekas, Symfony Community]]></author>
       <group><![CDATA[symfony]]></group>
       <name><![CDATA[string]]></name>
-      <version><![CDATA[v7.4.19]]></version>
+      <version><![CDATA[v7.4.21]]></version>
       <description><![CDATA[Provides an object-oriented API to strings and deals with bytes, UTF-8 code points and grapheme clusters in a unified way]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/symfony/string@v7.4.19]]></purl>
+      <purl><![CDATA[pkg:composer/symfony/string@v7.4.21]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/symfony/string/zipball/02731ce2bd26514bec9efc0baef2cd0b0cf67f46]]></url>
-          <comment><![CDATA[dist reference: 02731ce2bd26514bec9efc0baef2cd0b0cf67f46]]></comment>
+          <url><![CDATA[https://api.github.com/repos/symfony/string/zipball/9bc35d074ad16a58c21cd52b18c5cacc4f4c3981]]></url>
+          <comment><![CDATA[dist reference: 9bc35d074ad16a58c21cd52b18c5cacc4f4c3981]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/symfony/string.git]]></url>
-          <comment><![CDATA[source reference: 02731ce2bd26514bec9efc0baef2cd0b0cf67f46]]></comment>
+          <comment><![CDATA[source reference: 9bc35d074ad16a58c21cd52b18c5cacc4f4c3981]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://symfony.com]]></url>
           <comment><![CDATA[as detected from Composer manifest 'homepage']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/symfony/string/tree/v7.4.19]]></url>
+          <url><![CDATA[https://github.com/symfony/string/tree/v7.4.21]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[02731ce2bd26514bec9efc0baef2cd0b0cf67f46]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[02731ce2bd26514bec9efc0baef2cd0b0cf67f46]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[9bc35d074ad16a58c21cd52b18c5cacc4f4c3981]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[9bc35d074ad16a58c21cd52b18c5cacc4f4c3981]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -3270,8 +3270,8 @@
       <dependency ref="phpunit/php-timer-8.0.0.0"/>
       <dependency ref="phpunit/phpunit-12.5.33.0"/>
       <dependency ref="sebastian/environment-8.1.2.0"/>
-      <dependency ref="symfony/console-7.4.20.0"/>
-      <dependency ref="symfony/process-7.4.19.0"/>
+      <dependency ref="symfony/console-7.4.21.0"/>
+      <dependency ref="symfony/process-7.4.21.0"/>
     </dependency>
     <dependency ref="clue/ndjson-react-1.3.0.0">
       <dependency ref="react/stream-1.4.0.0"/>
@@ -3283,49 +3283,49 @@
       <dependency ref="psr/log-3.0.2.0"/>
     </dependency>
     <dependency ref="doctrine/deprecations-1.1.6.0"/>
-    <dependency ref="ergebnis/agent-detector-1.2.0.0"/>
+    <dependency ref="ergebnis/agent-detector-1.3.0.0"/>
     <dependency ref="evenement/evenement-3.0.2.0"/>
     <dependency ref="fakerphp/faker-1.24.1.0">
       <dependency ref="psr/container-2.0.2.0"/>
       <dependency ref="symfony/deprecation-contracts-3.7.1.0"/>
     </dependency>
     <dependency ref="fidry/cpu-core-counter-1.4.1.0"/>
-    <dependency ref="filp/whoops-2.18.6.0">
+    <dependency ref="filp/whoops-2.18.7.0">
       <dependency ref="psr/log-3.0.2.0"/>
     </dependency>
     <dependency ref="friendsofphp/php-cs-fixer-3.95.27.0">
       <dependency ref="clue/ndjson-react-1.3.0.0"/>
       <dependency ref="composer/semver-3.5.1.0"/>
       <dependency ref="composer/xdebug-handler-3.0.5.0"/>
-      <dependency ref="ergebnis/agent-detector-1.2.0.0"/>
+      <dependency ref="ergebnis/agent-detector-1.3.0.0"/>
       <dependency ref="fidry/cpu-core-counter-1.4.1.0"/>
       <dependency ref="react/child-process-0.6.7.0"/>
       <dependency ref="react/event-loop-1.6.0.0"/>
       <dependency ref="react/socket-1.17.0.0"/>
       <dependency ref="react/stream-1.4.0.0"/>
       <dependency ref="sebastian/diff-7.0.1.0"/>
-      <dependency ref="symfony/console-7.4.20.0"/>
+      <dependency ref="symfony/console-7.4.21.0"/>
       <dependency ref="symfony/event-dispatcher-7.4.17.0"/>
-      <dependency ref="symfony/filesystem-7.4.18.0"/>
+      <dependency ref="symfony/filesystem-7.4.21.0"/>
       <dependency ref="symfony/finder-7.4.20.0"/>
       <dependency ref="symfony/options-resolver-7.4.8.0"/>
       <dependency ref="symfony/polyfill-mbstring-1.43.0.0"/>
       <dependency ref="symfony/polyfill-php80-1.43.0.0"/>
       <dependency ref="symfony/polyfill-php81-1.38.1.0"/>
       <dependency ref="symfony/polyfill-php84-1.43.0.0"/>
-      <dependency ref="symfony/process-7.4.19.0"/>
+      <dependency ref="symfony/process-7.4.21.0"/>
       <dependency ref="symfony/stopwatch-7.4.8.0"/>
     </dependency>
     <dependency ref="jean85/pretty-package-versions-2.1.1.0"/>
     <dependency ref="myclabs/deep-copy-1.14.0.0"/>
     <dependency ref="nikic/php-parser-5.9.0.0"/>
     <dependency ref="nunomaduro/collision-8.9.5.0">
-      <dependency ref="filp/whoops-2.18.6.0"/>
+      <dependency ref="filp/whoops-2.18.7.0"/>
       <dependency ref="nunomaduro/termwind-2.4.0.0"/>
-      <dependency ref="symfony/console-7.4.20.0"/>
+      <dependency ref="symfony/console-7.4.21.0"/>
     </dependency>
     <dependency ref="nunomaduro/termwind-2.4.0.0">
-      <dependency ref="symfony/console-7.4.20.0"/>
+      <dependency ref="symfony/console-7.4.21.0"/>
     </dependency>
     <dependency ref="pestphp/pest-4.7.8.0">
       <dependency ref="brianium/paratest-7.20.0.0"/>
@@ -3337,7 +3337,7 @@
       <dependency ref="pestphp/pest-plugin-mutate-4.0.1.0"/>
       <dependency ref="pestphp/pest-plugin-profanity-4.2.1.0"/>
       <dependency ref="phpunit/phpunit-12.5.33.0"/>
-      <dependency ref="symfony/process-7.4.19.0"/>
+      <dependency ref="symfony/process-7.4.21.0"/>
     </dependency>
     <dependency ref="pestphp/pest-plugin-4.0.0.0"/>
     <dependency ref="pestphp/pest-plugin-arch-4.0.2.0">
@@ -3465,11 +3465,11 @@
     <dependency ref="sebastian/version-6.0.1.0"/>
     <dependency ref="spatie/color-2.1.0.0"/>
     <dependency ref="staabm/side-effects-detector-1.0.5.0"/>
-    <dependency ref="symfony/console-7.4.20.0">
+    <dependency ref="symfony/console-7.4.21.0">
       <dependency ref="symfony/deprecation-contracts-3.7.1.0"/>
       <dependency ref="symfony/polyfill-mbstring-1.43.0.0"/>
       <dependency ref="symfony/service-contracts-3.7.3.0"/>
-      <dependency ref="symfony/string-7.4.19.0"/>
+      <dependency ref="symfony/string-7.4.21.0"/>
     </dependency>
     <dependency ref="symfony/deprecation-contracts-3.7.1.0"/>
     <dependency ref="symfony/event-dispatcher-7.4.17.0">
@@ -3478,7 +3478,7 @@
     <dependency ref="symfony/event-dispatcher-contracts-3.7.1.0">
       <dependency ref="psr/event-dispatcher-1.0.0.0"/>
     </dependency>
-    <dependency ref="symfony/filesystem-7.4.18.0">
+    <dependency ref="symfony/filesystem-7.4.21.0">
       <dependency ref="symfony/polyfill-ctype-1.37.0.0"/>
       <dependency ref="symfony/polyfill-mbstring-1.43.0.0"/>
     </dependency>
@@ -3493,7 +3493,7 @@
     <dependency ref="symfony/polyfill-php80-1.43.0.0"/>
     <dependency ref="symfony/polyfill-php81-1.38.1.0"/>
     <dependency ref="symfony/polyfill-php84-1.43.0.0"/>
-    <dependency ref="symfony/process-7.4.19.0"/>
+    <dependency ref="symfony/process-7.4.21.0"/>
     <dependency ref="symfony/service-contracts-3.7.3.0">
       <dependency ref="psr/container-2.0.2.0"/>
       <dependency ref="symfony/deprecation-contracts-3.7.1.0"/>
@@ -3501,7 +3501,7 @@
     <dependency ref="symfony/stopwatch-7.4.8.0">
       <dependency ref="symfony/service-contracts-3.7.3.0"/>
     </dependency>
-    <dependency ref="symfony/string-7.4.19.0">
+    <dependency ref="symfony/string-7.4.21.0">
       <dependency ref="symfony/deprecation-contracts-3.7.1.0"/>
       <dependency ref="symfony/polyfill-ctype-1.37.0.0"/>
       <dependency ref="symfony/polyfill-intl-grapheme-1.43.0.0"/>
