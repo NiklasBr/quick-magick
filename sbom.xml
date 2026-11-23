@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:0d9e9d6b-9798-474a-8579-8927d2587f43">
+<bom xmlns="http://cyclonedx.org/schema/bom/1.5" version="1" serialNumber="urn:uuid:e690cb8f-3107-4b2b-b77d-43d6e1c4361a">
   <metadata>
-    <timestamp><![CDATA[2026-11-16T08:46:35Z]]></timestamp>
+    <timestamp><![CDATA[2026-11-23T09:59:33Z]]></timestamp>
     <tools>
       <tool>
         <name><![CDATA[composer]]></name>
@@ -47,8 +47,8 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[59186ee666d7ccbb212bccf5b53f97e6b5bf4131]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[59186ee666d7ccbb212bccf5b53f97e6b5bf4131]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[cc93c9b8ef1a2613ea33537282d9e35e18f9b6d7]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[cc93c9b8ef1a2613ea33537282d9e35e18f9b6d7]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
       </properties>
     </component>
@@ -295,26 +295,26 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="ergebnis/agent-detector-2.0.0.0">
+    <component type="library" bom-ref="ergebnis/agent-detector-2.1.0.0">
       <author><![CDATA[Andreas Möller]]></author>
       <group><![CDATA[ergebnis]]></group>
       <name><![CDATA[agent-detector]]></name>
-      <version><![CDATA[2.0.0]]></version>
+      <version><![CDATA[2.1.0]]></version>
       <description><![CDATA[Provides a detector for detecting the presence of an agent.]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/ergebnis/agent-detector@2.0.0]]></purl>
+      <purl><![CDATA[pkg:composer/ergebnis/agent-detector@2.1.0]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/ergebnis/agent-detector/zipball/bcc63004284c61c6df6e9625acf2673e3be1889b]]></url>
-          <comment><![CDATA[dist reference: bcc63004284c61c6df6e9625acf2673e3be1889b]]></comment>
+          <url><![CDATA[https://api.github.com/repos/ergebnis/agent-detector/zipball/ae2169d42024c6009abd0bb0aec5cf46c902fb1d]]></url>
+          <comment><![CDATA[dist reference: ae2169d42024c6009abd0bb0aec5cf46c902fb1d]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/ergebnis/agent-detector.git]]></url>
-          <comment><![CDATA[source reference: bcc63004284c61c6df6e9625acf2673e3be1889b]]></comment>
+          <comment><![CDATA[source reference: ae2169d42024c6009abd0bb0aec5cf46c902fb1d]]></comment>
         </reference>
         <reference type="website">
           <url><![CDATA[https://github.com/ergebnis/agent-detector]]></url>
@@ -334,8 +334,8 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[bcc63004284c61c6df6e9625acf2673e3be1889b]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[bcc63004284c61c6df6e9625acf2673e3be1889b]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[ae2169d42024c6009abd0bb0aec5cf46c902fb1d]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[ae2169d42024c6009abd0bb0aec5cf46c902fb1d]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -491,39 +491,39 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="friendsofphp/php-cs-fixer-3.95.30.0">
+    <component type="library" bom-ref="friendsofphp/php-cs-fixer-3.95.32.0">
       <author><![CDATA[Fabien Potencier, Dariusz Rumiński]]></author>
       <group><![CDATA[friendsofphp]]></group>
       <name><![CDATA[php-cs-fixer]]></name>
-      <version><![CDATA[v3.95.30]]></version>
+      <version><![CDATA[v3.95.32]]></version>
       <description><![CDATA[A tool to automatically fix PHP code style]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/friendsofphp/php-cs-fixer@v3.95.30]]></purl>
+      <purl><![CDATA[pkg:composer/friendsofphp/php-cs-fixer@v3.95.32]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/e85cafc4d861c122839d5409eda3325ac0ec0300]]></url>
-          <comment><![CDATA[dist reference: e85cafc4d861c122839d5409eda3325ac0ec0300]]></comment>
+          <url><![CDATA[https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/c12acc751f4039935429057f1fadf0e5f62601c1]]></url>
+          <comment><![CDATA[dist reference: c12acc751f4039935429057f1fadf0e5f62601c1]]></comment>
         </reference>
         <reference type="vcs">
           <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git]]></url>
-          <comment><![CDATA[source reference: e85cafc4d861c122839d5409eda3325ac0ec0300]]></comment>
+          <comment><![CDATA[source reference: c12acc751f4039935429057f1fadf0e5f62601c1]]></comment>
         </reference>
         <reference type="issue-tracker">
           <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.issues']]></comment>
         </reference>
         <reference type="vcs">
-          <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.95.30]]></url>
+          <url><![CDATA[https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.95.32]]></url>
           <comment><![CDATA[as detected from Composer manifest 'support.source']]></comment>
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[e85cafc4d861c122839d5409eda3325ac0ec0300]]></property>
-        <property name="cdx:composer:package:sourceReference"><![CDATA[e85cafc4d861c122839d5409eda3325ac0ec0300]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[c12acc751f4039935429057f1fadf0e5f62601c1]]></property>
+        <property name="cdx:composer:package:sourceReference"><![CDATA[c12acc751f4039935429057f1fadf0e5f62601c1]]></property>
         <property name="cdx:composer:package:type"><![CDATA[application]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -1103,22 +1103,22 @@
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
     </component>
-    <component type="library" bom-ref="phpstan/phpstan-2.3.6.0">
+    <component type="library" bom-ref="phpstan/phpstan-2.3.7.0">
       <author><![CDATA[Ondřej Mirtes, Markus Staab, Vincent Langlet]]></author>
       <group><![CDATA[phpstan]]></group>
       <name><![CDATA[phpstan]]></name>
-      <version><![CDATA[2.3.6]]></version>
+      <version><![CDATA[2.3.7]]></version>
       <description><![CDATA[PHPStan - PHP Static Analysis Tool]]></description>
       <licenses>
         <license>
           <id><![CDATA[MIT]]></id>
         </license>
       </licenses>
-      <purl><![CDATA[pkg:composer/phpstan/phpstan@2.3.6]]></purl>
+      <purl><![CDATA[pkg:composer/phpstan/phpstan@2.3.7]]></purl>
       <externalReferences>
         <reference type="distribution">
-          <url><![CDATA[https://api.github.com/repos/phpstan/phpstan/zipball/00cedebb76cc82c1592414fa4f616cefdccda16f]]></url>
-          <comment><![CDATA[dist reference: 00cedebb76cc82c1592414fa4f616cefdccda16f]]></comment>
+          <url><![CDATA[https://api.github.com/repos/phpstan/phpstan/zipball/90c91c2498849ab8cc4e873864bbf1cb2bf6ea12]]></url>
+          <comment><![CDATA[dist reference: 90c91c2498849ab8cc4e873864bbf1cb2bf6ea12]]></comment>
         </reference>
         <reference type="documentation">
           <url><![CDATA[https://phpstan.org/user-guide/getting-started]]></url>
@@ -1142,7 +1142,7 @@
         </reference>
       </externalReferences>
       <properties>
-        <property name="cdx:composer:package:distReference"><![CDATA[00cedebb76cc82c1592414fa4f616cefdccda16f]]></property>
+        <property name="cdx:composer:package:distReference"><![CDATA[90c91c2498849ab8cc4e873864bbf1cb2bf6ea12]]></property>
         <property name="cdx:composer:package:type"><![CDATA[library]]></property>
         <property name="cdx:composer:package:isDevRequirement"><![CDATA[true]]></property>
       </properties>
@@ -3283,7 +3283,7 @@
       <dependency ref="psr/log-3.0.2.0"/>
     </dependency>
     <dependency ref="doctrine/deprecations-1.2.0.0"/>
-    <dependency ref="ergebnis/agent-detector-2.0.0.0"/>
+    <dependency ref="ergebnis/agent-detector-2.1.0.0"/>
     <dependency ref="evenement/evenement-3.0.2.0"/>
     <dependency ref="fakerphp/faker-1.24.1.0">
       <dependency ref="psr/container-2.0.2.0"/>
@@ -3293,11 +3293,11 @@
     <dependency ref="filp/whoops-2.19.3.0">
       <dependency ref="psr/log-3.0.2.0"/>
     </dependency>
-    <dependency ref="friendsofphp/php-cs-fixer-3.95.30.0">
+    <dependency ref="friendsofphp/php-cs-fixer-3.95.32.0">
       <dependency ref="clue/ndjson-react-1.3.0.0"/>
       <dependency ref="composer/semver-3.6.0.0"/>
       <dependency ref="composer/xdebug-handler-3.0.5.0"/>
-      <dependency ref="ergebnis/agent-detector-2.0.0.0"/>
+      <dependency ref="ergebnis/agent-detector-2.1.0.0"/>
       <dependency ref="fidry/cpu-core-counter-1.4.1.0"/>
       <dependency ref="react/child-process-0.6.7.0"/>
       <dependency ref="react/event-loop-1.6.0.0"/>
@@ -3370,7 +3370,7 @@
       <dependency ref="phpstan/phpdoc-parser-2.4.1.0"/>
     </dependency>
     <dependency ref="phpstan/phpdoc-parser-2.4.1.0"/>
-    <dependency ref="phpstan/phpstan-2.3.6.0"/>
+    <dependency ref="phpstan/phpstan-2.3.7.0"/>
     <dependency ref="phpunit/php-code-coverage-12.5.8.0">
       <dependency ref="nikic/php-parser-5.9.0.0"/>
       <dependency ref="phpunit/php-text-template-5.0.1.0"/>
@@ -3520,8 +3520,8 @@
       <dependency ref="fakerphp/faker-1.24.1.0"/>
       <dependency ref="spatie/color-2.1.0.0"/>
       <dependency ref="pestphp/pest-4.7.8.0"/>
-      <dependency ref="friendsofphp/php-cs-fixer-3.95.30.0"/>
-      <dependency ref="phpstan/phpstan-2.3.6.0"/>
+      <dependency ref="friendsofphp/php-cs-fixer-3.95.32.0"/>
+      <dependency ref="phpstan/phpstan-2.3.7.0"/>
     </dependency>
   </dependencies>
 </bom>
